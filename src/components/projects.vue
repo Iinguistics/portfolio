@@ -5,7 +5,7 @@
             <article class="head-img">
                 <div class="head-img-wrapper">
                     <div class="head-img-inner">
-                        <img class="head-img-holder" src="../assets/hair-5.jpg" alt="" />
+                        <img class="head-img-holder" src="../assets/puzzle-2.jpg" alt="" />
                     </div>
                 </div>
             </article>
@@ -18,20 +18,20 @@
         <!-- grid image / listed projects -->
    <div class="project-container">
       <div class="bg1" id="view-src">
-          <a href="#" target="_blank">
-        <p>View Weather App Source Code</p>
-      </a>
        <a href="#" target="_blank">
-        <p>View Stat Tracker Source Code</p>
+        <p>View Hair Salon Source Code</p>
+      </a>
+      <a href="#" target="_blank">
+        <p>View CTDI Source Code</p>
       </a>
       <a href="#" target="_blank">
         <p>View Stat Tracker Source Code</p>
       </a>
-      <a href="#" target="_blank">
-        <p>View Stat Tracker Source Code</p>
+      <a href="https://github.com/Iinguistics/Stat-Tacker" target="_blank">
+        <p>View Portfolio Source Code</p>
       </a>
-      <a href="#" target="_blank">
-        <p>View Stat Tracker Source Code</p>
+          <a href="https://github.com/Iinguistics/weatherApp" target="_blank">
+        <p>View Weather App Source Code</p>
       </a>
       </div>
     
@@ -40,32 +40,30 @@
       </div>
       <div class="bg2">
       </div>
-       <a class="bg1" href="#" target="_blank">
-        <h2>Weather App</h2>
-        <p>Built with JQuery & Dark Sky API</p>
+        <a class="bg1" href="#" target="_blank">
+        <h2>Hair Salon</h2>
+        <p>Built with Vue,Node/Express,MongoDB,Bcrypt,ThreeJs &GSAP</p>
       </a>
        <a class="bg1" href="#" target="_blank">
-        <h2>36 &deg;</h2>
-        <p>Temperature</p>
+        <h2>CTDI</h2>
+        <p>Built with Vue,ThreeJs & Google Charts</p>
       </a>
-       <a class="bg2" href="#" target="_blank">
-        <h2>36 &deg;</h2>
-        <p>Temperature</p>
+       <a class="bg1" href="https://stat-tracking.herokuapp.com/" target="_blank">
+        <h2>Stat Tracker</h2>
+        <p>Built with Vue,Node/Express,MongoDB, & Tracker.gg API</p>
       </a>
-      <div class="bg1">
+      <div class="bg2">
       </div>
-     <a class="bg1" href="#" target="_blank">
-        <h2>36 &deg;</h2>
-        <p>Temperature</p>
+       <a class="bg1" href="#" target="_blank">
+        <h2>Portfolio</h2>
+        <p>Built with Vue & GSAP</p>
       </a>
-       <a class="bg2" href="#" target="_blank">
-        <h2>36 &deg;</h2>
-        <p>Temperature</p>
+       <a class="bg1" href="https://iinguistics.github.io/weatherApp/" target="_blank">
+        <h2>Weather App</h2>
+        <p>Built with JQuery & Open weather map API</p>
       </a>
-      <a class="bg2" href="#" target="_blank">
-        <h2>36 &deg;</h2>
-        <p>Temperature</p>
-      </a>
+      <div class="bg2">
+      </div>
       <div class="bg2">
       </div>
       <div class="bg2">
@@ -202,6 +200,9 @@ a{
 
 
 h2 {
+  font-family: "Coco Gothic Bold";
+  font-weight:normal;
+  font-style:normal;
   font-size: 45px;
   font-weight: 300;
   margin: 10px;
@@ -212,7 +213,7 @@ h2 span {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .project-container > div:nth-of-type(1) {
@@ -234,13 +235,18 @@ p {
 
 
 .bg1 {
-  background: url('../assets/puzzle.jpg');
-  color: #fff;;
+  background: url('../assets/puzzle-white.jpg');
+  color: #000;
+}
+
+.bg1 p{
+  font-size: 16px;
+  font-weight: 800;
 }
 
 .bg2 {
-  background: url('https://i.ibb.co/Fb5jb3J/bg2.jpg');
-  color: #333;
+  background: url('../assets/nature-road.jpg');
+  color: #000;
 }
 
 #view-src:hover{
@@ -254,8 +260,9 @@ p {
 }
 
 #view-src p:hover{
-  color: #00FF00 ;
+  color:#00FF00 ;
   text-decoration: underline;
+  font-weight: 800;
 }
 
 

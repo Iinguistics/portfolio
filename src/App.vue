@@ -15,10 +15,18 @@ export default {
 </script>
 
 <style>
+@font-face {
+font-family: "Coco Gothic";
+src: url("./assets/fonts/CocoGothic_trial.ttf");
+}
 
+@font-face {
+font-family: "Coco Gothic Bold";
+src: url("./assets/fonts/CocoGothic-Bold_trial.ttf");
+}
 
 #app {
-   font-family: Helvetica, Arial, sans-serif;
+   font-family: 'Coco Gothic', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

@@ -195,7 +195,6 @@ img {
 
 h1 {
       color: #fff;
-      font-family: "Roboto";
       font-weight: bolder !important;
       font-size: 46px !important;
       margin-bottom: 0px;
