@@ -1,5 +1,12 @@
 <template>
-<div class="body">
+<div>
+   <!-- barba -->
+    <div data-barba="wrapper">
+        <div class="load-container">
+            <div class="loading-screen"></div>
+        </div>
+    </div>
+      <!-- barba end   --> 
   <!-- title / header of page -->
     <div class="title-container">
             <article class="head-img">
@@ -17,7 +24,7 @@
         </div>
         <!-- grid image / listed projects -->
    <div class="project-container">
-      <div class="bg1" id="view-src">
+      <div class="bg1 links">
        <a href="#" target="_blank">
         <p>View Hair Salon Source Code</p>
       </a>
@@ -36,7 +43,10 @@
       </div>
     
      
-      <div class="bg1">
+      <div class="bg1 links">
+         <router-link to="/"><p>Home</p></router-link>
+         <router-link to="/about"><p>About</p></router-link>
+         <router-link to="/contact"><p>Contact</p></router-link>
       </div>
       <div class="bg2">
       </div>
@@ -50,13 +60,13 @@
       </a>
        <a class="bg1" href="https://stat-tracking.herokuapp.com/" target="_blank">
         <h2>Stat Tracker</h2>
-        <p>Built with Vue,Node/Express,MongoDB, & Tracker.gg API</p>
+        <p>Built with Vue,Node/Express & Tracker.gg API</p>
       </a>
       <div class="bg2">
       </div>
        <a class="bg1" href="#" target="_blank">
         <h2>Portfolio</h2>
-        <p>Built with Vue & GSAP</p>
+        <p>Built with Vue, pixie js & GSAP</p>
       </a>
        <a class="bg1" href="https://iinguistics.github.io/weatherApp/" target="_blank">
         <h2>Weather App</h2>
@@ -83,6 +93,8 @@
 import TweenMax from 'gsap';
 import $ from 'jquery';
 import Expo from 'gsap';
+import barba from '@barba/core';
+import gsap from 'gsap';
 
 export default {
   name: 'projects',
@@ -136,10 +148,69 @@ export default {
                     });
                 });
         });
-    }
+    },
+
+     delay: function(n) {
+    n = n || 2000;
+    return new Promise((done) => {
+        setTimeout(() => {
+            done();
+        }, n);
+    });
+   },
+  
+
+   pageTransition: function() {
+    var tl = gsap.timeline();
+    tl.to(".loading-screen", {
+        duration: 1.2,
+        width: "100%",
+        left: "0%",
+        ease: "Expo.easeInOut",
+    });
+
+    tl.to(".loading-screen", {
+        duration: 1,
+        width: "100%",
+        left: "100%",
+        ease: "Expo.easeInOut",
+        delay: 0.3,
+    });
+    tl.set(".loading-screen", { left: "-100%" });
+},
+
+
+      trans: function(){
+    barba.init({
+        sync: true,
+
+        transitions: [
+            {
+                async leave(data) {
+                    const done = this.async();
+
+                    pageTransition();
+                    await delay(3000);
+                    done();
+                },
+
+                async enter(data) {
+                    contentAnimation();
+                },
+
+                async once(data) {
+                    contentAnimation();
+                },
+            },
+        ],
+      });
+     }
   },
   mounted(){
     this.header();
+    this.delay();
+    this.pageTransition();
+    this.trans();
   }
 
 }
@@ -147,8 +218,26 @@ export default {
 
 
 <style scoped>
-.body{
-  background: #333;
+
+ .loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: #12343B;
+    width: 0%;
+    height: 100%;
+}
+
+.load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
 }
 
 a{
@@ -162,6 +251,7 @@ a{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-gap: 8px;
+  background: #333;
 }
 
 .project-container > div{
@@ -249,20 +339,20 @@ p {
   color: #000;
 }
 
-#view-src:hover{
+.links:hover{
   opacity: 1.0;
 }
 
-#view-src p{
+.links p{
    font-size: 17px;
    color: #000;
    font-weight: 700;
 }
 
-#view-src p:hover{
-  color:#00FF00 ;
+.links p:hover{
+  color: #0A192F;
   text-decoration: underline;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 

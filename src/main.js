@@ -5,7 +5,6 @@ import VueToasted from 'vue-toasted';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'wired-elements/lib/wired-elements-bundled-full.js';
 
-
 Vue.config.productionTip = false
 
 Vue.use(VueToasted,{

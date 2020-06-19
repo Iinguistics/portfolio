@@ -1,9 +1,8 @@
 <template>
-  <div class= "test">
+  <div class= "main-load">
     <!-- rings -->
-         <div>
-            <div class="loading-screen"></div>
-              <div class="loader">
+            <div class="loading-screen" id="loading-screen"></div>
+              <div class="loader" @click="contact">
                   <div class="ringOne ring">
                         <img src="../assets/ring.png" alt="spinning ring">
                   </div>
@@ -11,18 +10,18 @@
                     <img src="../assets/ring.png" alt="spinning ring">
                   </div>
             </div>
-      </div>
+      
    <!-- main / blend section -->
    <section>
      <div class="main-wrap">
-          <router-link to=/services/network class="about">
+          <router-link to=/about class="about">
                 <h5>About Me</h5></router-link>
          
-         <router-link to=/services/deployment class="projects">
-            <h5 id="network-deployment">Projects</h5></router-link>
+         <router-link to=/projects class="projects">
+            <h5>Projects</h5></router-link>
       
-         <router-link to=/services/deployment class="contact">
-            <h5 id="network-deployment">Contact Me</h5></router-link>
+         <router-link to=/contact class="contact" id="contact-me">
+            <h5>Contact Me</h5></router-link>
             
         </div>
    </section>
@@ -37,7 +36,6 @@
 import TweenMax from 'gsap';
 import anime from 'animejs';
 import Expo from 'gsap/src/EasePack';
-
 
 export default {
   name: 'home',
@@ -78,23 +76,6 @@ export default {
       });
     
 
-
-      
-
-      TweenMax.from("#one", 3, {
-            delay: 9.4,
-            opacity: 0,
-            y: 20,
-            ease: Expo.easeInOut
-      });
-
-      TweenMax.from("#two", 3, {
-            delay: 9.7,
-            opacity: 0,
-            y: 20,
-            ease: Expo.easeInOut
-      });
-
   
          let tl = TweenMax.timeline();
          tl.from(".ringOne" ,{duration:2, y:40})
@@ -102,27 +83,7 @@ export default {
          tl.from(".ringTwo" ,{duration:2, y:40})
          tl.to(".ringTwo", {duration:2, x:40});
 
-         /*
-           tl.from(".ringOne", 4, {
-            delay: 0.4,
-            opacity: 0,
-            y:40,
-            ease: Expo.easeInOut
-      }).from(".ringTwo", 4, {
-            delay: 0.9,
-            opacity: 0,
-            y: 40,
-            ease: Expo.easeInOut
-      }, "-=5").to(".ringOne", 4, {
-            delay: 0.4,
-            x: 40,
-            ease: Expo.easeInOut
-      }).to(".ringTwo", 4, {
-            delay: 0.9,
-            x: 40,
-            ease: Expo.easeInOut
-      },"-=5");
-      */
+        
 
           // const textWrapper = document.querySelector('.ml7 .letters'); 
           //textWrapper.innerHTML = this.textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
@@ -141,6 +102,9 @@ export default {
          return 9000 + 50 * i;
         }
      });
+    },
+    contact(){
+      this.$router.push('/contact');
     }
   },
 
@@ -152,23 +116,21 @@ export default {
 
 <style scoped>
 
- .test {
+ .main-load {
       margin: 0%;
       padding: 0%;
       width: 100%;
       height: 100vh;
       background: #121212;
-}
-
-.test {
       background: url('../assets/hero.jpg') no-repeat 50% 50%;
       background-size: cover;
 }
 
+
+
 img {
       width: 100%;
 }
-
 
 
 
@@ -237,12 +199,12 @@ p {
       margin: 0%;
       padding: 0%;
       top: 50%;
-      left: 72%;
+      left: 55%;
       transform: translate(-50%, -50%);
       position: absolute;
       z-index: 2;
-      width: 40%;
-      opacity: 0.7;    
+      width: 35%;
+      opacity: 0.7;
 }
 
 .ringOne img {
@@ -263,6 +225,7 @@ p {
 }
 
 
+
 /* main wrap */
 
 .main-wrap{
@@ -280,23 +243,21 @@ p {
    width: 225px;
 }
 
-.main-wrap a{
-  text-decoration: none;
-}
-
-.projects{
-  color: #fff;
-  
-}
 
 
-
-
-.projects h5:hover{
-    background-color: aqua;
+ a{
+  color: #fff; 
+  text-decoration: none !important;
 }
 
 
+a:hover{
+   color: #64FFDA;
+}
+
+.loader:hover{
+  cursor: pointer;
+}
 
 
 
