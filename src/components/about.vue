@@ -34,7 +34,7 @@
      </div>
      <!-- circle spinner -->
     <div class="circular-text">
-      <span id="rotated">stone • stone • stone • stone • stone • stone • stone • stone • stone •</span>
+      <span id="rotated">jogging • development • hiking • reading • movies • learning • music • gaming •</span>
     </div>
     <div class="circleArrow">
       <ion-icon name="arrow-down"></ion-icon>
@@ -171,7 +171,7 @@ export default {
      },
      test: function(){
          const circleType = new CircleType(document.getElementById('rotated'));
-         circleType.radius(75);
+         circleType.radius(52);
          $(window).scroll(function(){
            var offset = $(window).scrollTop();
            offset = offset * 0.4;
@@ -306,14 +306,14 @@ export default {
 .circleArrow{
   position: fixed;
   left: 50%;
-  top: 62%;
+  top: 63%;
   transform: translate(-50%,-50%);
 }
 
 
 
 ion-icon{
-  font-size: 90px;
+  font-size: 70px;
   color: #333;
 }
 
@@ -373,12 +373,16 @@ a:hover{
 }
 
 .links{
- margin-top: 350px;
- height: 100px;
+ margin-top: 300px;
+ height: 125px;
 }
 
 .circular-text{
-  top: 36%;
+  top: 40%;
+}
+
+.circleArrow{
+  top: 65%;
 
 }
 

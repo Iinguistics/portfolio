@@ -8,7 +8,9 @@
       <ion-icon name="arrow-down"></ion-icon>
     </div>
    
-    
+    <div class="what">
+        <h1>what</h1>
+    </div>
  
   </div>
 
@@ -77,5 +79,14 @@ export default {
   transform: translate(-50%,-50%);
 }
 
+.what{
+    height: 400px;
+    background: coral;
+}
 
+@media(min-width: 1300px) {
+    .what{
+        background: darkred;
+    }
+}
 </style>
