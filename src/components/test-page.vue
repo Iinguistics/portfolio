@@ -1,16 +1,12 @@
 <template>
   <div>
-          <!-- circle spinner -->
-    <div class="circular-text">
-      <span id="rotated">stone • stone • stone • stone • stone • stone • stone • stone • stone •</span>
-    </div>
-    <div class="circleArrow">
-      <ion-icon name="arrow-down"></ion-icon>
-    </div>
-   
-    <div class="what">
-        <h1>what</h1>
-    </div>
+   <div id="class1" @mouseover="update" @mouseleave="back">
+        this is class uno
+   </div>
+
+   <div id="class2">
+     this is class number two
+   </div>
  
   </div>
 
@@ -18,8 +14,7 @@
 </template>
 
 <script>
-import $ from 'jquery';
-const CircleType = require('circletype');
+
 
 
 export default {
@@ -31,15 +26,14 @@ export default {
     }
   },
      methods: {
-     test: function(){
-        const circleType = new CircleType(document.getElementById('rotated'));
-
-            // Set the radius to 150 pixels.
-            circleType.radius(80);
- 
-       console.log('what')
-      
-     }
+      update(){
+        const class2 = document.getElementById('class2');
+        class2.style.color = "red";
+      },
+      back(){
+        const class2 = document.getElementById('class2');
+        class2.style.color = "#333";
+      }
   
 
 
@@ -58,35 +52,12 @@ export default {
 </script>
 
 <style scoped>
-
-.circular-text{
-  position: fixed;
-  left: 50%;
-  top: 45%;
-  transform: translate(-50%, -50%);
-  color: #333;
-  font-size: 24px;
-  font-weight: 800;
-  transition: 0.5s ease-in-out;
-  -webkit-text-stoke: 1px rgba(255,255,255,0.6);
-  
+#class1{
+  height: 50px;
+  margin-top: 100px;
+  margin-bottom: 150px;
 }
 
-.circleArrow{
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-}
 
-.what{
-    height: 400px;
-    background: coral;
-}
 
-@media(min-width: 1300px) {
-    .what{
-        background: darkred;
-    }
-}
 </style>

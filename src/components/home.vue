@@ -2,10 +2,11 @@
   <div class= "main-load">
     <!-- rings -->
             <div class="loading-screen" id="loading-screen"></div>
-              <div class="loader" @click="contact">
+              <div class="loader" @click="contact"  @mouseover="update" @mouseleave="back">
                   <div class="ringOne ring">
                         <img src="../assets/ring.png" alt="spinning ring">
                   </div>
+                  
                   <div class="ringTwo ring">
                     <img src="../assets/ring.png" alt="spinning ring">
                   </div>
@@ -105,7 +106,15 @@ export default {
     },
     contact(){
       this.$router.push('/contact');
-    }
+    },
+    update(){
+        const updateColor = document.getElementById('contact-me');
+        updateColor.style.color = "#64FFDA";
+      },
+      back(){
+        const updateColor = document.getElementById('contact-me');
+        updateColor.style.color = "#fff";
+      }
   },
 
   mounted(){
@@ -258,6 +267,7 @@ a:hover{
 .loader:hover{
   cursor: pointer;
 }
+
 
 
 

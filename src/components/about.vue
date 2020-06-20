@@ -171,7 +171,7 @@ export default {
      },
      test: function(){
          const circleType = new CircleType(document.getElementById('rotated'));
-         circleType.radius(52);
+         circleType.radius(50);
          $(window).scroll(function(){
            var offset = $(window).scrollTop();
            offset = offset * 0.4;
@@ -181,7 +181,7 @@ export default {
              "-o-transform": "rotate(" + offset + "deg)",
              "-ms-transform": "rotate(" + offset + "deg)",
              "transform": "rotate(" + offset + "deg)"
-
+ 
            });
          });
      }
@@ -279,16 +279,17 @@ export default {
   font-size: 16px;
   display: inline-block;
   padding: 10px;
+  width: 175px;
 }
 
 .arrow{
-  height: 15px;
-  width: 15px;
+  height: 14px;
+  width: 14px;
 }
 
 #vue{
   width: 150px;
-  padding-left: 25px;
+  padding-left: 12px;
 }
 
 .circular-text{
@@ -297,7 +298,7 @@ export default {
   top: 30%;
   transform: translate(-50%, -50%);
   color: #333;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 800;
   transition: 0.5s ease-in-out;
   -webkit-text-stoke: 1px rgba(255,255,255,0.6);
@@ -306,7 +307,7 @@ export default {
 .circleArrow{
   position: fixed;
   left: 50%;
-  top: 63%;
+  top: 58%;
   transform: translate(-50%,-50%);
 }
 
@@ -378,11 +379,11 @@ a:hover{
 }
 
 .circular-text{
-  top: 40%;
+  top: 50%;
 }
 
 .circleArrow{
-  top: 65%;
+  top: 68%;
 
 }
 
