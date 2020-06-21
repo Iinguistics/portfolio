@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Home from './components/home.vue';
 import Projects from './components/projects.vue';
 import About from './components/about.vue';
+import Skills from './components/skills.vue';
 import Contact from './components/contact.vue';
 import contactMobile from './components/contactMobile.vue';
 import Page from './components/test-page.vue';
@@ -30,6 +31,11 @@ export default new Router({
             path:'/about',
             name: 'about',
             component: About,
+        },
+        {
+            path:'/skills',
+            name: 'skills',
+            component: Skills,
         },
         {
             path:'/contact',

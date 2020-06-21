@@ -21,7 +21,10 @@
          <router-link to=/projects class="projects">
             <h5>Projects</h5></router-link>
       
-         <router-link to=/contact class="contact" id="contact-me">
+          <router-link to=/skills class="skills">
+            <h5>Skills</h5></router-link>
+
+             <router-link to=/contact class="contact" id="contact-me">
             <h5>Contact Me</h5></router-link>
             
         </div>
@@ -49,7 +52,7 @@ export default {
   methods: {
     pageLoad: function(){
           TweenMax.to(".loading-screen", 4, {
-            delay: 6.6,
+            delay: 7.0,
             top: "-110%",
             ease: Expo.easeInOut
       });
@@ -64,6 +67,13 @@ export default {
 
       TweenMax.from(".projects", 3, {
             delay: 9,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+      });
+
+      TweenMax.from(".skills", 3, {
+            delay: 6.6,
             opacity: 0,
             y: 20,
             ease: Expo.easeInOut
@@ -208,7 +218,7 @@ p {
       margin: 0%;
       padding: 0%;
       top: 50%;
-      left: 55%;
+      left: 60%;
       transform: translate(-50%, -50%);
       position: absolute;
       z-index: 2;
@@ -242,7 +252,7 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   margin: auto;
-  max-width: 95%;
+  max-width: 98%;
   height: 100vh;
   align-items: center;
 }

@@ -12,25 +12,23 @@
      <div class="head-container">
        <div id="header"> </div>
      </div>
-     <div class="about-header">
+    
+        <div class="about-header">
       <h1>About Me</h1>
      </div>
      <div class="about-container">
        <div class="about-item">
-         <h5>Hello! I'm James, a software engineer based in El Dorado Hills, CA.</h5>
-         <h5>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.</h5>
+         <h5>Hello, I'm James, a full stack developer based in El Dorado Hills, CA.</h5>
+         <p>I enjoy creating software that has a positive impact of people's life, whether that be websites, applications, or anything in between.</p>
+         <p>I don’t like to define myself by the work I’ve done. I define myself
+            by the work I want to do. I prefer to keep learning, continue challenging myself,
+            and do interesting things that matter.
+         </p>
+        <p>
+          I enjoy problem solving, & have high ambitions with high attention to detail, I am interested in the entire frontend, backend spectrums & working with fellow ambitious life long learners.
+        </p>
        </div>
-         <div class="about-item">
-           <h5>Here are a few technologies I've been working with recently:</h5> 
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> JavaScript</p> 
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> HTML & CSS</p>
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> Node.js</p> 
-           <p id="vue"><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> Vue</p>  
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> Mongo DB</p> 
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> JQuery</p> 
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> Git version control</p>  
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> Axios</p> 
-         </div>
+      
      </div>
      <!-- circle spinner -->
     <div class="circular-text">
@@ -46,6 +44,7 @@
          <router-link to="/projects" class="link-item">Projects</router-link>
          <router-link to="/contact" class="link-item">Contact</router-link>
       </div>
+     
      
   </div>
 </template>
@@ -171,7 +170,7 @@ export default {
      },
      test: function(){
          const circleType = new CircleType(document.getElementById('rotated'));
-         circleType.radius(50);
+         circleType.radius(80);
          $(window).scroll(function(){
            var offset = $(window).scrollTop();
            offset = offset * 0.4;
@@ -247,6 +246,10 @@ export default {
     top: 45%;
 }
 
+h1{
+  color: #02203c;
+}
+
 .about-header{
   margin-top: 200px;
 }
@@ -258,47 +261,37 @@ export default {
 
 .about-container{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 80%;
+  flex-direction: column;
+  max-width: 60%;
   justify-content: space-evenly;
-  height: 350px;
+  height: 450px;
   margin:auto;
 }
 
 .about-item{
-  max-width: 350px; 
+  max-width: 400px; 
   text-align: left;
 }
 
 .about-item h5{
   font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .about-item p{
-  font-size: 16px;
-  display: inline-block;
-  padding: 10px;
-  width: 175px;
+  font-size: 17px;
+  width: 400px;
 }
 
-.arrow{
-  height: 14px;
-  width: 14px;
-}
 
-#vue{
-  width: 150px;
-  padding-left: 12px;
-}
 
 .circular-text{
   position: fixed;
-  left: 50%;
+  left: 70%;
   top: 30%;
   transform: translate(-50%, -50%);
   color: #333;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 800;
   transition: 0.5s ease-in-out;
   -webkit-text-stoke: 1px rgba(255,255,255,0.6);
@@ -306,8 +299,8 @@ export default {
 
 .circleArrow{
   position: fixed;
-  left: 50%;
-  top: 58%;
+  left: 70%;
+  top: 60%;
   transform: translate(-50%,-50%);
 }
 
@@ -323,7 +316,7 @@ ion-icon{
 .links{
  display: flex;
  flex-direction: row;
- margin-top: 225px;
+ margin-top: 50px;
  height: 100px;
  align-items: center;
 }
@@ -358,7 +351,6 @@ a:hover{
 
 
 
-
 @media(min-width: 1300px) {
    .white-space{
      height: 120px;
@@ -374,18 +366,21 @@ a:hover{
 }
 
 .links{
- margin-top: 300px;
+ margin-top: 100px;
  height: 125px;
 }
 
 .circular-text{
   top: 50%;
+  left: 65%;
 }
 
 .circleArrow{
-  top: 68%;
-
+  top: 70%;
+  left: 65%;
 }
+
+
 
 
 }
