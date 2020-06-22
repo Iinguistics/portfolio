@@ -1,5 +1,5 @@
 <template>
-  <div class= "main-load">
+  <div class="main-load">
     <!-- rings -->
             <div class="loading-screen" id="loading-screen"></div>
               <div class="loader" @click="contact"  @mouseover="update" @mouseleave="back">
@@ -124,7 +124,8 @@ export default {
       back(){
         const updateColor = document.getElementById('contact-me');
         updateColor.style.color = "#fff";
-      }
+      },
+     
   },
 
   mounted(){
@@ -252,9 +253,10 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   margin: auto;
-  max-width: 98%;
+  max-width: 99%;
   height: 100vh;
   align-items: center;
+  cursor: url("../assets/red-cursor.png"), auto !important;
 }
 
 .item{

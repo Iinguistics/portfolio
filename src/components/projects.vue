@@ -46,6 +46,7 @@
       <div class="bg1 links">
          <router-link to="/"><p>Home</p></router-link>
          <router-link to="/about"><p>About</p></router-link>
+         <router-link to="/skills"><p>Skills</p></router-link>
          <router-link to="/contact"><p>Contact</p></router-link>
       </div>
       <div class="bg2">
@@ -71,6 +72,7 @@
        <a class="bg1" href="https://iinguistics.github.io/weatherApp/" target="_blank">
         <h2>Weather App</h2>
         <p>Built with JQuery & Open weather map API</p>
+        <p>(First project I ever built)</p>
       </a>
       <div class="bg2">
       </div>
