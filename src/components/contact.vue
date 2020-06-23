@@ -12,6 +12,7 @@
          <router-link to="/" class="link-item">Home</router-link>
          <router-link to="/about" class="link-item">About</router-link>
          <router-link to="/projects" class="link-item">Projects</router-link>
+         <router-link to="/skills" class="link-item">Skills</router-link>
      </div>
       <div class="head">
         <h3>Get in touch</h3>

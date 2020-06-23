@@ -42,6 +42,7 @@
      <div class="links">
          <router-link to="/" class="link-item">Home</router-link>
          <router-link to="/projects" class="link-item">Projects</router-link>
+         <router-link to="/skills" class="link-item">Skills</router-link>
          <router-link to="/contact" class="link-item">Contact</router-link>
       </div>
      

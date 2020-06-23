@@ -1,28 +1,41 @@
 <template>
    <div class="wrap">
+    <div class="link-bar">
+        <li><router-link to="/"><img class="link-icons" id="home-img" src="../assets/icons/home-icon.png" alt="home icon"><p id="home-text">Home</p></router-link></li> 
+        <li><router-link to="/about"><img class="link-icons" id="about-img" src="../assets/icons/about-icon.png" alt="about icon"><p id="about-text">About</p></router-link></li> 
+        <li><router-link to="/projects"><img class="link-icons" id="projects-img" src="../assets/icons/eye-icon.png" alt="projects icon"><p id="projects-text">Projects</p></router-link></li>
+        <li><router-link to="/contact"><img class="link-icons" id="contact-img" src="../assets/icons/email-icon.png" alt="email icon"><p id="contact-text">Contact</p></router-link></li> 
+    </div>
    <div id="skills"></div>
    
    <div class="skills-flex">
-      <div class="skills-item">
-           <h5>Here are a few technologies I've been working with recently:</h5> 
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> JavaScript</p> 
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> HTML & CSS</p>
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> Node.js</p> 
-           <p id="vue"><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> Vue</p>  
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> Mongo DB</p> 
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> JQuery</p> 
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> Git version control</p>  
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> Axios</p> 
-         </div>
          <div class="skills-item">
-              <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> JavaScript</p> 
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> HTML & CSS</p>
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> Node.js</p> 
-           <p id="vue"><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> Vue</p>  
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> Mongo DB</p> 
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> JQuery</p> 
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> Git version control</p>  
-           <p><img class="arrow" src="../assets/arrow-icon.svg" alt="arrow"> Axios</p> 
+             <h5>Soft Skills</h5>
+              <li><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Efficient and effective communication skills </li> 
+              <li><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Self-organized & able to work independtly</li> 
+              <li><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Open and adoptable to changes & unexpected obstacles</li> 
+              <li><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Team player</li> 
+              <li><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Collaborative mindset and open-minded</li> 
+              <li><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Passion and hunger for excellence</li> 
+              <li><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Motivated to take on new challenges</li> 
+              <li><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Open to receive and deliver clear and useful criticism</li> 
+                
+         </div>
+
+          <div class="skills-item">
+           <h5>Tech Skills</h5> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JavaScript</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> HTML & CSS</p>
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Node.js</p> 
+           <p id="vue"><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Vue</p>  
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Mongo DB</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JQuery</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Git version control</p>  
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Axios</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Rest API</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JSON</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Linux</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Data structures</p> 
          </div>
    </div>
   
@@ -44,11 +57,11 @@ export default {
   },
   methods: {
          skillsBlotter: function(){
-       var cssContainer = document.getElementById("skills");
+       var skillsContainer = document.getElementById("skills");
 
     var text = new Blotter.Text("SKILLS", {
         family: "serif",
-        size: 130,
+        size: 120,
         fill: "#fff",
         paddingLeft: 80,
         paddingRight: 80,
@@ -66,7 +79,7 @@ export default {
     });
 
     var scope = blotter.forText(text);
-    scope.appendTo(cssContainer);
+    scope.appendTo(skillsContainer);
      },
     
  
@@ -96,9 +109,10 @@ export default {
 
 #skills{
  width: 100%;
- margin: auto;
- 
+ margin-bottom: -35px;
 }
+
+
 
 .skills-flex{
   display: flex;
@@ -109,30 +123,104 @@ export default {
 }
 
 .skills-item{
-  max-width: 450px; 
+  max-width: 350px; 
   text-align: left;
   color: #fff;
   margin: auto;
 }
 
 .skills-item h5{
+  color: #3EB489;   
   font-size: 20px;
+  margin-bottom: 15px;
+}
+
+li{
+  list-style: none;
+}
+
+.skills-item li{
+    padding-top: 1px;
 }
 
 .skills-item p{
   font-size: 15px;
   display: inline-block;
   width: 175px;
+  text-align: left;
+  height: 25px;
 }
 
 .arrow{
-  height: 14px;
-  width: 14px;
+  height: 15px;
+  width: 15px;
+}
+
+.link-bar{
+    background: #121212;
+    height: 100vh;
+    width: 60px;
+    position: absolute;
+    padding-top: 125px;
+}
+
+.link-icons {
+    padding-top: 20px;
+    height: 50px;
 }
 
 
+a{
+    text-decoration: none !important;
+    height: 65px;
+}
+
+#home-text{
+   color: #3EB489; 
+   display: none;  
+   font-size: 15px;
+}
+#projects-text{
+   color: #3EB489; 
+   display: none;  
+   font-size: 15px;
+}
+#about-text{
+   color: #3EB489; 
+   display: none;
+   font-size: 15px;  
+}
+#contact-text{
+   color: #3EB489; 
+   display: none;  
+   font-size: 15px;
+}
 
 
+#home-img:hover ~ #home-text{
+    display: inherit;
+}
+#projects-img:hover ~ #projects-text{
+    display: inherit;
+}
+#about-img:hover ~ #about-text{
+    display: inherit;
+}
+#contact-img:hover ~ #contact-text{
+    display: inherit;
+}
+
+
+@media(min-width: 1300px) {
+   #skills{
+   margin-bottom: 20px;
+}
+
+.skills-item{
+  max-width: 475px; 
+}
+
+}
 
 
 
