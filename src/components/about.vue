@@ -218,7 +218,7 @@ export default {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    background-color: #3F2A14;
+    background-color: #3EB489; 
     width: 0%;
     height: 100%;
 }

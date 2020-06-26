@@ -1,5 +1,13 @@
 <template>
-   <div class="wrap">
+<div>
+      <!-- barba -->
+    <div data-barba="wrapper">
+        <div class="load-container">
+            <div class="loading-screen"></div>
+        </div>
+     </div> 
+      <!-- barba end   -->  
+  <div class="wrap">
     <div class="link-bar">
         <li><router-link to="/"><img class="link-icons" id="home-img" src="../assets/icons/home-icon.png" alt="home icon"><p id="home-text">Home</p></router-link></li> 
         <li><router-link to="/about"><img class="link-icons" id="about-img" src="../assets/icons/about-icon.png" alt="about icon"><p id="about-text">About</p></router-link></li> 
@@ -41,10 +49,14 @@
   
 
   </div>
+</div>
+   
 </template>
 
 <script> 
-
+import Expo from 'gsap/src/EasePack';
+import barba from '@barba/core';
+import gsap from 'gsap';
 
 
 export default {
@@ -81,6 +93,25 @@ export default {
     var scope = blotter.forText(text);
     scope.appendTo(skillsContainer);
      },
+
+        pageTransition: function() {
+    var tl = gsap.timeline();
+    tl.to(".loading-screen", {
+        duration: 1.2,
+        width: "100%",
+        left: "0%",
+        ease: "Expo.easeInOut",
+    });
+
+    tl.to(".loading-screen", {
+        duration: 1,
+        width: "100%",
+        left: "100%",
+        ease: "Expo.easeInOut",
+        delay: 0.3,
+    });
+    tl.set(".loading-screen", { left: "-100%" });
+},
     
  
 
@@ -89,6 +120,7 @@ export default {
 
   mounted(){
     this.skillsBlotter();
+    this.pageTransition();
   }
  
 
@@ -100,6 +132,27 @@ export default {
 </script>
 
 <style scoped>
+
+ .loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: #A4A9A1; 
+    width: 0%;
+    height: 100%;
+}
+
+.load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}
 
 .wrap{
  background:#101010;
@@ -161,7 +214,7 @@ li{
     height: 100vh;
     width: 60px;
     position: absolute;
-    padding-top: 125px;
+    padding-top: 175px;
 }
 
 .link-icons {
@@ -218,6 +271,10 @@ a{
 
 .skills-item{
   max-width: 475px; 
+}
+
+.link-bar{
+    padding-top: 305px;
 }
 
 }
