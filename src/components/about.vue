@@ -301,7 +301,7 @@ h1{
 .circleArrow{
   position: fixed;
   left: 70%;
-  top: 60%;
+  top: 59%;
   transform: translate(-50%,-50%);
 }
 

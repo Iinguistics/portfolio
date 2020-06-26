@@ -6,7 +6,7 @@ import About from './components/about.vue';
 import Skills from './components/skills.vue';
 import Contact from './components/contact.vue';
 import contactMobile from './components/contactMobile.vue';
-import Page from './components/test-page.vue';
+import Parent from './components/parent-comp.vue';
 
 
 
@@ -48,9 +48,9 @@ export default new Router({
             component: contactMobile,
         },
         {
-            path:'/page',
-            name: 'test-page',
-            component: Page,
+            path:'/parent',
+            name: 'parent-comp',
+            component: Parent,
         },
        
     ]

@@ -38,7 +38,6 @@
 
 <script>
 import TweenMax from 'gsap';
-import anime from 'animejs';
 import Expo from 'gsap/src/EasePack';
 
 export default {
@@ -93,26 +92,7 @@ export default {
          tl.to(".ringOne", {duration:2, x:40});
          tl.from(".ringTwo" ,{duration:2, y:40})
          tl.to(".ringTwo", {duration:2, x:40});
-
-        
-
-          // const textWrapper = document.querySelector('.ml7 .letters'); 
-          //textWrapper.innerHTML = this.textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
-         // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-         anime.timeline({loop: false})
-        .add({ 
-         targets: '.ml7 .letter',
-         translateY: ["1.1em", 0],
-         translateX: ["0.55em", 0],
-         translateZ: 0,
-         rotateZ: [180, 0],
-         duration: 750,
-         easing: "easeOutExpo",
-         delay: function(el, i) {
-         return 9000 + 50 * i;
-        }
-     });
+      
     },
     contact(){
       this.$router.push('/contact');
@@ -137,8 +117,8 @@ export default {
 <style scoped>
 
  .main-load {
-      margin: 0%;
-      padding: 0%;
+      margin: 0;
+      padding: 0;
       width: 100%;
       height: 100vh;
       background: #121212;
@@ -149,31 +129,10 @@ export default {
 
 
 img {
-      width: 100%;
+      width: 93%;
 }
 
 
-
-.ml7 {
-      position: relative;
-      font-weight: 900;
-      font-size: 3.7em;
-}
-
-.ml7 .text-wrapper {
-      position: relative;
-      display: inline-block;
-      padding-top: 0.2em;
-      padding-right: 0.05em;
-      padding-bottom: 0.1em;
-      overflow: hidden;
-}
-
-.ml7 .letter {
-      transform-origin: 0 100%;
-      display: inline-block;
-      line-height: 1em;
-}
 
 h1 {
       color: #fff;
@@ -182,16 +141,6 @@ h1 {
       margin-bottom: 0px;
       text-transform: uppercase !important;
 }
-
-
-
-p {
-      color: rgb(95, 95, 95);
-      font-weight: 200;
-      font-family: "Roboto";
-      line-height: 28px;
-}
-
 
 
 
@@ -253,15 +202,16 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   margin: auto;
-  max-width: 99%;
-  height: 100vh;
+  max-width: 98%;
+  height: 98vh;
   align-items: center;
   cursor: url("../assets/red-cursor.png"), auto !important;
+  margin-top: 0px;
 }
 
 .item{
    height: 100px;
-   width: 225px;
+   width: 215px;
 }
 
 
