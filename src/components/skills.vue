@@ -7,7 +7,7 @@
         </div>
      </div> 
       <!-- barba end   -->  
-  <div class="wrap">
+  <div class="landing">
     <div class="link-bar">
         <li><router-link to="/"><img class="link-icons" id="home-img" src="../assets/icons/home-icon.png" alt="home icon"><p id="home-text">Home</p></router-link></li> 
         <li><router-link to="/about"><img class="link-icons" id="about-img" src="../assets/icons/about-icon.png" alt="about icon"><p id="about-text">About</p></router-link></li> 
@@ -63,7 +63,8 @@ export default {
   name: 'skills',
   data(){
     return{
-    
+     x:window.matchMedia("(max-width: 768px)"),
+     
       
     }
   },
@@ -112,6 +113,39 @@ export default {
     });
     tl.set(".loading-screen", { left: "-100%" });
 },
+
+  mobileSkillsBlotter: function(){
+      if (this.x.matches) { // If media query matches mobile size for blotter
+    var skillsContainer = document.getElementById("skills");
+
+    var text = new Blotter.Text("SKILLS", {
+        family: "serif",
+        size: 85,
+        fill: "#fff",
+        paddingLeft: 80,
+        paddingRight: 80,
+        paddingTop: 20,
+        paddingBottom: 80
+    });
+
+    var material = new Blotter.FliesMaterial();
+    material.uniforms.uPointCellWidth.value = 0.01;
+    material.uniforms.uPointRadius.value = 0.3;
+    material.uniforms.uSpeed.value = 3;
+
+    var blotter = new Blotter(material, {
+        texts: text
+    });
+
+    var scope = blotter.forText(text);
+    scope.appendTo(skillsContainer);
+          
+      } else {
+        // regular size
+       this.skillsBlotter();
+
+      }
+  }
     
  
 
@@ -119,8 +153,9 @@ export default {
   
 
   mounted(){
-    this.skillsBlotter();
+    // this.skillsBlotter();
     this.pageTransition();
+    this.mobileSkillsBlotter();
   }
  
 
@@ -154,7 +189,7 @@ export default {
     pointer-events: none;
 }
 
-.wrap{
+.landing{
  background:#101010;
  height: 100vh;
 }
@@ -171,7 +206,6 @@ export default {
   display: flex;
   flex-direction: row;
   margin: auto;
-  height: 100px;
   max-width: 95%;
 }
 
@@ -276,6 +310,51 @@ a{
 .link-bar{
     padding-top: 305px;
 }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .landing {
+  height: 950px;
+ }
+
+ .link-bar{
+     display: none;
+ }
+
+ .skills-flex{
+  max-width: 99%;
+  flex-direction: column;
+}
+
+.skills-item{
+  max-width: 97%; 
+  text-align: left;
+  color: #fff;
+  margin: auto;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+.skills-item h5{
+  color: #3EB489;   
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+
+.load-container {
+    height: 1150px;
+}
+
+.skills-item p{
+  font-size: 17px;
+}
+
+
+
 
 }
 

@@ -7,6 +7,8 @@ import Skills from './components/skills.vue';
 import Contact from './components/contact.vue';
 import contactMobile from './components/contactMobile.vue';
 import Parent from './components/parent-comp.vue';
+import Child from './components/child-comp.vue';
+import NavBar from './components/navBar.vue';
 
 
 
@@ -51,6 +53,17 @@ export default new Router({
             path:'/parent',
             name: 'parent-comp',
             component: Parent,
+        },
+        {
+            path:'/child',
+            name: 'child-comp',
+            component: Child,
+        },
+
+        {
+            path:'/test',
+            name: 'navBar',
+            component: NavBar,
         },
        
     ]

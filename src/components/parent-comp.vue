@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-   <Child :child-text="text" :does-it-matter="what" />
+   <Child :child-text="text" />
 
   </div>
 

@@ -1,15 +1,17 @@
 <template>
   <div id="app">
+    <navBar class="navBar" />
     <router-view />
   </div>
 </template>
 
 <script>
+import navBar from './components/navBar';
 
 export default {
   name: 'App',
   components: {
-    
+    navBar
   }
 }
 </script>
@@ -36,5 +38,7 @@ src: url("./assets/fonts/CocoGothic-Bold_trial.ttf");
 html {
   scroll-behavior: smooth;
 }
+
+
 
 </style>

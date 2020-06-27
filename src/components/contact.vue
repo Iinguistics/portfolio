@@ -39,7 +39,7 @@
           <div v-if="error" class="error">
             <h4>{{error}}</h4>
           </div>
-            <wired-button elevation="2" @click="submitMessage" id="submit">Submit</wired-button>
+            <wired-button elevation="2" @click="submitMessage" id="submit">Send</wired-button>
      </form>
       
       

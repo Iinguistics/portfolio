@@ -29,10 +29,6 @@
             
         </div>
    </section>
-      
-
-    
-
   </div>
 </template>
 
@@ -247,5 +243,9 @@ a:hover{
       }
 
 }
+
+
+
+
 
 </style>
