@@ -38,7 +38,7 @@
            <p id="vue"><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Vue</p>  
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Mongo DB</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JQuery</p> 
-           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Git version control</p>  
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Git</p>  
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Axios</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Rest API</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JSON</p> 
@@ -298,13 +298,25 @@ a{
 }
 
 
-@media(min-width: 1300px) {
+@media(min-width: 1400px) {
    #skills{
    margin-bottom: 20px;
 }
 
 .skills-item{
-  max-width: 475px; 
+  max-width: 500px; 
+}
+
+.skills-item h5{
+  font-size: 24px;
+}
+
+.skills-item p{
+  font-size: 19px;
+}
+
+.skills-item li{
+  font-size: 18px;
 }
 
 .link-bar{

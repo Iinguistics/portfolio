@@ -26,7 +26,7 @@
    <div class="project-container">
       <div class="bg1 links">
        <a href="#" target="_blank">
-        <p>View Hair Salon Source Code</p>
+        <p>View Hair Salon Source Code  (Click on stylist login to view my DB in action)</p>
       </a>
       <a href="#" target="_blank">
         <p>View CTDI Source Code</p>
@@ -54,6 +54,7 @@
         <a class="bg1" href="#" target="_blank">
         <h2>Hair Salon</h2>
         <p>Built with Vue,Node/Express,MongoDB,Bcrypt,ThreeJs &GSAP</p>
+        <p>Full Stack (CRUD)</p>
       </a>
        <a class="bg1" href="#" target="_blank">
         <h2>CTDI</h2>

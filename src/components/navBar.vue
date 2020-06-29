@@ -159,9 +159,6 @@ nav{
     opacity: 1;
   }
 
-  .landing {
-  height: 92vh;
-}
 }
  
 

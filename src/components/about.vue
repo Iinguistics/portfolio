@@ -12,8 +12,16 @@
      <div class="head-container">
        <div id="header"> </div>
      </div>
-    
-        <div class="about-header">
+
+     <!-- link side bar -->
+      <div class="link-bar">
+        <li><router-link to="/"><img class="link-icons" id="home-img" src="../assets/icons/home-icon.png" alt="home icon"><p id="home-text">Home</p></router-link></li> 
+        <li><router-link to="/skills"><img class="link-icons" id="about-img" src="../assets/icons/skills-icon.png" alt="skills icon"><p id="about-text">Skills</p></router-link></li> 
+        <li><router-link to="/projects"><img class="link-icons" id="projects-img" src="../assets/icons/eye-icon.png" alt="projects icon"><p id="projects-text">Projects</p></router-link></li>
+        <li><router-link to="/contact"><img class="link-icons" id="contact-img" src="../assets/icons/email-icon.png" alt="email icon"><p id="contact-text">Contact</p></router-link></li> 
+    </div>
+       <div class="about-wrap">
+         <div class="about-header">
       <h1>About Me</h1>
      </div>
      <div class="about-container">
@@ -32,21 +40,27 @@
      </div>
      <!-- circle spinner -->
     <div class="circular-text">
-      <span id="rotated">jogging • development • hiking • reading • movies • learning • music • gaming •</span>
+      <span id="rotated">jogging • development • hiking • reading • movies • learning • music • algorithms •</span>
     </div>
     <div class="circleArrow">
-      <ion-icon name="arrow-down"></ion-icon>
-    </div>
+        <!-- video -->
+      <video autoplay muted loop preload>
+         <source src="../assets/video/digital-face.mp4"
+            type="video/mp4">
 
-   <!-- links -->
-     <div class="links">
-         <router-link to="/" class="link-item">Home</router-link>
-         <router-link to="/projects" class="link-item">Projects</router-link>
-         <router-link to="/skills" class="link-item">Skills</router-link>
-         <router-link to="/contact" class="link-item">Contact</router-link>
-      </div>
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+    </div>
+       </div>
+        
+
+  
+
+   
+    
+
      
-     
+       
   </div>
 </template>
 
@@ -86,8 +100,8 @@ export default {
         container.addChild(flag);
 
         flag.y=-130
-        flag.x=-60
-        flag.width=1100
+        flag.x= -60
+        flag.width= 775
         flag.height=700
 
         var displacementSprite = PIXI.Sprite.from(this.ripple2);
@@ -208,8 +222,12 @@ export default {
 
 <style scoped>
 
+h1,h5,p{
+  color: #fff;
+}
+
  .white-space{
-     background-color: #121212;
+     background-color: #000;
      height: 40px;
  }
 
@@ -218,7 +236,7 @@ export default {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    background-color: #3EB489; 
+    background-color: #0FA958;
     width: 0%;
     height: 100%;
 }
@@ -234,30 +252,25 @@ export default {
     pointer-events: none;
 }
 
+
+
 .head-container{
-    height: 95vh;
-    background-color: #121212;
+    height: 100vh;
+    background-color: #000;
 }
 
-#header h2{
-    position: absolute;
-    color: #fff;
-    font-weight: 800;
-    left: 50%;
-    top: 45%;
+.about-wrap{
+  background: #000;
 }
 
-h1{
-  color: #02203c;
-}
 
 .about-header{
-  margin-top: 200px;
+  padding-top: 200px;
 }
 
 .about-header h1{
   font-size: 34px;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
 }
 
 .about-container{
@@ -265,7 +278,7 @@ h1{
   flex-direction: column;
   max-width: 60%;
   justify-content: space-evenly;
-  height: 450px;
+  height: 100vh;
   margin:auto;
 }
 
@@ -275,12 +288,12 @@ h1{
 }
 
 .about-item h5{
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 15px;
 }
 
 .about-item p{
-  font-size: 17px;
+  font-size: 19px;
   width: 400px;
 }
 
@@ -288,10 +301,10 @@ h1{
 
 .circular-text{
   position: fixed;
-  left: 70%;
+  left: 76%;
   top: 30%;
   transform: translate(-50%, -50%);
-  color: #333;
+  color: #3EB489; 
   font-size: 20px;
   font-weight: 800;
   transition: 0.5s ease-in-out;
@@ -300,76 +313,95 @@ h1{
 
 .circleArrow{
   position: fixed;
-  left: 70%;
-  top: 59%;
+  left: 76%;
+  top: 58%;
   transform: translate(-50%,-50%);
 }
 
 
 
-ion-icon{
-  font-size: 70px;
-  color: #333;
+li{
+  list-style: none;
 }
 
 
-
-.links{
- display: flex;
- flex-direction: row;
- margin-top: 50px;
- height: 100px;
- align-items: center;
+.link-bar{
+    background: #111;
+    height: 120vh;
+    width: 60px;
+    position: absolute;
+    padding-top: 275px;
 }
 
-.link-item{
-  margin-left: 15px;
+.link-icons {
+    padding-top: 20px;
+    height: 50px;
 }
 
-.link-item::after{
-  content: '';
-  display: block;
-  width: 0;
-  height: 1px;
-  background: #000000;
-  transition: width .3s;
-}
-
-.link-item:hover::after{
-  width: 100%;
-  transition: width .3s;
-}
 
 a{
-  color: #0A192F;
-  text-decoration: none !important;
+    text-decoration: none !important;
+    height: 65px;
 }
 
-a:hover{
-  color: #0A192F;
-  opacity: 0.9;
+#home-text{
+   color: #3EB489; 
+   display: none;  
+   font-size: 15px;
+}
+#projects-text{
+   color: #3EB489; 
+   display: none;  
+   font-size: 15px;
+}
+#about-text{
+   color: #3EB489; 
+   display: none;
+   font-size: 15px;  
+}
+#contact-text{
+   color: #3EB489; 
+   display: none;  
+   font-size: 15px;
+}
+
+
+#home-img:hover ~ #home-text{
+    display: inherit;
+}
+#projects-img:hover ~ #projects-text{
+    display: inherit;
+}
+#about-img:hover ~ #about-text{
+    display: inherit;
+}
+#contact-img:hover ~ #contact-text{
+    display: inherit;
 }
 
 
 
-@media(min-width: 1300px) {
+ video{
+  height: 250px;
+  width: 200px;
+}
+
+
+
+
+@media(min-width: 1400px) {
    .white-space{
      height: 120px;
  }
 
- .head-container{
-    height: 86vh;
-}
+
 
 #header h2{
     left: 50%;
     top: 40%;
 }
 
-.links{
- margin-top: 100px;
- height: 125px;
-}
+
 
 .circular-text{
   top: 50%;
@@ -377,11 +409,30 @@ a:hover{
 }
 
 .circleArrow{
-  top: 70%;
+  top: 68%;
   left: 65%;
 }
 
+.about-header h1{
+  font-size: 38px;
+  margin-bottom: 50px;
+}
 
+.about-item h5{
+  font-size: 24px;
+}
+
+.about-item p{
+  font-size: 20px;
+}
+
+.about-item{
+  max-width: 450px; 
+}
+
+.link-bar{
+    height: 100vh;
+}
 
 
 }

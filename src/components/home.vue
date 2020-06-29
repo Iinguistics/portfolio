@@ -164,7 +164,7 @@ h1 {
       margin: 0%;
       padding: 0%;
       top: 50%;
-      left: 60%;
+      left: 77.5%;
       transform: translate(-50%, -50%);
       position: absolute;
       z-index: 2;
@@ -229,7 +229,7 @@ a:hover{
 
 
 
-@media(max-width: 900px) {
+@media(max-width: 768px) {
 
       .loading-screen {
             display: none;
@@ -243,6 +243,7 @@ a:hover{
       }
 
 }
+
 
 
 
