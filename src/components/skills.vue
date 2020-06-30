@@ -145,7 +145,17 @@ export default {
        this.skillsBlotter();
 
       }
-  }
+  },
+   linkBar: function(){
+       gsap.from('.link-bar',
+       { 
+           duration: 3, 
+           y:'-100%',
+           ease: 'bounce',
+           delay: 4
+
+       }) 
+   }
     
  
 
@@ -156,6 +166,7 @@ export default {
     // this.skillsBlotter();
     this.pageTransition();
     this.mobileSkillsBlotter();
+    this.linkBar();
   }
  
 
@@ -173,7 +184,7 @@ export default {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    background-color: #A4A9A1; 
+    background-color: #626EE3; 
     width: 0%;
     height: 100%;
 }

@@ -183,7 +183,7 @@ export default {
         ]
       });
      },
-     test: function(){
+     circle: function(){
          const circleType = new CircleType(document.getElementById('rotated'));
          circleType.radius(80);
          $(window).scroll(function(){
@@ -198,7 +198,19 @@ export default {
  
            });
          });
-     }
+     },
+
+       linkBar: function(){
+       gsap.from('.link-bar',
+       { 
+           duration: 3, 
+           y:'-100%',
+           ease: 'bounce',
+           delay: 5
+
+       });
+   },
+ 
       
 
   },
@@ -209,7 +221,8 @@ export default {
       this.delay();
       this.pageTransition();
       //this.trans();
-      this.test();
+      this.circle();
+      this.linkBar();
   }
  
 
@@ -304,7 +317,7 @@ h1,h5,p{
   left: 76%;
   top: 30%;
   transform: translate(-50%, -50%);
-  color: #3EB489; 
+  color: #fff;
   font-size: 20px;
   font-weight: 800;
   transition: 0.5s ease-in-out;

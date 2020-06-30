@@ -1,5 +1,6 @@
 <template>
 <div>
+  <!-- header -->
  <div class="header-img">
   <img src="../assets/dev-img-mobile.jpg"/>
   <div class="header-details">
@@ -7,6 +8,12 @@
    <p>Front End Dev from El Dorado Hills, Ca</p>
   </div>
  </div>
+ <!-- projects display / swiperjs -->
+ <section>
+   <div class="work">
+
+   </div>
+ </section>
 sddfsdf
 </div>
  
@@ -51,9 +58,8 @@ export default {
 
 
 @media(max-width: 768px) {
-
-   .header-img img{
-   width: 100%;
+ .header-img img{
+  width: 100%;
   height: 350px;
   border-radius: 5px;
 
@@ -79,6 +85,11 @@ export default {
 .header-details p{
   color: #fff ;
   font-size: 18px ;
+}
+
+.work{
+  height: 350px;
+  background: #333;
 }
    
 

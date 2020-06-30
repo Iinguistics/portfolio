@@ -12,6 +12,14 @@ export default {
   name: 'App',
   components: {
     navBar
+  },
+  methods: {
+     toTop: function(){
+     window.scrollTo(0, 0);
+   }
+  },
+  mounted() {
+    this.toTop();
   }
 }
 </script>
