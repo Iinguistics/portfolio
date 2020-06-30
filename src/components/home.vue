@@ -230,17 +230,11 @@ a:hover{
 
 
 @media(max-width: 768px) {
-
-      .loading-screen {
-            display: none;
-      }
-      .ring img {
-            display: none;
+      .main-load{
+            display:none;
       }
 
-      .header p, button, .media, h1 {
-            display: none;
-      }
+   
 
 }
 
