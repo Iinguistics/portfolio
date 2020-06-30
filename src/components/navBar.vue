@@ -1,6 +1,7 @@
 <template>
 <div>
     <nav>
+       <h4>JG</h4>
       <div class="hamburger">
         <div class="line one"></div>
         <div class="line two"></div>
@@ -33,7 +34,7 @@ export default {
   data(){
     return{
      error: null,
-     
+     text: false
     }
   },
      methods: {
@@ -41,13 +42,23 @@ export default {
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
     const links = document.querySelectorAll(".nav-links li");
+    const header = document.querySelector(".header-details");
 
     hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
     links.forEach(link => {
         link.classList.toggle("fade");
       });
+      
+        setTimeout(function(){
+       header.classList.toggle("header-details-gone")
+      }, 400)
+      
+      
+   
     });
+
+    
   }
 
    
@@ -80,11 +91,19 @@ nav{
 }
 
 @media screen and (max-width: 768px) {
-
     nav {
   height: 8vh;
   background: #333;
 }
+
+   h4{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    z-index: 2;
+    transform: translate(-5%, -50%);
+    color: #fff;
+  }
 
 .nav-links {
   display: flex;
@@ -154,6 +173,12 @@ nav{
   }
   .nav-links li:nth-child(3) {
     transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(5) {
+    transition: all 0.5s ease 1.0s;
   }
   li.fade {
     opacity: 1;
