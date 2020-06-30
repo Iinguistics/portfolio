@@ -8,7 +8,7 @@ import Contact from './components/contact.vue';
 import contactMobile from './components/contactMobile.vue';
 import Parent from './components/parent-comp.vue';
 import Child from './components/child-comp.vue';
-import NavBar from './components/navBar.vue';
+import homeMobile from './components/homeMobile.vue';
 
 
 
@@ -62,8 +62,8 @@ export default new Router({
 
         {
             path:'/test',
-            name: 'navBar',
-            component: NavBar,
+            name: 'homeMobile',
+            component: homeMobile,
         },
        
     ]
