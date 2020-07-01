@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="main-wrap">
   <!-- header -->
  <div class="header-img">
   <img src="../assets/dev-img-mobile.jpg"/>
@@ -8,12 +8,37 @@
    <p>Front End Dev from El Dorado Hills, Ca</p>
   </div>
  </div>
- <!-- projects display / swiperjs -->
- <section>
-   <div class="work">
 
+ <!-- projects display -->
+    <div class="work">
+    <h6>My Work</h6>
+    <router-link to="/projects">-View all my projects</router-link>
    </div>
- </section>
+   
+     <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide1">
+        <h1>Loveley Flowers</h1>
+        <p>this is a random paragraph</p>
+      </div>
+      <div class="swiper-slide slide2">
+        <h1>Loveley Flowers</h1>
+        <p>this is a random paragraph</p>
+      </div>
+      <div class="swiper-slide slide3">
+        <h1>Loveley Flowers</h1>
+        <p>this is a random paragraph</p>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-next swiper-button-black"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+
+ 
 sddfsdf
 </div>
  
@@ -22,7 +47,7 @@ sddfsdf
 </template>
 
 <script>
-
+import Swiper from 'swiper';
 
 
 export default {
@@ -31,19 +56,35 @@ export default {
   data(){
     return{
      error: null,
+     swiperr: ''
      
     }
   },
      methods: {
-     
+      swipe: function(){
+         var mySwiper = new Swiper('.swiper-container', {
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+        shadow: false,
+        slideShadows: false,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+    });
+   
+     }
 
    
       
-  
 
   },
     mounted(){
-   
+     this.swipe();
 }  
 
 }
@@ -58,6 +99,10 @@ export default {
 
 
 @media(max-width: 768px) {
+ .main-wrap{
+  background: #212121;
+ }
+
  .header-img img{
   width: 100%;
   height: 350px;
@@ -88,10 +133,111 @@ export default {
 }
 
 .work{
-  height: 350px;
-  background: #333;
+  height: 50px;
+  background: #232323;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -1px;
 }
-   
+.work h6{
+  color: #fff;
+  padding-top: 10px;
+  font-size: 18px;
+}
+.work a{
+  font-size: 17px;
+}
+
+  /* swiper */
+  .swiper-container{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+  }
+
+
+  .swiper-slide{
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 6em 3em;
+    color: #fff;
+  }
+  .swiper-slide h1{
+    font-size: 5em;
+    line-height: 1em;
+  }
+  .swiper-slide h1::before{
+    content: '';
+    position: absolute;
+    top: 1em;
+    width: 50%;
+    height: 40%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .swiper-slide p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-top: 7em;
+  }
+  
+ 
+ .slide1{
+   background: url('../assets/hair-5.jpg');
+   background-size: cover;
+ }
+ .slide1 h1::before{
+    border-left: 1px solid #fff;
+    right: 0;
+  }
+
+  .slide2{
+   background: url('../assets/computer-1.jpg');
+   background-size: cover;
+ }
+ .slide2 h1::before{
+    border-right: 1px solid #fff;
+    right: 0;
+  }
+  .slide2 h1::after{
+    border-left: 1px solid #fff;
+    right: 0;
+    content: '';
+    position:absolute;
+    top: 1em;
+    width: 20%;
+    height: 40%;
+    border-top:1px solid #fff; 
+    border-bottom:1px solid #fff; 
+  }
+
+  .slide3{
+   background: url('../assets/computer-1.jpg');
+   background-size: cover;
+ }
+ .slide3 h1::before{
+    border-right: 1px solid #fff;
+    left: 0;
+  }
+
+  .swiper-button-next, .swiper-button-prev{
+    top: 80%;
+    outline: none;
+  }
+  .swiper-button-next{
+    right: 3em;
+  }
+  .swiper-button-prev{
+    left: 3em;
+  }
+
+
+  
+
+
+  
 
 }
 

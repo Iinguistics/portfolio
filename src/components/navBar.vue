@@ -42,7 +42,7 @@ export default {
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
     const links = document.querySelectorAll(".nav-links li");
-    const header = document.querySelector(".header-details");
+    
 
     hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
@@ -51,6 +51,7 @@ export default {
       });
       
         setTimeout(function(){
+       const header = document.querySelector(".header-details");
        header.classList.toggle("header-details-gone")
       }, 400)
       
@@ -93,7 +94,7 @@ nav{
 @media screen and (max-width: 768px) {
     nav {
   height: 8vh;
-  background: #333;
+  background: #232323;
 }
 
    h4{
