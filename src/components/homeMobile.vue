@@ -19,8 +19,8 @@
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide slide1">
-        <h1>Loveley Flowers</h1>
-        <p>this is a random paragraph</p>
+        <a href="https://hair-salon-site.herokuapp.com/"><h1>Hair Salon</h1></a>
+        <p>Equipped with appointment booking & employee portal</p>
       </div>
       <div class="swiper-slide slide2">
         <h1>Loveley Flowers</h1>
@@ -34,13 +34,18 @@
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
 
-    <div class="swiper-button-next swiper-button-black"></div>
+    <div class="swiper-button-next swiper-button-white"></div>
     <div class="swiper-button-prev swiper-button-white"></div>
   </div>
 
+<!-- footer -->
+  <div class="footer">
+    <router-link to="/about"><img src="../assets/mobile-icons/face.png" id="about"/>About</router-link>
+    <router-link to="/skills"><img src="../assets/mobile-icons/skill.png"/>Skills</router-link>
+    <router-link to="/contact"><img src="../assets/mobile-icons/contact.png" id="contact"/>Contact</router-link>
+  </div>
  
-sddfsdf
-</div>
+</div> 
  
 
   
@@ -48,6 +53,7 @@ sddfsdf
 
 <script>
 import Swiper from 'swiper';
+import 'swiper/css/swiper.min.css';
 
 
 export default {
@@ -233,8 +239,32 @@ export default {
     left: 3em;
   }
 
+  .cube-gone{
+    display: none;
+  }
 
-  
+  .footer{
+    height: 90px;
+    width: 100%;
+    background: #5b78c7;
+    margin-top: 600px;
+    margin-bottom: -50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer a{
+    color: #fff;
+    font-size: 17px;
+  }
+  .footer img{
+    height: 35px;
+    display: block;
+  }
+
+  #about, #contact{
+    padding-left: 8px;
+  }
 
 
   

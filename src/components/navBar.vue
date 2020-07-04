@@ -42,7 +42,8 @@ export default {
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
     const links = document.querySelectorAll(".nav-links li");
-    
+    const header = document.querySelector(".header-details");
+    const cube = document.querySelector(".swiper-container");
 
     hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
@@ -51,8 +52,11 @@ export default {
       });
       
         setTimeout(function(){
-       const header = document.querySelector(".header-details");
        header.classList.toggle("header-details-gone")
+      }, 400)
+
+      setTimeout(function(){
+       cube.classList.toggle("cube-gone")
       }, 400)
       
       

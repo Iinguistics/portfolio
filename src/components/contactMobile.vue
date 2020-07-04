@@ -66,10 +66,6 @@ export default {
   },
   
  
-
- 
- 
-
 }
      
 
@@ -79,13 +75,16 @@ export default {
 
 <style scoped>
 
+@media(max-width: 768px) {
+  
+
 .wrap{
-  height: 100vh;
+  height: 92vh;
   background-color: #0A192F;
 }
 
 .head{
- color: #64FFDA;
+ color: #000;
  padding-top: 30px;
 }
 
@@ -93,7 +92,7 @@ export default {
 
 label{
   font-size: 17px;
-  color: #64FFDA;
+  color: #000;
 }
 
 
@@ -122,7 +121,7 @@ label{
 
 .btn{
   text-align: center;
-  color: #64FFDA;
+  color: #000;
 }
 
 .btn:hover{
@@ -130,6 +129,6 @@ label{
   color: #FFF;
 }
 
-
+}
 
 </style>

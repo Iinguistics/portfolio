@@ -315,7 +315,7 @@ a{
 
 
 
-@media(max-width: 700px) {
+@media(max-width: 768px) {
    .wrap{
      display: none;
    }
@@ -325,7 +325,7 @@ a{
 
 }
 
-@media(min-width: 700px) {
+@media(min-width: 768px) {
   .mobileWrap{
      display: none;
    }

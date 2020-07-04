@@ -45,7 +45,7 @@
     <div class="circleArrow">
         <!-- video -->
       <video autoplay muted loop preload>
-         <source src="../assets/video/digital-face.mp4"
+         <source src="../assets/video/about/digital-face.mp4"
             type="video/mp4">
 
         Sorry, your browser doesn't support embedded videos.

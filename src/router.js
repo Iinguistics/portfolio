@@ -9,6 +9,7 @@ import contactMobile from './components/contactMobile.vue';
 import Parent from './components/parent-comp.vue';
 import Child from './components/child-comp.vue';
 import homeMobile from './components/homeMobile.vue';
+import test from './components/test.vue';
 
 
 
@@ -64,6 +65,11 @@ export default new Router({
             path:'/test',
             name: 'homeMobile',
             component: homeMobile,
+        },
+        {
+            path:'/test1',
+            name: 'test',
+            component: test,
         },
        
     ]
