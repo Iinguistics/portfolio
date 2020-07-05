@@ -155,7 +155,10 @@ export default {
            delay: 4
 
        }) 
-   }
+   },
+    toTop: function(){
+     window.scrollTo(0, 0);
+    }
     
  
 
@@ -167,6 +170,7 @@ export default {
     this.pageTransition();
     this.mobileSkillsBlotter();
     this.linkBar();
+    this.toTop();
   }
  
 

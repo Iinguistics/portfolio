@@ -210,11 +210,11 @@ export default {
 
        });
    },
- 
-      
 
+   toTop: function(){
+     window.scrollTo(0, 0);
+    }
   },
-  
 
   mounted(){
       this.header();
@@ -223,6 +223,7 @@ export default {
       //this.trans();
       this.circle();
       this.linkBar();
+      this.toTop();
   }
  
 
