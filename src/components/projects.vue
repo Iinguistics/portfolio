@@ -22,24 +22,16 @@
                 </div>
             </div>
         </div>
+        <!-- preview component -->
+        <Preview />
+        <!--  -->
+        <div class="github-header">
+          <h1>Take me to the source</h1><a href="https://github.com/Iinguistics" target="_blank"><img src="../assets/icons/github-color-icon.png" alt="github logo"/></a>
+        </div>
         <!-- grid image / listed projects -->
    <div class="project-container">
       <div class="bg1 links">
-       <a href="#" target="_blank">
-        <p>View Hair Salon Source Code  (Click on stylist login to view my DB in action)</p>
-      </a>
-      <a href="#" target="_blank">
-        <p>View CTDI Source Code</p>
-      </a>
-      <a href="#" target="_blank">
-        <p>View Stat Tracker Source Code</p>
-      </a>
-      <a href="https://github.com/Iinguistics/Stat-Tacker" target="_blank">
-        <p>View Portfolio Source Code</p>
-      </a>
-          <a href="https://github.com/Iinguistics/weatherApp" target="_blank">
-        <p>View Weather App Source Code</p>
-      </a>
+      
       </div>
     
      
@@ -51,26 +43,26 @@
       </div>
       <div class="bg2">
       </div>
-        <a class="bg1" href="#" target="_blank">
+        <a class="bg1" href="https://github.com/Iinguistics/Hair" target="_blank">
         <h2>Hair Salon</h2>
         <p>Built with Vue,Node/Express,MongoDB,Bcrypt,ThreeJs &GSAP</p>
         <p>Full Stack (CRUD)</p>
       </a>
-       <a class="bg1" href="#" target="_blank">
+       <a class="bg1" href="https://github.com/Iinguistics/ctdi" target="_blank">
         <h2>CTDI</h2>
         <p>Built with Vue,ThreeJs & Google Charts</p>
       </a>
-       <a class="bg1" href="https://stat-tracking.herokuapp.com/" target="_blank">
+       <a class="bg1" href="https://github.com/Iinguistics/Stat-Tacker" target="_blank">
         <h2>Stat Tracker</h2>
         <p>Built with Vue,Node/Express & Tracker.gg API</p>
       </a>
       <div class="bg2">
       </div>
-       <a class="bg1" href="#" target="_blank">
+       <a class="bg1" href="https://github.com/Iinguistics/portfolio" target="_blank">
         <h2>Portfolio</h2>
         <p>Built with Vue, pixie js & GSAP</p>
       </a>
-       <a class="bg1" href="https://iinguistics.github.io/weatherApp/" target="_blank">
+       <a class="bg1" href="https://github.com/Iinguistics/weatherApp" target="_blank">
         <h2>Weather App</h2>
         <p>Built with JQuery & Open weather map API</p>
         <p>(First project I ever built)</p>
@@ -98,9 +90,13 @@ import $ from 'jquery';
 import Expo from 'gsap';
 import barba from '@barba/core';
 import gsap from 'gsap';
+import Preview from './preview';
 
 export default {
   name: 'projects',
+  components: {
+    Preview
+  },
   data(){
     return{
      
@@ -207,13 +203,18 @@ export default {
             },
         ],
       });
-     }
+     },
+     toTop: function(){
+     window.scrollTo(0, 0);
+    }
+
   },
   mounted(){
     this.header();
     this.delay();
     this.pageTransition();
     this.trans();
+    this.toTop();
   }
 
 }
@@ -246,6 +247,9 @@ export default {
 a{
   text-decoration: none !important;
 }
+
+
+
 .project-container{
   box-sizing: border-box;
   margin: 0;
@@ -254,7 +258,8 @@ a{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-gap: 8px;
-  background: #333;
+  background: #222;
+  margin-top: 55px;
 }
 
 .project-container > div{
@@ -292,7 +297,7 @@ a{
 }
 
 
-h2 {
+h1,h2 {
   font-family: "Coco Gothic Bold";
   font-weight:normal;
   font-style:normal;
@@ -416,6 +421,7 @@ p {
     -webkit-text-stroke: 2px white;
     text-transform: uppercase;
 }
+
 
 
 
