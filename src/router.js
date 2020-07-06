@@ -62,7 +62,7 @@ export default new Router({
         },
 
         {
-            path:'/test',
+            path:'/homeMobile',
             name: 'homeMobile',
             component: homeMobile,
         },
