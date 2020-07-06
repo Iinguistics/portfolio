@@ -26,7 +26,8 @@
         <Preview />
         <!--  -->
         <div class="github-header">
-          <h1>Take me to the source</h1><a href="https://github.com/Iinguistics" target="_blank"><img src="../assets/icons/github-color-icon.png" alt="github logo"/></a>
+          <h1>Take me to the source</h1>
+          <a href="https://github.com/Iinguistics" target="_blank"> <img src="../assets/icons/github-color-icon.png" alt="github logo"/></a>
         </div>
         <!-- grid image / listed projects -->
    <div class="project-container">
@@ -67,8 +68,10 @@
         <p>Built with JQuery & Open weather map API</p>
         <p>(First project I ever built)</p>
       </a>
-      <div class="bg2">
-      </div>
+      <a class="bg2" href="https://github.com/algorithm-archivists/algorithm-archive" target="_blank">
+        <h2>Algorithm-Archive</h2>
+        <p>Open source project I contribute to</p>
+      </a>
       <div class="bg2">
       </div>
       <div class="bg2">
@@ -344,7 +347,7 @@ p {
 
 .bg2 {
   background: url('../assets/nature-road.jpg');
-  color: #000;
+  color: #fff;
 }
 
 .links:hover{
