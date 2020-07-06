@@ -19,16 +19,16 @@
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide slide1">
-        <a href="https://hair-salon-site.herokuapp.com/"><h1>Hair Salon</h1></a>
-        <p>Equipped with appointment booking & employee portal</p>
+        <a href="https://hair-salon-site.herokuapp.com/" target="_blank"><h1>Hair</h1></a>
+        <p>Equipped with appointment booking & employee portal (CRUD App)</p>
       </div>
       <div class="swiper-slide slide2">
-        <h1>Loveley Flowers</h1>
-        <p>this is a random paragraph</p>
+        <a href="https://ctdi-jg.netlify.app/#/" target="_blank"><h1>CTDI</h1></a>
+        <p>Business/Info site, focused on UI libs & aesthetics</p>
       </div>
       <div class="swiper-slide slide3">
-        <h1>Loveley Flowers</h1>
-        <p>this is a random paragraph</p>
+        <a href="https://ctdi-jg.netlify.app/#/" target="_blank"><h1>Stat Tracker</h1></a>
+        <p>hits multiple server side API end points & returns data to the client</p>
       </div>
     </div>
     <!-- Add Pagination -->
@@ -127,7 +127,7 @@ export default {
 
 .header-details h5{
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.15em;
   margin-bottom: 0.5em;
   text-transform: uppercase;
@@ -135,7 +135,8 @@ export default {
 }
 .header-details p{
   color: #fff ;
-  font-size: 18px ;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 .work{
@@ -184,15 +185,16 @@ export default {
     border-bottom: 1px solid #fff;
   }
   .swiper-slide p{
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 1.5em;
     margin-top: 7em;
   }
   
  
  .slide1{
-   background: url('../assets/hair-5.jpg');
+   background: url('../assets/homeMobile/hair-5.jpg');
    background-size: cover;
+   height: 535px;
  }
  .slide1 h1::before{
     border-left: 1px solid #fff;
@@ -200,8 +202,9 @@ export default {
   }
 
   .slide2{
-   background: url('../assets/computer-1.jpg');
+   background: url('../assets/homeMobile/cell-phone.jpg');
    background-size: cover;
+   height: 535px;
  }
  .slide2 h1::before{
     border-right: 1px solid #fff;
@@ -220,8 +223,9 @@ export default {
   }
 
   .slide3{
-   background: url('../assets/computer-1.jpg');
+   background: url('../assets/homeMobile/overwatch-logo.jpg');
    background-size: cover;
+   height: 535px;
  }
  .slide3 h1::before{
     border-right: 1px solid #fff;
