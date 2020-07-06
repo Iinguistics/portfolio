@@ -29,6 +29,9 @@
             
         </div>
    </section>
+   <div class="github"><a href="https://github.com/Iinguistics" target="_blank"> 
+   <img src="../assets/icons/github-icon.png" alt="github logo"/></a>
+   </div>
   </div>
 </template>
 
@@ -117,7 +120,6 @@ export default {
       padding: 0;
       width: 100%;
       height: 100vh;
-      background: #121212;
       background: url('../assets/hero.jpg') no-repeat 50% 50%;
       background-size: cover;
 }
@@ -163,7 +165,7 @@ h1 {
 .ring {
       margin: 0%;
       padding: 0%;
-      top: 50%;
+      top: 48%;
       left: 77.5%;
       transform: translate(-50%, -50%);
       position: absolute;
@@ -199,7 +201,7 @@ h1 {
   justify-content: space-evenly;
   margin: auto;
   max-width: 98%;
-  height: 98vh;
+  height: 95vh;
   align-items: center;
   cursor: url("../assets/red-cursor.png"), auto !important;
   margin-top: 0px;
@@ -227,6 +229,17 @@ a:hover{
 }
 
 
+.github img{
+ height: 50px;
+ width: 50px;
+ margin-top: -50px;
+}
+
+@media(min-width: 1400px) {
+      .github img{
+    margin-top: -25px;
+  } 
+}
 
 
 @media(max-width: 768px) {
