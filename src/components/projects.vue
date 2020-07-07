@@ -53,7 +53,7 @@
         <h2>CTDI</h2>
         <p>Built with Vue,ThreeJs & Google Charts</p>
       </a>
-       <a class="bg1" href="https://github.com/Iinguistics/Stat-Tacker" target="_blank">
+       <a class="bg1" href="https://github.com/Iinguistics/Stat-Tracker" target="_blank">
         <h2>Stat Tracker</h2>
         <p>Built with Vue,Node/Express & Tracker.gg API</p>
       </a>
