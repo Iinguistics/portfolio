@@ -4,6 +4,7 @@ import router from './router';
 import VueToasted from 'vue-toasted';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'wired-elements/lib/wired-elements-bundled-full.js';
+import "particles.js";
 
 Vue.config.productionTip = false
 
