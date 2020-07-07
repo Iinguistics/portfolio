@@ -48,7 +48,9 @@
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Rest API</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JSON</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Linux</p> 
-           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Data structures</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Data structures</p>
+           <p id="test"><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> UI component libs</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Figma</p>  
          </div>
    </div>
   
@@ -215,7 +217,7 @@ export default {
       "line_linked": {
         "enable": true,
         "distance": 100,
-		"color": "#fff",
+		"color": "#626EE3",
         "opacity": 1,
         "width": 1
       },
@@ -357,6 +359,7 @@ export default {
   color: #fff;
   margin: auto;
 }
+
 
 .skills-item h5{
   color: #3EB489;   
