@@ -246,9 +246,7 @@ a:hover{
       .main-load{
             display:none;
       }
-
-   
-
+      
 }
 
 

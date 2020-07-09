@@ -15,7 +15,7 @@
         <li><router-link to="/contact"><img class="link-icons" id="contact-img" src="../assets/icons/email-icon.png" alt="email icon"><p id="contact-text">Contact</p></router-link></li> 
     </div>
    <div id="skills"></div>
-   
+    <div class="main">
    <div class="skills-flex">
          <div class="skills-item">
              <h5>Soft Skills</h5>
@@ -49,12 +49,12 @@
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JSON</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Linux</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Data structures</p>
-           <p id="test"><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> UI component libs</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> UI component libs</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Figma</p>  
          </div>
    </div>
   
-
+    </div>
   </div>
 </div>
    
@@ -345,12 +345,17 @@ export default {
   left: 120px;
 }
 
+.main{
+ background:#101010;
+}
+
 
 .skills-flex{
   display: flex;
   flex-direction: row;
   margin: auto;
   max-width: 95%;
+  background:#101010;
 }
 
 .skills-item{
@@ -511,8 +516,26 @@ a{
 }
 
 
+}
 
+/* use for when users have zoom set to 70em = 125% or higher, default css I set for 1300px width laptop  use 75em instead of 60? 60=150% breakpoint*/
+@media (max-width: 60em) {
+     .skills-flex{
+        max-width: 85%;
+        flex-direction: column;
+}
+   .skills-item{
+  max-width: 85%; 
+  text-align: left;
+  color: #fff;
+  margin: auto;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
 
+.skills-item p{
+  font-size: 15px;
+}
 }
 
 

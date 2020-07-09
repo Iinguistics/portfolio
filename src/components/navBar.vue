@@ -44,6 +44,7 @@ export default {
     const links = document.querySelectorAll(".nav-links li");
     const header = document.querySelector(".header-details");
     const cube = document.querySelector(".swiper-container");
+    const aboutHeader = document.querySelector(".about-header-mobile");
 
     hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
@@ -55,8 +56,12 @@ export default {
        header.classList.toggle("header-details-gone")
       }, 400)
 
-      setTimeout(function(){
+       setTimeout(function(){
        cube.classList.toggle("cube-gone")
+      }, 400)
+
+       setTimeout(function(){
+       aboutHeader.classList.toggle("header-gone")
       }, 400)
       
       
