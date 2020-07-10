@@ -269,11 +269,14 @@ export default {
   #about, #contact{
     padding-left: 8px;
   }
-
-
-  
-
 }
+
+@media(min-width: 768px) {
+   .main-wrap{
+    display: none;
+   }
+}
+
 
 
 
