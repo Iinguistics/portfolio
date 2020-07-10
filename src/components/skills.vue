@@ -45,7 +45,7 @@
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JQuery</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Git</p>  
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Axios</p> 
-           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Rest API</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Rest API's</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JSON</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Linux</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Data structures</p>
@@ -56,6 +56,12 @@
   
     </div>
   </div>
+     <!-- footer -->
+   <div class="footer">
+    <router-link to="/about"><img src="../assets/mobile-icons/projects-icon.png" id="about"/>Projects</router-link>
+    <router-link to="/about"><img src="../assets/mobile-icons/face.png" id="about"/>About</router-link>
+    <router-link to="/contact"><img src="../assets/mobile-icons/contact.png" id="contact"/>Contact</router-link>
+   </div>
 </div>
    
 </template>
@@ -447,7 +453,11 @@ a{
     display: inherit;
 }
 
+.footer{
+    display: none;
+}
 
+/* bigger monitor */
 @media(min-width: 1400px) {
    #skills{
    margin-bottom: 20px;
@@ -463,7 +473,10 @@ a{
 
 .skills-item p{
   font-size: 19px;
+  width: 215px;
 }
+
+
 
 .skills-item li{
   font-size: 18px;
@@ -475,8 +488,8 @@ a{
 
 }
 
-
-@media screen and (max-width: 768px) {
+/* mobile */
+@media (min-width: 414px) and (max-width: 768px) {
 
   .landing {
   height: 950px;
@@ -487,23 +500,32 @@ a{
  }
 
  .skills-flex{
-  max-width: 99%;
+  max-width: 97%;
   flex-direction: column;
+  margin-bottom: 0px;
 }
 
+
 .skills-item{
-  max-width: 97%; 
+  max-width: 98%; 
   text-align: left;
   color: #fff;
   margin: auto;
   font-size: 18px;
   padding-bottom: 15px;
 }
+ 
+
 
 .skills-item h5{
   color: #3EB489;   
   font-size: 25px;
   margin-bottom: 15px;
+}
+
+.skills-item li{
+    max-width: 100%;
+    padding-bottom: 5px;
 }
 
 
@@ -515,28 +537,48 @@ a{
   font-size: 17px;
 }
 
+#particles-js{
+    max-width: 97%;
+}
+
+  .footer{
+    height: 80px;
+    width: 100%;
+    background: #5b78c7;
+    margin-top: 0px;
+    margin-bottom: -50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer a{
+    color: #fff;
+    font-size: 17px;
+  }
+  .footer img{
+    height: 35px;
+    display: block;
+  }
+
+   #about, #contact{
+    padding-left: 8px;
+  }
+}
+
+/* ipad */
+@media (min-width: 768px) and (max-width: 1024px) {
+   
+.link-bar{
+    padding-top: 375px;
+}
+  .skills-flex{
+  margin-top: 150px;
+}
 
 }
 
-/* use for when users have zoom set to 70em = 125% or higher, default css I set for 1300px width laptop  use 75em instead of 60? 60=150% breakpoint*/
-@media (max-width: 60em) {
-     .skills-flex{
-        max-width: 85%;
-        flex-direction: column;
-}
-   .skills-item{
-  max-width: 85%; 
-  text-align: left;
-  color: #fff;
-  margin: auto;
-  font-size: 16px;
-  padding-bottom: 15px;
-}
 
-.skills-item p{
-  font-size: 15px;
-}
-}
+
 
 
 
