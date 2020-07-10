@@ -447,10 +447,10 @@ li{
 
 .link-bar{
     background: #111;
-    height: 120vh;
+    height: 99vh;
     width: 60px;
     position: absolute;
-    padding-top: 280px;
+    padding-top: 200px;
 }
 
 .link-icons {
@@ -562,7 +562,7 @@ a{
 }
 
 .link-bar{
-    height: 90vh;
+    height: 80vh;
     padding-top: 250px;
 }
 
