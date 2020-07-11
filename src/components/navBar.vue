@@ -8,11 +8,11 @@
         <div class="line three"></div>
       </div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Contact</a></li>
+        <li @click="home"><router-link to="/">Home</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
+        <li><router-link to="/projects">Projects</router-link></li>
+        <li><router-link to="/skills">Skills</router-link></li>
+        <li><router-link to="/contact">Contact</router-link></li>
       </ul>
     </nav>
 
@@ -45,6 +45,7 @@ export default {
     const header = document.querySelector(".header-details");
     const cube = document.querySelector(".swiper-container");
     const aboutHeader = document.querySelector(".about-header-mobile");
+    const previewMobile = document.querySelector(".preview-mobile");
 
     hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
@@ -63,13 +64,25 @@ export default {
        setTimeout(function(){
        aboutHeader.classList.toggle("header-gone")
       }, 400)
+
+       setTimeout(function(){
+       previewMobile.classList.toggle("preview-gone")
+      }, 500)
       
       
    
     });
 
     
-  }
+  },
+    home: function(){
+      const navLinks = document.querySelector(".nav-links");
+      const links = document.querySelectorAll(".nav-links li");
+       navLinks.classList.toggle("open");
+        links.forEach(link => {
+        link.classList.toggle("fade");
+      });
+    }
 
    
       
