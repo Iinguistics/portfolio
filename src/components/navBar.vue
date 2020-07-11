@@ -7,8 +7,8 @@
         <div class="line two"></div>
         <div class="line three"></div>
       </div>
-      <ul class="nav-links">
-        <li @click="home"><router-link to="/">Home</router-link></li>
+      <ul class="nav-links" @click="home">
+        <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/about">About</router-link></li>
         <li><router-link to="/projects">Projects</router-link></li>
         <li><router-link to="/skills">Skills</router-link></li>
@@ -78,9 +78,15 @@ export default {
     home: function(){
       const navLinks = document.querySelector(".nav-links");
       const links = document.querySelectorAll(".nav-links li");
-       navLinks.classList.toggle("open");
+        navLinks.classList.toggle("open");
         links.forEach(link => {
         link.classList.toggle("fade");
+        
+        // components with position absolute toggle class will not run unless page is reloaded, clicking the link goes straight to the route no loading
+        // can look unsmooth revisit this solution, perhaps only target the components that have the absolute "issue"
+        setTimeout(function(){
+         window.location.reload();
+      }, 100)
       });
     }
 
