@@ -104,7 +104,8 @@ export default {
 
 
 
-@media(max-width: 768px) {
+/* mobile */
+@media (max-width: 768px) {
  .main-wrap{
   background: #212121;
  }
@@ -251,8 +252,8 @@ export default {
     height: 90px;
     width: 100%;
     background: #5b78c7;
-    margin-top: 600px;
-    margin-bottom: -50px;
+    margin-top: 625px;
+    margin-bottom: 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;

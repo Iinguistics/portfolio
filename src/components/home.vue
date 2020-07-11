@@ -1,5 +1,6 @@
 <template>
-  <div class="main-load">
+  <div>
+    <div class="main-load">
     <!-- rings -->
             <div class="loading-screen" id="loading-screen"></div>
               <div class="loader" @click="contact"  @mouseover="update" @mouseleave="back">
@@ -12,35 +13,42 @@
                   </div>
             </div>
       
-   <!-- main / blend section -->
-   <section>
-     <div class="main-wrap">
-          <router-link to=/about class="about">
-                <h5>About Me</h5></router-link>
-         
-         <router-link to=/projects class="projects">
-            <h5>Projects</h5></router-link>
-      
-          <router-link to=/skills class="skills">
-            <h5>Skills</h5></router-link>
+            <!-- main -->
+            <section>
+            <div class="main-wrap">
+                  <router-link to=/about class="about">
+                        <h5>About Me</h5></router-link>
+                  
+                  <router-link to=/projects class="projects">
+                        <h5>Projects</h5></router-link>
+                  
+                  <router-link to=/skills class="skills">
+                        <h5>Skills</h5></router-link>
 
-             <router-link to=/contact class="contact" id="contact-me">
-            <h5>Contact Me</h5></router-link>
-            
-        </div>
-   </section>
-   <div class="github"><a href="https://github.com/Iinguistics" target="_blank"> 
-   <img src="../assets/icons/github-icon.png" alt="github logo"/></a>
-   </div>
+                        <router-link to=/contact class="contact" id="contact-me">
+                        <h5>Contact Me</h5></router-link>
+                        
+                  </div>
+                  </section>
+      <div class="github"><a href="https://github.com/Iinguistics" target="_blank"> 
+        <img src="../assets/icons/github-icon.png" alt="github logo"/></a>
+       </div>
+      </div>
+      <homeMobile class="mobile"/>
   </div>
+  
 </template>
 
 <script>
 import TweenMax from 'gsap';
 import Expo from 'gsap/src/EasePack';
+import homeMobile from './homeMobile';
 
 export default {
   name: 'home',
+   components: {
+    homeMobile
+  },
   data(){
     return{
 
@@ -114,6 +122,7 @@ export default {
 </script>
 
 <style scoped>
+  /* 1024  to 1400 */
 
  .main-load {
       margin: 0;
@@ -235,6 +244,8 @@ a:hover{
  margin-top: -50px;
 }
 
+
+/* bigger monitor */
 @media(min-width: 1400px) {
       .github img{
     margin-top: -25px;
@@ -242,15 +253,36 @@ a:hover{
 }
 
 
-@media(max-width: 768px) {
-      .main-load{
-            display:none;
-      }
-      
+
+
+/* ipad */
+@media (min-width: 768px) and (max-width: 1024px) {
+   
+
 }
 
 
 
+
+/* mobile */
+@media (max-width: 767px) {
+       .main-load{
+            display:none;
+      }
+
+      .mobile{
+         display: inherit;
+         height: inherit;
+      }
+
+}
+
+
+@media (min-width: 767px){
+       .mobile{
+         display: none;
+      }
+}
 
 
 

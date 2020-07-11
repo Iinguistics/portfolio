@@ -76,8 +76,7 @@ export default {
   name: 'skills',
   data(){
     return{
-     x:window.matchMedia("(max-width: 768px)"),
-     
+     x:window.matchMedia("(max-width: 767px)"),
       
     }
   },
@@ -133,7 +132,7 @@ export default {
 
     var text = new Blotter.Text("SKILLS", {
         family: "serif",
-        size: 85,
+        size: 70,
         fill: "#fff",
         paddingLeft: 80,
         paddingRight: 80,
@@ -284,6 +283,12 @@ export default {
   };
 
         particlesJS("particles-js", particlesJSON)
+    },
+    noParticles: function(){
+        if(this.x.matches){
+            const noP = document.getElementById('particles-js');
+            noP.style.display = "none";
+        }
     }
     
  
@@ -298,6 +303,7 @@ export default {
     this.linkBar();
     this.toTop();
     this.particles();
+    this.noParticles();
   }
  
 
@@ -489,23 +495,18 @@ a{
 }
 
 /* mobile */
-@media (min-width: 414px) and (max-width: 768px) {
-
+@media (max-width: 767px) {
   .landing {
   height: 950px;
  }
-
  .link-bar{
      display: none;
  }
-
  .skills-flex{
   max-width: 97%;
   flex-direction: column;
   margin-bottom: 0px;
 }
-
-
 .skills-item{
   max-width: 98%; 
   text-align: left;
@@ -515,30 +516,20 @@ a{
   padding-bottom: 15px;
 }
  
-
-
 .skills-item h5{
   color: #3EB489;   
   font-size: 25px;
   margin-bottom: 15px;
 }
-
 .skills-item li{
     max-width: 100%;
     padding-bottom: 5px;
 }
-
-
 .load-container {
     height: 1150px;
 }
-
 .skills-item p{
   font-size: 17px;
-}
-
-#particles-js{
-    max-width: 97%;
 }
 
   .footer{
@@ -559,11 +550,12 @@ a{
     height: 35px;
     display: block;
   }
-
    #about, #contact{
     padding-left: 8px;
   }
+
 }
+
 
 /* ipad */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -574,6 +566,7 @@ a{
   .skills-flex{
   margin-top: 150px;
 }
+
 
 }
 

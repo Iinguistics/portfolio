@@ -24,7 +24,7 @@
         </div>
         <!-- preview component -->
         <Preview />
-        <!--  -->
+        <!--      --------------->
         <div class="github-header">
           <h1>Take me to the source</h1>
           <a href="https://github.com/Iinguistics" target="_blank"> <img src="../assets/icons/github-color-icon.png" alt="github logo"/></a>

@@ -8,10 +8,9 @@ import Contact from './components/contact.vue';
 import contactMobile from './components/contactMobile.vue';
 import Parent from './components/parent-comp.vue';
 import Child from './components/child-comp.vue';
-import homeMobile from './components/homeMobile.vue';
 import preview from './components/preview.vue';
 import aboutMobile from './components/aboutMobile.vue';
-import test from './components/test.vue';
+import previewMobile from './components/previewMobile.vue';
 
 
 
@@ -62,12 +61,6 @@ export default new Router({
             name: 'child-comp',
             component: Child,
         },
-
-        {
-            path:'/homeMobile',
-            name: 'homeMobile',
-            component: homeMobile,
-        },
         {
             path:'/preview',
             name: 'preview',
@@ -80,9 +73,9 @@ export default new Router({
         },
 
         {
-            path:'/test',
-            name: 'test',
-            component: test,
+            path:'/previewMobile',
+            name: 'previewMobile',
+            component: previewMobile,
         },
        
     ]
