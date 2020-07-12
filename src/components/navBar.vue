@@ -7,7 +7,7 @@
         <div class="line two"></div>
         <div class="line three"></div>
       </div>
-      <ul class="nav-links" @click="home">
+      <ul class="nav-links" @click="paths">
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/about">About</router-link></li>
         <li><router-link to="/projects">Projects</router-link></li>
@@ -75,7 +75,7 @@ export default {
 
     
   },
-    home: function(){
+    paths: function(){
       const navLinks = document.querySelector(".nav-links");
       const links = document.querySelectorAll(".nav-links li");
         navLinks.classList.toggle("open");
