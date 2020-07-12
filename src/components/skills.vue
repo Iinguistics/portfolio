@@ -58,7 +58,7 @@
   </div>
      <!-- footer -->
    <div class="footer">
-    <router-link to="/about"><img src="../assets/mobile-icons/projects-icon.png" id="about"/>Projects</router-link>
+    <router-link to="/projects"><img src="../assets/mobile-icons/projects-icon.png" id="about"/>Projects</router-link>
     <router-link to="/about"><img src="../assets/mobile-icons/face.png" id="about"/>About</router-link>
     <router-link to="/contact"><img src="../assets/mobile-icons/contact.png" id="contact"/>Contact</router-link>
    </div>
