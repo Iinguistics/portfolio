@@ -7,7 +7,8 @@
         </div>
     </div>
       <!-- barba end   --> 
-  <!-- title / header of page -->
+      <div class="main">
+         <!-- title / header of page -->
     <div class="title-container">
             <article class="head-img">
                 <div class="head-img-wrapper">
@@ -23,7 +24,7 @@
             </div>
         </div>
         <!-- preview component -->
-        <Preview />
+        <Preview class="preview"/>
         <!--      --------------->
         <div class="github-header">
           <h1>Take me to the source</h1>
@@ -32,10 +33,7 @@
         <!-- grid image / listed projects -->
    <div class="project-container">
       <div class="bg1 links">
-      
       </div>
-    
-     
       <div class="bg1 links">
          <router-link to="/"><p>Home</p></router-link>
          <router-link to="/about"><p>About</p></router-link>
@@ -80,9 +78,13 @@
       </div>
        <div class="bg2">
       </div>
-    
- 
   </div>
+      </div>
+      
+   <!-- mobile -->
+   <projectsMobile class="mobile"/>
+
+  
 </div>
  
 </template>
@@ -94,16 +96,18 @@ import Expo from 'gsap';
 import barba from '@barba/core';
 import gsap from 'gsap';
 import Preview from './preview';
+import projectsMobile from './projectsMobile';
 
 export default {
   name: 'projects',
   components: {
-    Preview
+    Preview,
+    projectsMobile
+
   },
   data(){
     return{
      
-
 
     }
   },
@@ -425,6 +429,19 @@ p {
     text-transform: uppercase;
 }
 
+.mobile{
+  display: none;
+}
+
+@media(max-width: 767px) {
+  .main{
+    display: none;
+  }
+
+  .mobile{
+         display: inherit;
+      }
+}
 
 
 
