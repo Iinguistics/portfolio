@@ -2,7 +2,7 @@
         <div class="preview-mobile">
             <section>
              <div class="head">
-               <h1>Preview</h1>
+               <h1>Project's Preview</h1>
             </div>
         <div class="outer">
             <div class="inner"><a href="https://hair-salon-site.herokuapp.com/" target="_blank">Hair Salon</a></div>
@@ -114,7 +114,7 @@ export default {
      },
      
     mounted(){
-         this.onScroll();
+        // this.onScroll();
     }  
 
 }
@@ -125,7 +125,9 @@ export default {
 </script>
 
 <style scoped>
+
  @media(max-width: 767px) {
+ 
 a{
     color: #020C3A;
     text-decoration: none !important;

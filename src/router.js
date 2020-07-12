@@ -11,6 +11,7 @@ import Child from './components/child-comp.vue';
 import preview from './components/preview.vue';
 import aboutMobile from './components/aboutMobile.vue';
 import previewMobile from './components/previewMobile.vue';
+import projectsMobile from './components/projectsMobile.vue';
 
 
 
@@ -76,6 +77,11 @@ export default new Router({
             path:'/previewMobile',
             name: 'previewMobile',
             component: previewMobile,
+        },
+        {
+            path:'/projectsMobile',
+            name: 'projectsMobile',
+            component: projectsMobile,
         },
        
     ]

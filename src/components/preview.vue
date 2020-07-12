@@ -128,6 +128,7 @@ export default {
 </script>
 
 <style scoped>
+
 a{
     color: #020C3A;
     text-decoration: none !important;
@@ -219,6 +220,7 @@ video{
    
 
 }
+
 
 
 </style>
