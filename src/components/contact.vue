@@ -20,22 +20,21 @@
         </div>
         <h3>Get in touch</h3>
       </div>
-       
         <form v-on:submit.prevent="submitMessage" class="appointment-form" name="contact" method="POST" data-netlify="true">
 
          <div class="form-group">
              <label for="name">Your Name:</label>
-             <input class="form-input" id="name" type="text" v-model="name" />
+             <input class="form-input" id="name" name="name" type="text" v-model="name" />
          </div>
 
          <div class="form-group">
              <label for="email">Your Email:</label>
-             <input class="form-input" id="email" type="email" v-model="email"  />
+             <input class="form-input" id="email" type="email" name="email" v-model="email"  />
          </div>
         
           <div class="form-group">
              <label for="message">Message:</label>
-             <textarea class="form-input" id="message" type="text" rows="4" cols="50" v-model="message"></textarea>
+             <textarea class="form-input" id="message" name="message" type="text" rows="4" cols="50" v-model="message"></textarea>
          </div>
 
             <!-- form error -->
@@ -186,6 +185,8 @@ export default {
 .wrap{
  background-color: #fff;
 }
+
+
  
  .message{
    height: 0px;

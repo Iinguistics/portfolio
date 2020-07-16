@@ -27,7 +27,12 @@
              <input type="submit" value="Send" class="btn btn-outline-dark" />
      </form>
       
-       
+        <!-- footer -->
+  <div class="footer" @click="paths">
+    <router-link to="/about"><img src="../assets/mobile-icons/face.png" id="about"/>About</router-link>
+    <router-link to="/skills"><img src="../assets/mobile-icons/skill.png"/>Skills</router-link>
+     <router-link to="/projects"><img src="../assets/mobile-icons/projects-icon.png" id="about"/>Projects</router-link>
+  </div>
   
   </div>
 
@@ -58,11 +63,20 @@ export default {
                    theme: "bubble", 
                })
              }
+     },
+     paths: function(){
+         // components with position absolute toggle class will not run unless page is reloaded, clicking the link goes straight to the route no loading
+        // can look unsmooth revisit this solution, perhaps only target the components that have the absolute "issue"
+        setTimeout(function(){
+         window.location.reload();
+      }, 100)
      }
-      
   },
+      
+     
+
   mounted() {
-      this.submitMessage();
+      
   },
   
  
@@ -79,7 +93,7 @@ export default {
   
 
 .wrap{
-  height: 92vh;
+  height: 94vh;
   background-color: #0A192F;
 }
 
@@ -128,6 +142,28 @@ label{
   background-color: transparent !important;
   color: #FFF;
 }
+
+.footer{
+    height: 85px;
+    width: 100%;
+    background: #5b78c7;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer a{
+    color: #fff;
+    font-size: 17px;
+  }
+  .footer img{
+    height: 35px;
+    display: block;
+  }
+
+  #about, #contact{
+    padding-left: 8px;
+  }
 
 }
 

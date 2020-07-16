@@ -68,7 +68,7 @@
         <div class="about-container">
          <div class="about-item">
             <h5>Hello, I'm James, a full stack developer based in El Dorado Hills, CA.</h5>
-            <p>I enjoy creating software that has a positive impact of people's life, whether that be websites, applications, or anything in between.</p>
+            <p>I enjoy creating software that has a positive impact on people's life, whether that be websites, applications, or anything in between.</p>
             <p>I don’t like to define myself by the work I’ve done. I define myself
                 by the work I want to do. I prefer to keep learning, continue challenging myself,
                 and do interesting things that matter.
@@ -81,7 +81,7 @@
      </div>
        </div>
        <!-- footer -->
-   <div class="footer">
+   <div class="footer" @click="paths">
     <router-link to="/projects"><img src="../assets/mobile-icons/projects-icon.png" id="about"/>Projects</router-link>
     <router-link to="/skills"><img src="../assets/mobile-icons/skill.png"/>Skills</router-link>
     <router-link to="/contact"><img src="../assets/mobile-icons/contact.png" id="contact"/>Contact</router-link>
@@ -310,6 +310,13 @@ export default {
            delay: 3
        });
    },
+   paths: function(){
+         // components with position absolute toggle class will not run unless page is reloaded, clicking the link goes straight to the route no loading
+        // can look unsmooth revisit this solution, perhaps only target the components that have the absolute "issue"
+        setTimeout(function(){
+         window.location.reload();
+      }, 100)
+     }
 
   },
 
