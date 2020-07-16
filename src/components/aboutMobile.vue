@@ -1,13 +1,6 @@
 <template>
 <div>
-    
-    <!-- barba -->
-    <div data-barba="wrapper">
-        <div class="load-container">
-            <div class="loading-screen"></div>
-        </div>
-     </div> 
-      <!-- barba end   -->  
+  
       <div class="mobile">
       <div class="white-space"></div>
      <div class="head-container">
@@ -33,6 +26,12 @@
       
      </div>
        </div>
+         <!-- footer -->
+   <div class="footer" @click="paths">
+    <router-link to="/projects"><img src="../assets/mobile-icons/projects-icon.png" id="about"/>Projects</router-link>
+     <router-link to="/skills"><img src="../assets/mobile-icons/skill.png"/>Skills</router-link>
+    <router-link to="/contact"><img src="../assets/mobile-icons/contact.png" id="contact"/>Contact</router-link>
+   </div>
   </div>
 </div>
  
@@ -168,7 +167,14 @@ export default {
   
    toTop: function(){
      window.scrollTo(0, 0);
-    }
+    },
+    paths: function(){
+         // components with position absolute toggle class will not run unless page is reloaded, clicking the link goes straight to the route no loading
+        // can look unsmooth revisit this solution, perhaps only target the components that have the absolute "issue"
+        setTimeout(function(){
+         window.location.reload();
+      }, 100)
+     }
   },
 
   mounted(){
@@ -176,7 +182,7 @@ export default {
       //this.delay();
       //this.pageTransition();
       //this.trans();
-     // this.toTop();
+      this.toTop();
       this.aboutHeader();
       
   }

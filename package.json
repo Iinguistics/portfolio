@@ -19,6 +19,7 @@
     "jquery": "^3.5.1",
     "particles.js": "^2.0.0",
     "pixi.js": "^5.2.4",
+    "prerender-spa-plugin": "^3.4.0",
     "swiper": "^5.4.5",
     "three": "^0.117.1",
     "vue": "^2.6.11",

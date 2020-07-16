@@ -57,7 +57,7 @@
     </div>
   </div>
      <!-- footer -->
-   <div class="footer">
+   <div class="footer" @click="paths">
     <router-link to="/projects"><img src="../assets/mobile-icons/projects-icon.png" id="about"/>Projects</router-link>
     <router-link to="/about"><img src="../assets/mobile-icons/face.png" id="about"/>About</router-link>
     <router-link to="/contact"><img src="../assets/mobile-icons/contact.png" id="contact"/>Contact</router-link>
@@ -289,7 +289,14 @@ export default {
             const noP = document.getElementById('particles-js');
             noP.style.display = "none";
         }
-    }
+    },
+     paths: function(){
+         // components with position absolute toggle class will not run unless page is reloaded, clicking the link goes straight to the route no loading
+        // can look unsmooth revisit this solution, perhaps only target the components that have the absolute "issue"
+        setTimeout(function(){
+         window.location.reload();
+      }, 100)
+     }
     
  
 
