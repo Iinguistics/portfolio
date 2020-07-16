@@ -47,6 +47,8 @@ export default new Router({
             component: Contact,
         },
 
+
+
         /*
         {
             path:'/contactMobile',
