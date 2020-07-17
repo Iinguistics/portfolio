@@ -179,7 +179,7 @@ h1{
 
 
 .bg2 {
-  background: url('../assets/nature-road.jpg');
+  background: url('../assets/projects/nature-road.jpg');
   color: #fff;
 }
 
