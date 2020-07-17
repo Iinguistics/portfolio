@@ -42,7 +42,7 @@
   <div class="footer" @click="paths">
     <router-link to="/about"><img src="../assets/mobile-icons/face.png" id="about"/>About</router-link>
     <router-link to="/skills"><img src="../assets/mobile-icons/skill.png"/>Skills</router-link>
-    <router-link to="/contact"><img src="../assets/mobile-icons/contact.png" id="contact"/>Contact</router-link>
+    <a href="mailto:jmsgoytia@gmail.com"><img src="../assets/mobile-icons/contact.png" id="contact"/>Contact</a>
   </div>
  
 </div> 
