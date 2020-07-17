@@ -3,7 +3,7 @@
     <div class="main-load">
     <!-- rings -->
             <div class="loading-screen" id="loading-screen"></div>
-              <div class="loader" @click="contact"  @mouseover="update" @mouseleave="back">
+              <div class="loader" @click="pushSkills"  @mouseover="update" @mouseleave="back">
                   <div class="ringOne ring">
                         <img src="../assets/ring.png" alt="spinning ring">
                   </div>
@@ -22,11 +22,10 @@
                   <router-link to=/projects class="projects">
                         <h5>Projects</h5></router-link>
                   
-                  <router-link to=/skills class="skills">
+                  <router-link to=/skills class="skills" id="skills">
                         <h5>Skills</h5></router-link>
 
-                        <router-link to=/contact class="contact" id="contact-me">
-                        <h5>Contact Me</h5></router-link>
+                        <a href="mailto:jmsgoytia@gmail.com"><h5>Get in touch</h5></a>
                         
                   </div>
                   </section>
@@ -101,15 +100,15 @@ export default {
          tl.to(".ringTwo", {duration:2, x:40});
       
     },
-    contact(){
-      this.$router.push('/contact');
+    pushSkills(){
+      this.$router.push('/skills');
     },
     update(){
-        const updateColor = document.getElementById('contact-me');
+        const updateColor = document.getElementById('skills');
         updateColor.style.color = "#64FFDA";
       },
       back(){
-        const updateColor = document.getElementById('contact-me');
+        const updateColor = document.getElementById('skills');
         updateColor.style.color = "#fff";
       },
      
@@ -175,7 +174,7 @@ h1 {
       margin: 0%;
       padding: 0%;
       top: 48%;
-      left: 77.5%;
+      left: 57%;
       transform: translate(-50%, -50%);
       position: absolute;
       z-index: 2;

@@ -38,7 +38,7 @@
          <router-link to="/"><p>Home</p></router-link>
          <router-link to="/about"><p>About</p></router-link>
          <router-link to="/skills"><p>Skills</p></router-link>
-         <router-link to="/contact"><p>Contact</p></router-link>
+         <a href="mailto:jmsgoytia@gmail.com"><p>Contact</p></a>
       </div>
       <div class="bg2">
       </div>
