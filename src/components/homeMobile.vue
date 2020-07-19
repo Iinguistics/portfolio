@@ -27,7 +27,7 @@
         <p>Business/Info site, focused on UI libs & aesthetics</p>
       </div>
       <div class="swiper-slide slide3">
-        <a href="https://ctdi-jg.netlify.app/#/" target="_blank"><h1>Stat Tracker</h1></a>
+        <a href="https://stat-tracking.herokuapp.com/" target="_blank"><h1>Stat Tracker</h1></a>
         <p>hits multiple server side API end points & returns data to the client</p>
       </div>
     </div>

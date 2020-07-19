@@ -13,7 +13,7 @@
        <div class="about-wrap">
         <div class="about-containerr">
          <div class="about-item">
-            <h5>Hello, I'm James, a full stack developer based in El Dorado Hills, CA.</h5>
+            <h5>Hello, I'm James, a front end developer based in El Dorado Hills, CA.</h5>
             <p>I enjoy creating software that has a positive impact of people's life, whether that be websites, applications, or anything in between.</p>
             <p>I don’t like to define myself by the work I’ve done. I define myself
                 by the work I want to do. I prefer to keep learning, continue challenging myself,

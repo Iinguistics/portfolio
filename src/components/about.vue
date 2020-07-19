@@ -99,7 +99,7 @@ import Expo from 'gsap/src/EasePack';
 import barba from '@barba/core';
 import gsap from 'gsap';
 import $ from 'jquery';
-import aboutMobile from './aboutMobile';
+// import aboutMobile from './aboutMobile';
 const CircleType = require('circletype');
 
 
@@ -110,7 +110,7 @@ export default {
       head: require('../assets/computer-1.jpg'),
       ripple: require('../assets/ripple.png'),
       ripple2: require('../assets/ripple-2.jpg'),
-      x:window.matchMedia("(max-width: 768px)"),
+      x:window.matchMedia("(max-width: 767px)"),
       
     }
   },
@@ -159,8 +159,7 @@ export default {
 
      mobileHeader: function(){
       if (this.x.matches) { // If media query matches mobile size
-        var what = document.getElementById("header");
-        what.style.display = "none";
+        
         var appDiv=document.getElementById("mobile-header");
         var app = new PIXI.Application({ width: 375, height: 500 });
         appDiv.appendChild(app.view);
@@ -608,7 +607,7 @@ a{
 
 
 /* mobile */
-@media(max-width: 768px) {
+@media(max-width: 767px) {
       .main-load{
             display: none;
       }
