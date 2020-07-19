@@ -12,6 +12,9 @@
       <div class="white-space"></div>
      <div class="head-container">
        <div id="header"> </div>
+        <div class="about-desc">
+        <p>I want to make things that make a difference</p>
+        </div>
         <div class="about-header">
         <h1>About Me</h1>
         </div>
@@ -28,7 +31,7 @@
         
      <div class="about-container">
        <div class="about-item">
-         <h5>Hello, I'm James, a full stack developer based in El Dorado Hills, CA.</h5>
+         <h5>Hello, I'm James, a front end developer based in El Dorado Hills, CA.</h5>
          <p>I enjoy creating software that has a positive impact of people's life, whether that be websites, applications, or anything in between.</p>
          <p>I don’t like to define myself by the work I’ve done. I define myself
             by the work I want to do. I prefer to keep learning, continue challenging myself,
@@ -67,7 +70,7 @@
        <div class="about-wrap">
         <div class="about-container">
          <div class="about-item">
-            <h5>Hello, I'm James, a full stack developer based in El Dorado Hills, CA.</h5>
+            <h5>Hello, I'm James, a front end developer based in El Dorado Hills, CA.</h5>
             <p>I enjoy creating software that has a positive impact on people's life, whether that be websites, applications, or anything in between.</p>
             <p>I don’t like to define myself by the work I’ve done. I define myself
                 by the work I want to do. I prefer to keep learning, continue challenging myself,
@@ -309,6 +312,18 @@ export default {
            delay: 3
        });
    },
+   
+       aboutDesc: function(){
+       gsap.from('.about-desc',
+       { 
+           duration: 3, 
+           y:'100%',
+           ease: 'bounce',
+           delay: 3
+       });
+   },
+
+
    paths: function(){
          // components with position absolute toggle class will not run unless page is reloaded, clicking the link goes straight to the route no loading
         // can look unsmooth revisit this solution, perhaps only target the components that have the absolute "issue"
@@ -328,6 +343,7 @@ export default {
       this.toTop();
       this.aboutHeader();
       this.aboutHeaderMobile();
+      this.aboutDesc();
       
   }
  
@@ -386,11 +402,23 @@ export default {
   background: #000;
 }
 
+.about-desc{
+  position: absolute;
+  left: 25%;
+  top: 72%;
+}
+.about-desc p{
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #08FDD8;
+  font-weight: 800;
+}
+
 
 .about-header{
   position: absolute;
   left: 25%;
-  top: 70%;
+  top: 20%;
 }
 
 .about-header h1{
@@ -525,13 +553,6 @@ a{
 
 
 
-#header h2{
-    left: 50%;
-    top: 40%;
-}
-
-
-
 .circular-text{
   top: 50%;
   left: 65%;
@@ -550,9 +571,14 @@ a{
   height: 105vh;
 }
 
-.about-header{
+.about-desc{
   left: 30%;
   top: 60%;
+}
+
+.about-header{
+  left: 30%;
+  top: 20%;
 }
 
 .about-item h5{
