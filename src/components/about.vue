@@ -13,7 +13,7 @@
      <div class="head-container">
        <div id="header"> </div>
         <div class="about-desc">
-        <p>I want to make things that make a difference</p>
+        <p>I want to build things that make a difference</p>
         </div>
         <div class="about-header">
         <h1>About Me</h1>
@@ -41,7 +41,6 @@
           I enjoy problem solving, & have high ambitions with high attention to detail, I am interested in the entire frontend, backend spectrums & working with fellow ambitious life long learners.
         </p>
        </div>
-      
      </div>
      <!-- circle spinner -->
     <div class="circular-text">
