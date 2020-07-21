@@ -6,6 +6,7 @@ import About from './components/about.vue';
 import Skills from './components/skills.vue';
 import Contact from './components/contact.vue';
 
+import test from './components/test.vue';
 //import contactMobile from './components/contactMobile.vue';
 //import preview from './components/preview.vue';
 //import aboutMobile from './components/aboutMobile.vue';
@@ -45,6 +46,14 @@ export default new Router({
             path:'/contact',
             name: 'contact',
             component: Contact,
+        },
+
+
+
+        {
+            path:'/test',
+            name: 'test',
+            component: test,
         },
 
 

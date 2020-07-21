@@ -46,6 +46,7 @@
     <div class="circular-text">
       <span id="rotated">jogging • development • hiking • reading • movies • learning • music • algorithms •</span>
     </div>
+   
     <div class="circleArrow">
         <!-- video -->
       <video autoplay muted loop preload>
@@ -55,7 +56,37 @@
         Sorry, your browser doesn't support embedded videos.
       </video>
     </div>
+    
        </div>
+       <!-- cube slider ------------------------>
+          <!-- projects display -->
+    <div class="process">
+    <h6>My Process</h6>
+   </div>
+   
+     <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide1">
+        <a href="https://hair-salon-site.herokuapp.com/" target="_blank"><h1>Hair</h1></a>
+        <p>Equipped with appointment booking & employee portal (CRUD App)</p>
+      </div>
+      <div class="swiper-slide slide2">
+        <a href="https://ctdi-jg.netlify.app/#/" target="_blank"><h1>CTDI</h1></a>
+        <p>Business/Info site, focused on UI libs & aesthetics</p>
+      </div>
+      <div class="swiper-slide slide3">
+        <a href="https://stat-tracking.herokuapp.com/" target="_blank"><h1>Stat Tracker</h1></a>
+        <p>hits multiple server side API end points & returns data to the client</p>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+       <!--  ---------------------------------->
     </div>
    <div class="mobile">
        <div class="white-space"></div>
@@ -101,12 +132,13 @@ import Expo from 'gsap/src/EasePack';
 import barba from '@barba/core';
 import gsap from 'gsap';
 import $ from 'jquery';
-// import aboutMobile from './aboutMobile';
+import Swiper from 'swiper';
+import 'swiper/css/swiper.min.css';
 const CircleType = require('circletype');
 
 
 export default {
-  name: 'about',
+  name: 'test',
   data(){
     return{
       head: require('../assets/computer-1.jpg'),
@@ -236,6 +268,7 @@ export default {
 },
 
 
+   
      circle: function(){
          const circleType = new CircleType(document.getElementById('rotated'));
          circleType.radius(80);
@@ -304,7 +337,68 @@ export default {
         setTimeout(function(){
          window.location.reload();
       }, 100)
+     },
+
+     scrollTest: function(){
+           var ctrl = new ScrollMagic.Controller();
+
+        // Create scenes in jQuery each() loop
+        $("section").each(function(i) {
+        var inner = $(this).find(".inner");
+        var outer = $(this).find(".outer");
+       
+        var two = $(this).find(".two");
+        var tl = new TimelineMax();
+        
+        tl.from(outer, 0.80, { scaleX: 0 });
+        tl.from(inner, 0.65, { yPercent: 100, ease: Back.easeOut });
+
+        
+           new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.90
+        })
+             .setTween(tl)
+                .addIndicators({
+                colorTrigger: "transparent",
+                colorStart: "transparent",
+                colorEnd: "transparent",
+                indent: 40
+                })
+                .addTo(ctrl);
+            });
+     },
+       processReg: function(){
+       $(window).bind('scroll', function() {
+     if ($(window).scrollTop() > 975) {
+         $('.circleArrow').hide();
+         $('.circular-text').hide();
      }
+     else {
+         $('.circleArrow').show();
+         $('.circular-text').show();
+     }
+});
+     },
+
+     
+       swipe: function(){
+         var mySwiper = new Swiper('.swiper-container', {
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+        shadow: false,
+        slideShadows: false,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+    });
+   
+     },
 
   },
 
@@ -318,6 +412,9 @@ export default {
       this.aboutHeader();
       this.aboutHeaderMobile();
       this.aboutDesc();
+      this.scrollTest();
+      this.processReg();
+      this.swipe();
       
   }
  
@@ -516,6 +613,119 @@ a{
 .mobile{
       display: none;
     }
+
+
+/*  process cube ------------*/
+
+.process{
+  height: 50px;
+  background: #232323;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -1px;
+}
+.process h6{
+  color: #fff;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+  .swiper-container{
+    position: absolute;
+    width: 95%;
+    left: 52%;
+    margin-left: -50%;
+  }
+
+
+  .swiper-slide{
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 6em 3em;
+    color: #fff;
+  }
+  .swiper-slide h1{
+    font-size: 5em;
+    line-height: 1em;
+  }
+  .swiper-slide h1::before{
+    content: '';
+    position: absolute;
+    top: 1em;
+    width: 50%;
+    height: 40%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .swiper-slide p{
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin-top: 7em;
+  }
+  
+ 
+ .slide1{
+   background: url('../assets/homeMobile/hair-5.jpg');
+   background-size: cover;
+   background-position: center;
+   max-width: 100%;
+   max-height: 100%;
+   height: 535px;
+ }
+ .slide1 h1::before{
+    border-left: 1px solid #fff;
+    right: 0;
+  }
+
+  .slide2{
+   background: url('../assets/homeMobile/cell-phone.jpg');
+   background-size: cover;
+   height: 535px;
+   background-position: center;
+   height: 535px;
+   max-width: 100%;
+   max-height: 100%;
+ }
+ .slide2 h1::before{
+    border-right: 1px solid #fff;
+    right: 0;
+  }
+  .slide2 h1::after{
+    border-left: 1px solid #fff;
+    right: 0;
+    content: '';
+    position:absolute;
+    top: 1em;
+    width: 20%;
+    height: 40%;
+    border-top:1px solid #fff; 
+    border-bottom:1px solid #fff; 
+  }
+
+  .slide3{
+   background: url('../assets/homeMobile/overwatch-logo.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 535px;
+   max-width: 100%;
+   max-height: 100%;
+ }
+ .slide3 h1::before{
+    border-right: 1px solid #fff;
+    left: 0;
+  }
+
+  .swiper-button-next, .swiper-button-prev{
+    top: 80%;
+    outline: none;
+  }
+  .swiper-button-next{
+    right: 3em;
+  }
+  .swiper-button-prev{
+    left: 3em;
+  }
 
 
 
