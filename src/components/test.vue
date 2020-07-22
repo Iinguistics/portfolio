@@ -1,13 +1,7 @@
 <template>
   <div>
    
-       <!-- barba -->
-    <div data-barba="wrapper">
-        <div class="load-container">
-            <div class="loading-screen"></div>
-        </div>
-     </div> 
-      <!-- barba end   -->  
+      
         <div class="main-load">
       <div class="white-space"></div>
      <div class="head-container">
@@ -61,23 +55,29 @@
        <!-- cube slider ------------------------>
           <!-- projects display -->
     <div class="process">
-    <h6>My Process</h6>
+    <h6>Some processes I like to follow</h6>
    </div>
    
      <!-- Swiper -->
-  <div class="swiper-container">
+ <div class="swiper-outer">
+     <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide slide1">
-        <a href="https://hair-salon-site.herokuapp.com/" target="_blank"><h1>Hair</h1></a>
-        <p>Equipped with appointment booking & employee portal (CRUD App)</p>
+           <h1>Data Gathering/Research</h1>
+        <p>Understand the client’s subject matter completely and build on the knowledge related to it, becoming intimately familiar with the subject matter. Determine methods to address the specific customer’s needs and requirements. I like to make sure I have a clear and unambiguous picture of what it is im building before moving onto the next step. </p>
+         <q>If you fail to plan, you are planning to fail. -Ben Franklin</q>
       </div>
       <div class="swiper-slide slide2">
-        <a href="https://ctdi-jg.netlify.app/#/" target="_blank"><h1>CTDI</h1></a>
-        <p>Business/Info site, focused on UI libs & aesthetics</p>
+           <h1>Design</h1>
+        <p>Misleadingly thought of as the superficial appearance of a product, design actually encompasses a lot more. It is a cross functional process that includes market research, technical research, design of a concept, and prototype mockup. The API design is very important in this stage, you want to ensure the UI has all the API's it needs from the backend so they can trade data seamlessly.  </p>
       </div>
       <div class="swiper-slide slide3">
-        <a href="https://stat-tracking.herokuapp.com/" target="_blank"><h1>Stat Tracker</h1></a>
-        <p>hits multiple server side API end points & returns data to the client</p>
+              <h1>Development</h1>
+        <p>Findings from the research and design phases are utilized for the production of specific products including materials, systems, and methods. Engineer utilizing the research and designs to produce commercial products for the customer. Also a good time to bug hunt & try to break the UI.</p>
+      </div>
+      <div class="swiper-slide slide4">
+              <h1>Launch</h1>
+        <p>Monitor & support the product, make sure it is performing the way it is supposed to. Get feedback from the users, is this a success? What can we do to improve on this?</p>
       </div>
     </div>
     <!-- Add Pagination -->
@@ -86,16 +86,16 @@
     <div class="swiper-button-next swiper-button-white"></div>
     <div class="swiper-button-prev swiper-button-white"></div>
   </div>
+ </div>
+
        <!--  ---------------------------------->
     </div>
    <div class="mobile">
-       <div class="white-space"></div>
-     <div class="head-container">
-       <div id="mobile-header"> </div>
+       
         <div class="about-header-mobile">
              <h1>About Me</h1>
             </div>
-     </div>
+     
            
        <div class="about-wrap">
         <div class="about-container">
@@ -113,6 +113,43 @@
       
      </div>
        </div>
+
+             <!-- cube slider ------------------------>
+          <!-- projects display -->
+    <div class="process">
+    <h6>Some processes I like to follow</h6>
+   </div>
+   
+     <!-- Swiper -->
+        <div class="swiper-outer">
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+                <h1>Data Gathering/Research</h1>
+                <p>Understand the client’s subject matter completely and build on the knowledge related to it, becoming intimately familiar with the subject matter. Determine methods to address the specific customer’s needs and requirements. I like to make sure I have a clear and unambiguous picture of what it is im building before moving onto the next step. </p>
+                <q>If you fail to plan, you are planning to fail. -Ben Franklin</q>
+            </div>
+            <div class="swiper-slide slide2">
+                <h1>Design</h1>
+                <p>Misleadingly thought of as the superficial appearance of a product, design actually encompasses a lot more. It is a cross functional process that includes market research, technical research, design of a concept, and prototype mockup. The API design is very important in this stage, you want to ensure the UI has all the API's it needs from the backend so they can trade data seamlessly.  </p>
+            </div>
+            <div class="swiper-slide slide3">
+                    <h1>Development</h1>
+                <p>Findings from the research and design phases are utilized for the production of specific products including materials, systems, and methods. Engineer utilizing the research and designs to produce commercial products for the customer. Also a good time to bug hunt & try to break the UI.</p>
+            </div>
+            <div class="swiper-slide slide4">
+                    <h1>Launch</h1>
+                <p>Monitor & support the product, make sure it is performing the way it is supposed to. Get feedback from the users, is this a success? What can we do to improve on this?</p>
+            </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-next "></div>
+            <div class="swiper-button-prev "></div>
+         </div>
+        </div>
+
        <!-- footer -->
    <div class="footer" @click="paths">
     <router-link to="/projects"><img src="../assets/mobile-icons/projects-icon.png" id="about"/>Projects</router-link>
@@ -129,7 +166,7 @@
 import * as PIXI from 'pixi.js'
 // import TweenMax from 'gsap';
 import Expo from 'gsap/src/EasePack';
-import barba from '@barba/core';
+//import barba from '@barba/core';
 import gsap from 'gsap';
 import $ from 'jquery';
 import Swiper from 'swiper';
@@ -237,7 +274,7 @@ export default {
       }
      },
 
-
+     // for circle
       delay: function(n) {
     n = n || 2000;
     return new Promise((done) => {
@@ -403,7 +440,8 @@ export default {
   },
 
   mounted(){
-      this.mobileHeader();
+      this.header();
+      //this.mobileHeader();
       this.delay();
       this.pageTransition();
       this.circle();
@@ -619,7 +657,7 @@ a{
 
 .process{
   height: 50px;
-  background: #232323;
+  background: #121212;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -631,11 +669,17 @@ a{
   font-size: 18px;
 }
 
+.swiper-outer{
+    height: 100vh;
+    background: #121212;
+}
+
   .swiper-container{
     position: absolute;
-    width: 95%;
-    left: 52%;
+    width: 90%;
+    left: 55%;
     margin-left: -50%;
+     
   }
 
 
@@ -666,24 +710,29 @@ a{
   
  
  .slide1{
-   background: url('../assets/homeMobile/hair-5.jpg');
+   background: url('../assets/about/about-me-research.jpg');
    background-size: cover;
    background-position: center;
    max-width: 100%;
    max-height: 100%;
-   height: 535px;
+   height: 575px;
  }
- .slide1 h1::before{
-    border-left: 1px solid #fff;
-    right: 0;
+ 
+  .slide1 p{
+      color: #000;
+      font-weight: 800;
+      text-align: left;
+  }
+  .slide1 q{
+      color: #121212;
+
   }
 
   .slide2{
-   background: url('../assets/homeMobile/cell-phone.jpg');
+   background: url('../assets/about/about-me-design.jpg');
    background-size: cover;
-   height: 535px;
+   height: 575px;
    background-position: center;
-   height: 535px;
    max-width: 100%;
    max-height: 100%;
  }
@@ -703,17 +752,38 @@ a{
     border-bottom:1px solid #fff; 
   }
 
+   .slide2 p{
+      text-align: left;
+  }
+
   .slide3{
-   background: url('../assets/homeMobile/overwatch-logo.jpg');
+   background: url('../assets/about/about-me-development.jpg');
    background-size: cover;
    background-position: center;
-   height: 535px;
+   height: 575px;
    max-width: 100%;
    max-height: 100%;
  }
- .slide3 h1::before{
-    border-right: 1px solid #fff;
-    left: 0;
+ 
+
+   .slide3 p{
+      color: #000;
+      font-weight: 800;
+      text-align: left;
+  }
+
+  .slide4{
+   background: url('../assets/about/about-me-launch.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 575px;
+   max-width: 100%;
+   max-height: 100%;
+ }
+ 
+
+   .slide4 p{
+      text-align: left;
   }
 
   .swiper-button-next, .swiper-button-prev{
@@ -722,9 +792,11 @@ a{
   }
   .swiper-button-next{
     right: 3em;
+    color:#333;
   }
   .swiper-button-prev{
     left: 3em;
+    color:#333;
   }
 
 
@@ -735,7 +807,9 @@ a{
      height: 120px;
  }
 
-
+.about-wrap{
+  height: 91vh;
+}
 
 .circular-text{
   top: 50%;
@@ -783,7 +857,9 @@ a{
 }
 
 
-
+.swiper-outer{
+    height: 75vh;
+}
 
 
 }
@@ -813,6 +889,10 @@ a{
     height: 80vh;
     padding-top: 300px;
 }
+
+.swiper-outer{
+    height: 80vh;
+}
 }
 
 
@@ -824,6 +904,12 @@ a{
 
       .mobile{
       display: inherit;
+    }
+
+    .about-header-mobile{
+        height: 75px;
+        background: #000;
+        padding-top: 15px;
     }
 
 
@@ -926,6 +1012,47 @@ a{
 
    #about, #contact{
     padding-left: 8px;
+  }
+
+
+  /*  process cube ------------*/
+
+
+.swiper-outer{
+    height: 80vh;
+}
+
+  .swiper-container{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+  }
+
+
+  .swiper-slide{
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 6em 3em;
+    color: #fff;
+  }
+  .swiper-slide h1{
+    font-size: 2.1em;
+    line-height: 1em;
+  }
+
+  .swiper-slide p{
+    font-size: 1.1em;
+    line-height: 1.2em;
+    margin-top: 4em;
+  }
+  
+  
+  .swiper-button-next{
+    right: 3em;
+  }
+  .swiper-button-prev{
+    left: 2.7em;
   }
 
 
