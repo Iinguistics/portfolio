@@ -1,6 +1,6 @@
 <template>
         <div>
-            <section>
+            <section id="first">
              <div class="head">
                 <div class="message">
                   <img src="../assets/projects/preview.jpg"/>
@@ -15,6 +15,7 @@
                     type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video> 
+            <div class="three-inner"><p>Write what I learned on this projects, what was exciting ect...</p></div>
         </div>
         </section>
         <section>
@@ -90,6 +91,7 @@ export default {
         var inner = $(this).find(".inner");
         var outer = $(this).find(".outer");
         var twoInner = $(this).find(".two-inner");
+        var threeInner = $(this).find(".three-inner");
         var two = $(this).find(".two");
         var tl = new TimelineMax();
         
@@ -98,6 +100,7 @@ export default {
 
         tl.from(two, 0.25, { scaleX: 0 });
         tl.from(twoInner, 0.65, { xPercent: 100, ease: Back.easeOut });
+        tl.from(threeInner, 0.65, { xPercent: -100, ease: Back.easeOut });
         
            new ScrollMagic.Scene({
             triggerElement: this,
@@ -170,13 +173,16 @@ p{
 
 section {
   width: 100%;
-  height: 107vh;
+  height: 125vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   color: #000;
+}
+#first{
+   height: 145vh;
 }
 
 .inner {
@@ -216,6 +222,10 @@ video{
      h1{
     margin-bottom: 95px;
 }
+
+    section {
+      height: 107vh;
+    }
 
    
 

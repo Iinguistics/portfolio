@@ -22,9 +22,10 @@
                     <h1>Projects</h1>
                 </div>
             </div>
+            <a href="#preview"><img id="head-arrow" src="../assets/projects/projects-down-arrow.png" alt="down arrow"></a> 
         </div>
         <!-- preview component -->
-        <Preview class="preview"/>
+        <Preview id="preview" class="preview"/>
         <!--      --------------->
         <div class="github-header">
           <h1>Take me to the source</h1>
@@ -255,6 +256,11 @@ a{
   text-decoration: none !important;
 }
 
+#head-arrow{
+  height: 50px;
+  width: 50px;
+}
+
 
 
 .project-container{
@@ -375,6 +381,7 @@ p {
  .title-container{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: #121212;
