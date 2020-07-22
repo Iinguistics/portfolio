@@ -1,13 +1,5 @@
 <template>
   <div>
-   
-       <!-- barba -->
-    <div data-barba="wrapper">
-        <div class="load-container">
-            <div class="loading-screen"></div>
-        </div>
-     </div> 
-      <!-- barba end   -->  
         <div class="main-load">
       <div class="white-space"></div>
      <div class="head-container">
@@ -46,6 +38,7 @@
     <div class="circular-text">
       <span id="rotated">jogging • development • hiking • reading • movies • learning • music • algorithms •</span>
     </div>
+   
     <div class="circleArrow">
         <!-- video -->
       <video autoplay muted loop preload>
@@ -55,16 +48,52 @@
         Sorry, your browser doesn't support embedded videos.
       </video>
     </div>
+    
        </div>
+       <!-- cube slider ------------------------>
+          <!-- projects display -->
+    <div class="process">
+    <h6>Some processes I like to follow</h6>
+   </div>
+   
+     <!-- Swiper -->
+ <div class="swiper-outer">
+     <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide1">
+           <h1>Data Gathering/Research</h1>
+        <p>Understand the client’s subject matter completely and build on the knowledge related to it, becoming intimately familiar with the subject matter. Determine methods to address the specific customer’s needs and requirements. I like to make sure I have a clear and unambiguous picture of what it is im building before moving onto the next step. </p>
+         <q>If you fail to plan, you are planning to fail. -Ben Franklin</q>
+      </div>
+      <div class="swiper-slide slide2">
+           <h1>Design</h1>
+        <p>Misleadingly thought of as the superficial appearance of a product, design actually encompasses a lot more. It is a cross functional process that includes market research, technical research, design of a concept, and prototype mockup. The API design is very important in this stage, you want to ensure the UI has all the API's it needs from the backend so they can trade data seamlessly.  </p>
+      </div>
+      <div class="swiper-slide slide3">
+              <h1>Development</h1>
+        <p>Findings from the research and design phases are utilized for the production of specific products including materials, systems, and methods. Engineer utilizing the research and designs to produce commercial products for the customer. Also a good time to bug hunt & try to break the UI.</p>
+      </div>
+      <div class="swiper-slide slide4">
+              <h1>Launch</h1>
+        <p>Monitor & support the product, make sure it is performing the way it is supposed to. Get feedback from the users, is this a success? What can we do to improve on this?</p>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+ </div>
+
+       <!--  ---------------------------------->
     </div>
    <div class="mobile">
-       <div class="white-space"></div>
-     <div class="head-container">
-       <div id="mobile-header"> </div>
+       
         <div class="about-header-mobile">
              <h1>About Me</h1>
             </div>
-     </div>
+     
            
        <div class="about-wrap">
         <div class="about-container">
@@ -82,6 +111,43 @@
       
      </div>
        </div>
+
+             <!-- cube slider ------------------------>
+          <!-- projects display -->
+    <div class="process">
+    <h6>Some processes I like to follow</h6>
+   </div>
+   
+     <!-- Swiper -->
+        <div class="swiper-outer">
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+                <h1>Data Gathering/Research</h1>
+                <p>Understand the client’s subject matter completely and build on the knowledge related to it, becoming intimately familiar with the subject matter. Determine methods to address the specific customer’s needs and requirements. I like to make sure I have a clear and unambiguous picture of what it is im building before moving onto the next step. </p>
+                <q>If you fail to plan, you are planning to fail. -Ben Franklin</q>
+            </div>
+            <div class="swiper-slide slide2">
+                <h1>Design</h1>
+                <p>Misleadingly thought of as the superficial appearance of a product, design actually encompasses a lot more. It is a cross functional process that includes market research, technical research, design of a concept, and prototype mockup. The API design is very important in this stage, you want to ensure the UI has all the API's it needs from the backend so they can trade data seamlessly.  </p>
+            </div>
+            <div class="swiper-slide slide3">
+                    <h1>Development</h1>
+                <p>Findings from the research and design phases are utilized for the production of specific products including materials, systems, and methods. Engineer utilizing the research and designs to produce commercial products for the customer. Also a good time to bug hunt & try to break the UI.</p>
+            </div>
+            <div class="swiper-slide slide4">
+                    <h1>Launch</h1>
+                <p>Monitor & support the product, make sure it is performing the way it is supposed to. Get feedback from the users, is this a success? What can we do to improve on this?</p>
+            </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-next "></div>
+            <div class="swiper-button-prev "></div>
+         </div>
+        </div>
+
        <!-- footer -->
    <div class="footer" @click="paths">
     <router-link to="/projects"><img src="../assets/mobile-icons/projects-icon.png" id="about"/>Projects</router-link>
@@ -98,15 +164,16 @@
 import * as PIXI from 'pixi.js'
 // import TweenMax from 'gsap';
 import Expo from 'gsap/src/EasePack';
-import barba from '@barba/core';
+//import barba from '@barba/core';
 import gsap from 'gsap';
 import $ from 'jquery';
-// import aboutMobile from './aboutMobile';
+import Swiper from 'swiper';
+import 'swiper/css/swiper.min.css';
 const CircleType = require('circletype');
 
 
 export default {
-  name: 'about',
+  name: 'test',
   data(){
     return{
       head: require('../assets/computer-1.jpg'),
@@ -205,7 +272,7 @@ export default {
       }
      },
 
-
+     // for circle
       delay: function(n) {
     n = n || 2000;
     return new Promise((done) => {
@@ -236,6 +303,7 @@ export default {
 },
 
 
+   
      circle: function(){
          const circleType = new CircleType(document.getElementById('rotated'));
          circleType.radius(80);
@@ -304,12 +372,74 @@ export default {
         setTimeout(function(){
          window.location.reload();
       }, 100)
+     },
+
+     scrollTest: function(){
+           var ctrl = new ScrollMagic.Controller();
+
+        // Create scenes in jQuery each() loop
+        $("section").each(function(i) {
+        var inner = $(this).find(".inner");
+        var outer = $(this).find(".outer");
+       
+        var two = $(this).find(".two");
+        var tl = new TimelineMax();
+        
+        tl.from(outer, 0.80, { scaleX: 0 });
+        tl.from(inner, 0.65, { yPercent: 100, ease: Back.easeOut });
+
+        
+           new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.90
+        })
+             .setTween(tl)
+                .addIndicators({
+                colorTrigger: "transparent",
+                colorStart: "transparent",
+                colorEnd: "transparent",
+                indent: 40
+                })
+                .addTo(ctrl);
+            });
+     },
+       processReg: function(){
+       $(window).bind('scroll', function() {
+     if ($(window).scrollTop() > 975) {
+         $('.circleArrow').hide();
+         $('.circular-text').hide();
      }
+     else {
+         $('.circleArrow').show();
+         $('.circular-text').show();
+     }
+});
+     },
+
+     
+       swipe: function(){
+         var mySwiper = new Swiper('.swiper-container', {
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+        shadow: false,
+        slideShadows: false,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+    });
+   
+     },
 
   },
 
   mounted(){
-      this.mobileHeader();
+      this.header();
+      //this.mobileHeader();
       this.delay();
       this.pageTransition();
       this.circle();
@@ -318,6 +448,9 @@ export default {
       this.aboutHeader();
       this.aboutHeaderMobile();
       this.aboutDesc();
+      this.scrollTest();
+      this.processReg();
+      this.swipe();
       
   }
  
@@ -518,6 +651,153 @@ a{
     }
 
 
+/*  process cube ------------*/
+
+.process{
+  height: 50px;
+  background: #121212;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -1px;
+}
+.process h6{
+  color: #fff;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.swiper-outer{
+    height: 100vh;
+    background: #121212;
+}
+
+  .swiper-container{
+    position: absolute;
+    width: 90%;
+    left: 55%;
+    margin-left: -50%;
+     
+  }
+
+
+  .swiper-slide{
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 6em 3em;
+    color: #fff;
+  }
+  .swiper-slide h1{
+    font-size: 5em;
+    line-height: 1em;
+  }
+  .swiper-slide h1::before{
+    content: '';
+    position: absolute;
+    top: 1em;
+    width: 50%;
+    height: 40%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .swiper-slide p{
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin-top: 7em;
+  }
+  
+ 
+ .slide1{
+   background: url('../assets/about/about-me-research.jpg');
+   background-size: cover;
+   background-position: center;
+   max-width: 100%;
+   max-height: 100%;
+   height: 575px;
+ }
+ 
+  .slide1 p{
+      color: #000;
+      font-weight: 800;
+      text-align: left;
+  }
+  .slide1 q{
+      color: #121212;
+
+  }
+
+  .slide2{
+   background: url('../assets/about/about-me-design.jpg');
+   background-size: cover;
+   height: 575px;
+   background-position: center;
+   max-width: 100%;
+   max-height: 100%;
+ }
+ .slide2 h1::before{
+    border-right: 1px solid #fff;
+    right: 0;
+  }
+  .slide2 h1::after{
+    border-left: 1px solid #fff;
+    right: 0;
+    content: '';
+    position:absolute;
+    top: 1em;
+    width: 20%;
+    height: 40%;
+    border-top:1px solid #fff; 
+    border-bottom:1px solid #fff; 
+  }
+
+   .slide2 p{
+      text-align: left;
+  }
+
+  .slide3{
+   background: url('../assets/about/about-me-development.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 575px;
+   max-width: 100%;
+   max-height: 100%;
+ }
+ 
+
+   .slide3 p{
+      color: #000;
+      font-weight: 800;
+      text-align: left;
+  }
+
+  .slide4{
+   background: url('../assets/about/about-me-launch.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 575px;
+   max-width: 100%;
+   max-height: 100%;
+ }
+ 
+
+   .slide4 p{
+      text-align: left;
+  }
+
+  .swiper-button-next, .swiper-button-prev{
+    top: 80%;
+    outline: none;
+  }
+  .swiper-button-next{
+    right: 3em;
+    color:#333;
+  }
+  .swiper-button-prev{
+    left: 3em;
+    color:#333;
+  }
+
+
 
 /* bigger moniter */
 @media(min-width: 1400px) {
@@ -525,7 +805,9 @@ a{
      height: 120px;
  }
 
-
+.about-wrap{
+  height: 91vh;
+}
 
 .circular-text{
   top: 50%;
@@ -573,7 +855,9 @@ a{
 }
 
 
-
+.swiper-outer{
+    height: 75vh;
+}
 
 
 }
@@ -603,6 +887,10 @@ a{
     height: 80vh;
     padding-top: 300px;
 }
+
+.swiper-outer{
+    height: 80vh;
+}
 }
 
 
@@ -614,6 +902,12 @@ a{
 
       .mobile{
       display: inherit;
+    }
+
+    .about-header-mobile{
+        height: 75px;
+        background: #000;
+        padding-top: 15px;
     }
 
 
@@ -716,6 +1010,47 @@ a{
 
    #about, #contact{
     padding-left: 8px;
+  }
+
+
+  /*  process cube ------------*/
+
+
+.swiper-outer{
+    height: 80vh;
+}
+
+  .swiper-container{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+  }
+
+
+  .swiper-slide{
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 6em 3em;
+    color: #fff;
+  }
+  .swiper-slide h1{
+    font-size: 2.1em;
+    line-height: 1em;
+  }
+
+  .swiper-slide p{
+    font-size: 1.1em;
+    line-height: 1.2em;
+    margin-top: 4em;
+  }
+  
+  
+  .swiper-button-next{
+    right: 3em;
+  }
+  .swiper-button-prev{
+    left: 2.7em;
   }
 
 
