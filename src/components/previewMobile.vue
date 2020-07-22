@@ -1,6 +1,6 @@
 <template>
         <div class="preview-mobile">
-            <section>
+            <section id ="outer-first">
              <div class="head">
                <h1>Project's Preview</h1>
             </div>
@@ -12,6 +12,7 @@
                     type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video> 
+              <div class="three-inner"><p>User logins, password hashing, setting up a database, posting, updating & deleting data. Once you learn the server side API calls & how to set up a data base /schemas, not only can you create any site on the web, it also expands your knowledge of the front end so you have a deeper understanding of the parameter's & data distribution on the UI.</p></div>
         </div>
         </section>
         <section>
@@ -23,6 +24,7 @@
                     type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video> 
+               <div class="three-inner"><p>The UI is not much to look at, but under the hood the most exciting app Ive built(at the time). I learned how to connect the client with the server, how to make an api call from the front end & to a back end api & display the data on the client. Plus I enjoy gaming, so accessing assist stats & WL ratios was very exciting.</p></div>
         </div>
         </section>
         <section>
@@ -34,6 +36,7 @@
                     type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video> 
+               <div class="three-inner"><p>Focused on learning UI libraries, threejs(really fun to use), hovereffect, blotterjs, animejs & google charts to name a few. Piling on img's, vid's, css & js although can look really good, is not ideal for load times/optimization.</p></div>
         </div>
         </section>
         <section>
@@ -45,6 +48,7 @@
                     type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video> 
+                <div class="three-inner"><p>Learned how to make api calls from the front end with ajax, after learning HTML,CSS & JS..when I look at the code now I cringe, there are so many things that could be done differently, this was before I learned about flexbox & grid, UI libraries & axios. (Although the major cities portion is pretty scalable if I ever wanted to add to it)</p></div>
         </div>
         </section>
          <section>
@@ -56,6 +60,7 @@
                     type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video> 
+                 <div class="three-inner"><p>A guide for all algorithms in all languages. This project brings the joy's of algorithm's into a good learning resource for everyone to explore & learn. </p></div>
         </div>
         </section>
 
@@ -154,13 +159,16 @@ p{
 
 section {
   width: 100%;
-  height: 75vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   color: #000;
+}
+#outer-first{
+  height: 105vh;
 }
 
 .inner {
@@ -169,6 +177,16 @@ position: relative;
 }
 .outer {
   overflow: hidden;
+}
+
+.three-inner{
+  max-width: 95%;
+  margin-top: 50px;
+}
+.three-inner p{
+  text-align: left;
+  margin-left: 5%;
+  font-size: 16px;
 }
 
 section:nth-child(1) {
@@ -186,6 +204,7 @@ section:nth-child(4) {
 section:nth-child(5) {
   background-color: #0FA958;
 }
+
 
 
 video{
