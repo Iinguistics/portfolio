@@ -45,6 +45,7 @@ export default {
     const header = document.querySelector(".header-details");
     const cube = document.querySelector(".swiper-container");
     const aboutHeader = document.querySelector(".about-header-mobile");
+    const aboutProcess = document.querySelector(".about-process");
     const previewMobile = document.querySelector(".preview-mobile");
 
     hamburger.addEventListener("click", () => {
@@ -63,6 +64,10 @@ export default {
 
        setTimeout(function(){
        aboutHeader.classList.toggle("header-gone")
+      }, 400)
+
+        setTimeout(function(){
+       aboutProcess.classList.toggle("process-gone")
       }, 400)
 
        setTimeout(function(){

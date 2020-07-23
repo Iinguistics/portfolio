@@ -51,6 +51,8 @@
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Data structures</p>
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> UI component libs</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Figma</p>  
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Webpack</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Gulp</p> 
          </div>
    </div>
   
@@ -58,7 +60,7 @@
   </div>
      <!-- footer -->
    <div class="footer" @click="paths">
-    <router-link to="/projects"><img src="../assets/mobile-icons/projects-icon.png" id="about"/>Projects</router-link>
+    <router-link to="/projects"><img src="../assets/mobile-icons/projects-icon.png" id="projects"/>Projects</router-link>
     <router-link to="/about"><img src="../assets/mobile-icons/face.png" id="about"/>About</router-link>
     <a href="mailto:jmsgoytia@gmail.com"><img src="../assets/mobile-icons/contact.png" id="contact"/>Contact</a>
    </div>
@@ -378,7 +380,7 @@ export default {
 }
 
 .skills-item{
-  max-width: 350px; 
+  max-width: 365px; 
   text-align: left;
   color: #fff;
   margin: auto;
@@ -415,7 +417,7 @@ li{
 .link-bar{
     background: #121212;
     height: 100vh;
-    width: 60px;
+    width: 65px;
     position: absolute;
     padding-top: 175px;
 }
@@ -423,6 +425,9 @@ li{
 .link-icons {
     padding-top: 20px;
     height: 50px;
+}
+.link-bar p{
+  font-size: 15px !important;
 }
 
 
@@ -504,7 +509,7 @@ a{
 /* mobile */
 @media (max-width: 767px) {
   .landing {
-  height: 950px;
+  height: 1150px;
  }
  .link-bar{
      display: none;
@@ -557,8 +562,15 @@ a{
     height: 35px;
     display: block;
   }
-   #about, #contact{
+   #about{
     padding-left: 8px;
+  }
+  #contact{
+    padding-left: 12px;
+  }
+
+  #projects{
+   padding-left: 20px;
   }
 
 }

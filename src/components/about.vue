@@ -119,7 +119,7 @@
    </div>
    
      <!-- Swiper -->
-        <div class="swiper-outer">
+        <div class="swiper-outer about-process">
             <div class="swiper-container">
             <div class="swiper-wrapper">
             <div class="swiper-slide slide1">
@@ -150,8 +150,8 @@
 
        <!-- footer -->
    <div class="footer" @click="paths">
-    <router-link to="/projects"><img src="../assets/mobile-icons/projects-icon.png" id="about"/>Projects</router-link>
-    <router-link to="/skills"><img src="../assets/mobile-icons/skill.png"/>Skills</router-link>
+    <router-link to="/projects"><img src="../assets/mobile-icons/projects-icon.png" id="projects"/>Projects</router-link>
+    <router-link to="/skills"><img src="../assets/mobile-icons/skill.png" id="skills"/>Skills</router-link>
     <a href="mailto:jmsgoytia@gmail.com"><img src="../assets/mobile-icons/contact.png" id="contact"/>Contact</a>
    </div>
   </div>
@@ -173,7 +173,7 @@ const CircleType = require('circletype');
 
 
 export default {
-  name: 'test',
+  name: 'about',
   data(){
     return{
       head: require('../assets/computer-1.jpg'),
@@ -351,7 +351,7 @@ export default {
            duration: 3, 
            y:'-100%',
            ease: 'bounce',
-           delay: 3
+           delay: 2
        });
    },
    
@@ -589,7 +589,7 @@ li{
 .link-bar{
     background: #111;
     height: 99vh;
-    width: 60px;
+    width: 65px;
     position: absolute;
     padding-top: 200px;
 }
@@ -597,6 +597,9 @@ li{
 .link-icons {
     padding-top: 20px;
     height: 50px;
+}
+.link-bar p{
+  font-size: 15px !important;
 }
 
 
@@ -988,6 +991,9 @@ a{
 .header-gone{
     display: none;
   }
+  .process-gone{
+    display: none;
+  }
 
   .footer{
     height: 80px;
@@ -1008,8 +1014,14 @@ a{
     display: block;
   }
 
-   #about, #contact{
-    padding-left: 8px;
+   #contact{
+    padding-left: 14px;
+  }
+   #projects{
+    padding-left: 20px;
+  }
+   #skills{
+    padding-left: 13px;
   }
 
 

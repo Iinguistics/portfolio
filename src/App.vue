@@ -36,11 +36,15 @@ src: url("./assets/fonts/CocoGothic-Bold_trial.ttf");
 }
 
 #app {
-   font-family: 'Coco Gothic', sans-serif;
+   font-family: 'Roboto Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+h1,h2,h3,h4{
+  font-family: 'Russo One', sans-serif;
 }
 
 html {

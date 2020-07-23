@@ -49,7 +49,7 @@
    <!-- footer -->
   <div class="footer" @click="paths">
     <router-link to="/about"><img src="../assets/mobile-icons/face.png" id="about"/>About</router-link>
-    <router-link to="/skills"><img src="../assets/mobile-icons/skill.png"/>Skills</router-link>
+    <router-link to="/skills"><img src="../assets/mobile-icons/skill.png" id="skills"/>Skills</router-link>
     <a href="mailto:jmsgoytia@gmail.com"><img src="../assets/mobile-icons/contact.png" id="contact"/>Contact</a>
   </div>
 </div>
@@ -155,13 +155,11 @@ a{
 
 
   h2 {
-  font-family: "Coco Gothic Bold";
   font-size: 34px;
   font-weight: 300;
   margin: 10px;
 }
 h1{
-  font-family: "Coco Gothic Bold";
   font-size: 38px;
   font-weight: 300;
   margin: 10px;
@@ -202,8 +200,14 @@ h1{
     display: block;
   }
 
-  #about, #contact{
+  #about{
     padding-left: 8px;
+  }
+  #contact{
+    padding-left: 14px;
+  }
+  #skills{
+    padding-left: 12px;
   }
 
 
