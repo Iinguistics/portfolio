@@ -41,7 +41,7 @@
 <!-- footer -->
   <div class="footer" @click="paths">
     <router-link to="/about"><img src="../assets/mobile-icons/face.png" id="about"/>About</router-link>
-    <router-link to="/skills"><img src="../assets/mobile-icons/skill.png"/>Skills</router-link>
+    <router-link to="/skills"><img src="../assets/mobile-icons/skill.png" id="skills"/>Skills</router-link>
     <a href="mailto:jmsgoytia@gmail.com"><img src="../assets/mobile-icons/contact.png" id="contact"/>Contact</a>
   </div>
  
@@ -274,8 +274,14 @@ export default {
     display: block;
   }
 
-  #about, #contact{
-    padding-left: 8px;
+  #skills{
+    padding-left: 14px;
+  }
+  #about{
+    padding-left: 10px;
+  }
+  #contact{
+    padding-left: 15px;
   }
 }
 

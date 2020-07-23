@@ -9,13 +9,13 @@
             </div>
         <div class="outer">
             <div class="inner"><a href="https://hair-salon-site.herokuapp.com/" target="_blank">Hair Salon</a></div>
-            <div class="two-inner"><p>Built with Vue,Node/Express,MongoDB,Bcrypt,ThreeJs &GSAP</p></div>
+            <div class="two-inner"><p>Built with Vue,Node/Express,MongoDB,Bcrypt,Google Maps API,ThreeJs & GSAP</p></div>
             <video autoplay muted loop preload>
                     <source src="../assets/video/projects/hair-salon-mp4.mp4"
                     type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video> 
-            <div class="three-inner"><p>User logins, password hashing, setting up a database, posting, updating & deleting data. Once you learn the server side API calls & how to set up a data base /schemas, not only can you create any site on the web, it also expands your knowledge of the front end so you have a deeper understanding of the parameter's & data distribution on the UI.</p></div>
+            <div class="three-inner"><p>User logins, password hashing, setting up a database, posting, updating & deleting data. Once you learn the server side API calls & how to set up a data base /schemas, not only can you create any site on the web,it also expands your knowledge of the front end so you have a deeper understanding of the parameter's & data distribution on the UI.</p><p>Enter in Admin@admin.com & project*# to log into & view the stylist dashboard page.</p></div>
         </div>
         </section>
         <section>

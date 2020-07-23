@@ -311,9 +311,6 @@ a{
 
 
 h1,h2 {
-  font-family: "Coco Gothic Bold";
-  font-weight:normal;
-  font-style:normal;
   font-size: 45px;
   font-weight: 300;
   margin: 10px;

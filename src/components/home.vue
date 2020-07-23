@@ -174,7 +174,7 @@ h1 {
       margin: 0%;
       padding: 0%;
       top: 48%;
-      left: 57%;
+      left: 56%;
       transform: translate(-50%, -50%);
       position: absolute;
       z-index: 2;
@@ -249,6 +249,10 @@ a:hover{
       .github img{
     margin-top: -25px;
   } 
+
+  .ring {
+      left: 57%;
+}
 }
 
 
