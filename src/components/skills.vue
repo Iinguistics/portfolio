@@ -417,9 +417,9 @@ li{
 .link-bar{
     background: #121212;
     height: 100vh;
-    width: 65px;
+    width: 70px;
     position: absolute;
-    padding-top: 175px;
+    padding-top: 250px;
 }
 
 .link-icons {
@@ -434,6 +434,7 @@ li{
 a{
     text-decoration: none !important;
     height: 65px;
+    display: block;
 }
 
 #home-text{
@@ -501,7 +502,7 @@ a{
 }
 
 .link-bar{
-    padding-top: 305px;
+    padding-top: 320px;
 }
 
 }

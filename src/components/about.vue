@@ -589,7 +589,7 @@ li{
 .link-bar{
     background: #111;
     height: 99vh;
-    width: 65px;
+    width: 70px;
     position: absolute;
     padding-top: 200px;
 }
@@ -605,7 +605,8 @@ li{
 
 a{
     text-decoration: none !important;
-    height: 65px;
+    height: 60px;
+    display: block;
 }
 
 #home-text{
