@@ -1060,10 +1060,10 @@ a{
   
   
   .swiper-button-next{
-    right: 3em;
+    right: 2em;
   }
   .swiper-button-prev{
-    left: 2.7em;
+    left: 2em;
   }
 
 
