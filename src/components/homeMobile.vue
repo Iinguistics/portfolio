@@ -20,7 +20,7 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide slide1">
         <a href="https://hair-salon-site.herokuapp.com/" target="_blank"><h1>Hair</h1></a>
-        <p>Equipped with appointment booking & employee portal (CRUD App)</p>
+        <p>Salon app with appointment booking & employee portal (CRUD App)</p>
       </div>
       <div class="swiper-slide slide2">
         <a href="https://ctdi-jg.netlify.app/#/" target="_blank"><h1>CTDI</h1></a>
@@ -28,7 +28,7 @@
       </div>
       <div class="swiper-slide slide3">
         <a href="https://stat-tracking.herokuapp.com/" target="_blank"><h1>Stat Tracker</h1></a>
-        <p>hits multiple server side API end points & returns data to the client</p>
+        <p>View current player stats on four different games</p>
       </div>
     </div>
     <!-- Add Pagination -->

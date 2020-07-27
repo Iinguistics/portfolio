@@ -37,22 +37,21 @@
          <!--  ------------------------->
           <div class="skills-item">
            <h5>Tech Skills</h5> 
-           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JavaScript</p> 
-           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> HTML & CSS</p>
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JavaScript (ES6+)</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> HTML & (S)CSS</p>
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Node.js</p> 
            <p id="vue"><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Vue</p>  
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> TypeScript</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Mongo DB</p> 
-           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JQuery</p> 
-           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Git</p>  
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JQuery</p>  
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Git</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Axios</p> 
-           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Rest API's</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JSON</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Linux</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Data structures</p>
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> UI component libs</p> 
-           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Figma</p>  
-           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Webpack</p> 
-           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Gulp</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Gulp</p>  
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Figma</p> 
          </div>
    </div>
   
@@ -404,7 +403,7 @@ li{
 .skills-item p{
   font-size: 15px;
   display: inline-block;
-  width: 175px;
+  width: 180px;
   text-align: left;
   height: 25px;
 }
@@ -492,13 +491,14 @@ a{
 
 .skills-item p{
   font-size: 19px;
-  width: 215px;
+  width: 250px;
 }
 
 
 
 .skills-item li{
   font-size: 18px;
+  padding-bottom: 5px;
 }
 
 .link-bar{
@@ -543,6 +543,7 @@ a{
 }
 .skills-item p{
   font-size: 17px;
+  width: 195px;
 }
 
   .footer{
