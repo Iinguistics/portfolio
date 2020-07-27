@@ -13,7 +13,7 @@
             <article class="head-img">
                 <div class="head-img-wrapper">
                     <div class="head-img-inner">
-                        <img class="head-img-holder" src="../assets/puzzle-2.jpg" alt="" />
+                        <img class="head-img-holder" src="../assets/puzzle-2.jpg" alt="puzzle peices" />
                     </div>
                 </div>
             </article>
@@ -219,7 +219,7 @@ export default {
   },
   mounted(){
     this.header();
-    this.delay();
+    //this.delay();
     this.pageTransition();
     this.trans();
     this.toTop();
