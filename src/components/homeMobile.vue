@@ -245,10 +245,10 @@ export default {
     outline: none;
   }
   .swiper-button-next{
-    right: 3em;
+    right: 2em;
   }
   .swiper-button-prev{
-    left: 3em;
+    left: 2em;
   }
 
   .cube-gone{
