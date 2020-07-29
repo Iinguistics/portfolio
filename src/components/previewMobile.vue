@@ -7,11 +7,13 @@
         <div class="outer">
             <div class="inner"><a href="https://hair-salon-site.herokuapp.com/" target="_blank">Hair Salon</a></div>
             <div class="two-inner"><p>Built with Vue,Node/Express,MongoDB,Bcrypt,Google Maps API,ThreeJs &GSAP</p></div>
-            <video autoplay muted loop preload>
+            <a href="https://hair-salon-site.herokuapp.com/" target="_blank">
+              <video autoplay muted loop preload>
                     <source src="../assets/video/projects/hair-salon-mp4.mp4"
                     type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video> 
+            </a>
               <div class="three-inner"><p>User logins, password hashing, setting up a database, posting, updating & deleting data. Once you learn the server side API calls & how to set up a data base /schemas, not only can you create any site on the web,it also expands your knowledge of the front end so you have a deeper understanding of the parameter's & data distribution on the UI.</p><p>Enter in Admin@admin.com & project*# to log into & view the stylist dashboard page.</p></div>
         </div>
         </section>
@@ -19,11 +21,13 @@
          <div class="outer">
             <div class="inner"><a href="https://stat-tracking.herokuapp.com/" target="_blank">Stat Tracker</a></div>
             <div class="two-inner"><p>Built with Vue,Node/Express & Tracker.gg API</p></div>
-            <video autoplay muted loop preload>
+            <a  href="https://stat-tracking.herokuapp.com/" target="_blank">
+             <video autoplay muted loop preload>
                     <source src="../assets/video/projects/stat-tracker-mp4.mp4"
                     type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video> 
+            </a>
                <div class="three-inner"><p>The UI is not much to look at, but under the hood the most exciting app Ive built(at the time). I learned how to connect the client with the server, how to make an api call from the front end & to a back end api & display the data on the client. Plus I enjoy gaming, so accessing assist stats & WL ratios was very exciting.</p></div>
         </div>
         </section>
@@ -31,11 +35,13 @@
           <div class="outer">
             <div class="inner"><a href="https://ctdi-jg.netlify.app/#/" target="_blank">CTDI</a></div>
             <div class="two-inner"><p>Built with Vue,ThreeJs & Google Charts</p></div>
-            <video autoplay muted loop preload>
+            <a href="https://ctdi-jg.netlify.app/#/" target="_blank"> 
+               <video autoplay muted loop preload>
                     <source src="../assets/video/projects/ctdi-mp4.mp4"
                     type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video> 
+            </a> 
                <div class="three-inner"><p>Focused on learning UI libraries, threejs(really fun to use), hovereffect, blotterjs, animejs & google charts to name a few. Piling on img's, vid's, css & js although can look really good, is not ideal for load times/optimization.</p></div>
         </div>
         </section>
@@ -43,11 +49,13 @@
           <div class="outer">
             <div class="inner"><a href="https://iinguistics.github.io/weatherApp/" target="_blank">Weather App</a></div>
             <div class="two-inner"><p>Built with JQuery & Open weather map API (First project I built)</p></div>
-            <video autoplay muted loop preload>
+            <a href="https://iinguistics.github.io/weatherApp/" target="_blank">
+              <video autoplay muted loop preload>
                     <source src="../assets/video/projects/weather-mp4.mp4"
                     type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video> 
+            </a>   
                 <div class="three-inner"><p>Learned how to make api calls from the front end with ajax, after learning HTML,CSS & JS..when I look at the code now I cringe, there are so many things that could be done differently, this was before I learned about flexbox & grid, UI libraries & axios. (Although the major cities portion is pretty scalable if I ever wanted to add to it)</p></div>
         </div>
         </section>
@@ -55,11 +63,13 @@
           <div class="outer">
             <div class="inner"><a href="https://www.algorithm-archive.org/" target="_blank">Algorithm Archive</a></div>
             <div class="two-inner"><p>Open source project I am contributing to</p></div>
-            <video autoplay muted loop preload>
+            <a href="https://www.algorithm-archive.org/" target="_blank">
+               <video autoplay muted loop preload>
                     <source src="../assets/video/projects/algo-archive-mp4.mp4"
                     type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video> 
+            </a>
                  <div class="three-inner"><p>A guide for all algorithms in all languages. This project brings the joy's of algorithm's into a good learning resource for everyone to explore & learn. </p></div>
         </div>
         </section>
