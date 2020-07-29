@@ -156,10 +156,11 @@ a{
     font-size: 32px;
     text-transform: uppercase;
 }
-a:hover{
+.inner a:hover{
   border-bottom: 1px solid #020C3A;
   color: #020C3A;
 }
+
 
  .message{
    height: 0px;
