@@ -177,7 +177,7 @@ nav{
   }
 
   .nav-links {
-    position: fixed;
+     position: fixed;
     background: #5b78c7;
     height: 108vh;
     width: 100%;
