@@ -45,11 +45,12 @@
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Mongo DB</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JQuery</p>  
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Git</p> 
-           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Axios</p> 
-           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JSON</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Axios</p>
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Vuex</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Data structures</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Linux</p> 
-           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Data structures</p>
-           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> UI component libs</p> 
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> JSON</p>
+           <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> UI libraries</p> 
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Gulp</p>  
            <p><img class="arrow" src="../assets/icons/blue-arrow-icon.png" alt="arrow"> Figma</p> 
          </div>
@@ -518,7 +519,7 @@ a{
  .skills-flex{
   max-width: 97%;
   flex-direction: column;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 .skills-item{
   max-width: 98%; 
@@ -526,7 +527,8 @@ a{
   color: #fff;
   margin: auto;
   font-size: 18px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  margin-top: 30px;
 }
  
 .skills-item h5{
