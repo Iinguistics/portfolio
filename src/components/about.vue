@@ -32,7 +32,7 @@
             I enjoy problem solving, & have high ambitions with high attention to detail, I am interested in the entire frontend, backend spectrums & working with fellow ambitious life long learners.
           </p>
           <p>
-            I am an avid reader, if you are interested in viewing some of my favorite books check out my <router-link to="list">reading list</router-link>
+            I am an avid reader, if you are interested in viewing some of my favorite books & resources I use check out my <router-link to="list" id="list">reading list</router-link>
           </p>
        </div>
      </div>
@@ -107,7 +107,7 @@
             I enjoy problem solving, & have high ambitions with high attention to detail, I am interested in the entire frontend, backend spectrums & working with fellow ambitious life long learners.
             </p>
              <p>
-            I am an avid reader, if you are interested in viewing some of my favorite books check out my <router-link to="list"> reading list</router-link>
+            I am an avid reader, if you are interested in viewing some of my favorite books & resources I use check out my <router-link to="list"> reading list</router-link>
         </p>
        </div>
      </div>
@@ -649,6 +649,10 @@ a{
  video{
   height: 250px;
   width: 200px;
+}
+
+#list{
+  display: inline-block;
 }
 
 .mobile{
