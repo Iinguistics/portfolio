@@ -20,7 +20,7 @@
          <p>In this section I want to share with you some resources I use to gain Knowledge about software/web development.</p>
          <p>Since I am very passionate about tech, I decided to go the self taught route, rather enroll in a standard college & learn out dated technology, I wanted to learn the most up to date tech by the people who specialize in the tech/subject I was/am absorbing. Also considering that we live in the age of information & youtube ad revenue it turned out to be a great idea.</p>
          <p>Sites:</p>
-       <div class="resources-flex">
+       <div class="resources-site-flex">
              <li class="resources-item">
                  <a href="https://www.codecademy.com/" target="_blank"><img class="globe-svg" src="../assets/list/globe.svg"/> Codecademy</a>
              </li>
@@ -82,16 +82,20 @@
        <p> Youtube Channel's:</p>
        <div class="resources-flex">
              <li class="resources-item">
-                 <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank"> <img src="../assets/list/youtube.svg"/> Traversy Media (covers frontend & backend / one of my favorite channel's)</a>
+                 <a id="brad-youtube" href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank"> <img src="../assets/list/youtube.svg"/> Traversy Media (covers frontend & backend / one of my favorite channel's)</a>
+                   <img id="brad-img" src="../assets/list/youtube-channels/traversy-media.jpg" />
              </li>
               <li class="resources-item">
-                 <a href="https://www.youtube.com/c/noobtoprofessional/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Chris Hawkes (Industry vet with good insights/info)</a>
+                 <a id="chris-youtube" href="https://www.youtube.com/c/noobtoprofessional/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Chris Hawkes (Industry vet with good insights/info)</a>
+                  <img id="chris-img" src="../assets/list/youtube-channels/chris-img.jpg" />
              </li>
               <li class="resources-item">
-                 <a href="https://www.youtube.com/c/EngineerMan/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Engineer Man (Good for database & linux knowledge)</a>
+                 <a id="engineer-youtube" href="https://www.youtube.com/c/EngineerMan/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Engineer Man (Good for database & linux knowledge)</a>
+                 <img id="engineer-img" src="../assets/list/youtube-channels/engineer-img.jpg" />
              </li>
              <li class="resources-item">
-                 <a href="https://www.youtube.com/channel/UCaO6VoaYJv4kS-TQO_M-N_g/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Clement Mihailescu (Algorithm expert & all around great software engineering content)</a>
+                 <a  id="clement-youtube" href="https://www.youtube.com/channel/UCaO6VoaYJv4kS-TQO_M-N_g/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Clement Mihailescu (Algorithm expert & all around great software engineering content)</a>
+                   <img id="clement-img" src="https://yt3.ggpht.com/a/AATXAJzk3Q0K_jLcqVVXOFqMz6iNw9YAt-b98G842PRrA_w=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
               <li class="resources-item">
                  <a href="https://www.youtube.com/channel/UCaO6VoaYJv4kS-TQO_M-N_g/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Ben Awad (Good info on an array of various technologies)</a>
@@ -106,7 +110,7 @@
                  <a href="https://www.youtube.com/c/WebDevSimplified/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Web Dev Simplified(Good front end content)</a>
              </li>
              <li class="resources-item">
-                 <a href="https://www.youtube.com/c/TheNetNinja/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Net Ninja(youtube icon, I learned quit a bit from this channel)</a>
+                 <a href="https://www.youtube.com/c/TheNetNinja/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Net Ninja(youtube icon, I learned quite a bit from this channel)</a>
              </li>
               <li class="resources-item">
                  <a href="https://www.youtube.com/c/Socratica/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Socratica(Study tips to SQL queries)</a>
@@ -174,6 +178,13 @@
         <li><router-link to="/projects"><img class="link-icons" id="projects-img" src="../assets/icons/eye-icon.png" alt="projects icon"><p id="projects-text">Projects</p></router-link></li>
         <li><a href="mailto:jmsgoytia@gmail.com"><img class="link-icons" id="contact-img" src="../assets/icons/email-icon.png" alt="email icon"><p id="contact-text">Contact</p></a></li> 
     </div>
+
+     <!-- footer -->
+  <div class="footer" @click="paths">
+    <router-link to="/about"><img src="../assets/mobile-icons/face.png" id="about"/>About</router-link>
+    <router-link to="/skills"><img src="../assets/mobile-icons/skill.png" id="skills"/>Skills</router-link>
+    <a href="mailto:jmsgoytia@gmail.com"><img src="../assets/mobile-icons/contact.png" id="contact"/>Contact</a>
+  </div>
   </div>
 </template>
 
@@ -219,6 +230,14 @@ export default {
      window.scrollTo(0, 0);
     },
 
+     paths: function(){
+         // components with position absolute toggle class will not run unless page is reloaded, clicking the link goes straight to the route no loading
+        // can look unsmooth revisit this solution, perhaps only target the components that have the absolute "issue"
+        setTimeout(function(){
+         window.location.reload();
+      }, 100)
+     },
+
    
 
   },
@@ -238,7 +257,7 @@ export default {
 
 <style scoped>
 .header{
-    height: 50vh;
+    height: 40vh;
 }
 
 #services-title {
@@ -308,16 +327,28 @@ h6{
 }
 
 .resources{
-    height: 100vh;
-    max-width: 70%;
+    
+    max-width: 75%;
     margin: auto;
 }
 
 .resources p{
     text-align: left;
 }
-  
 
+.resources-site-flex{
+     margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+.resources-site-flex li{
+    padding-bottom: 150px;
+}
+  
 
 
 .resources-flex{
@@ -329,15 +360,68 @@ h6{
     max-width: 100%;
     margin-bottom: 50px;
 }
+.resources-flex li{
+    padding-bottom: 215px;
+}
 .resources-item{
-    padding-right: 10px;
-    max-width: 450px;
+    padding-right: 20px;
+    max-width: 350px;
     text-align: left;
     height: 125px;
 }
 .resources-item a:hover{
     text-decoration: underline !important;
 }
+
+
+/* youtube img's */
+#brad-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+}
+#brad-youtube:hover ~ #brad-img{
+   opacity: 1;
+}
+
+#chris-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#chris-youtube:hover ~ #chris-img{
+   opacity: 1;
+}
+
+#engineer-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#engineer-youtube:hover ~ #engineer-img{
+   opacity: 1;
+}
+
+#clement-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#clement-youtube:hover ~ #clement-img{
+   opacity: 1;
+}
+
 
 
 
@@ -358,7 +442,7 @@ li{
     width: 75px;
     position: absolute;
     padding-top: 200px;
-    top: 160%;
+    top: 150%;
 }
 
 .link-icons {
@@ -412,9 +496,9 @@ a{
 }
 
 
-.mobile{
+ .footer{
       display: none;
-    }
+     }
 
 
 
@@ -423,46 +507,76 @@ a{
 /* bigger moniter */
 @media(min-width: 1400px) {
   .link-bar{
-    padding-top: 300px;
-}
+    height: 80vh;
+    padding-top: 250px;
+    top: 160%;
+  }
 
 .resources-item{
     padding-right: 10px;
     max-width: 400px;
 }
 
+     .header{
+    height: 24vh;
+}
+
 }
 
 /* ipad */
 @media(max-width: 1025px) {
-
-
-
+   .link-bar{
+    height: 50vh;
+    padding-top: 200px;
+    top: 145%;
+  }
 }
 
 
 /* mobile */
 @media(max-width: 767px) {
-      .main-load{
-            display: none;
-      }
-
-      .mobile{
-      display: inherit;
-    }
-
+      .header{
+    height: 25vh;
+}
    
+   .link-bar{
+       display: none;
+   }
 
+   .footer{
+    height: 85px;
+    width: 100%;
+    background: #5b78c7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+  }
+  .footer a{
+    color: #fff;
+    font-size: 17px;
+  }
+  .footer img{
+    height: 35px;
+    display: block;
+  }
 
+  #about{
+    padding-left: 8px;
+  }
+  #contact{
+    padding-left: 14px;
+  }
+  #skills{
+    padding-left: 12px;
+  }
 
 
 }
     
 
    @media(min-width: 768px) {
-      .mobile{
-            display: none;
-      }
+     
   
       
 }
