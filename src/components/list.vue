@@ -18,7 +18,7 @@
        </div>
      <div class="resources">
          <p>In this section I want to share with you some resources I use to gain Knowledge about software/web development.</p>
-         <p>Since I am very passionate about tech, I decided to go the self taught route, rather enroll in a standard college & learn out dated technology, I wanted to learn the most up to date tech by the people who specialize in the tech/subject I was/am absorbing. Also considering that we live in the age of information & youtube ad revenue it turned out to be a great idea.</p>
+         <p>Since I am very passionate about tech, I decided to go the self taught route, rather enroll in a standard college & learn out dated technology, I wanted to learn the most up to date tech by the people who specialize in the tech/subject I am absorbing. Also considering that we live in the age of information & youtube ad revenue it turned out to be a great idea.</p>
          <p>Sites:</p>
        <div class="resources-site-flex">
              <li class="resources-item">
@@ -98,77 +98,97 @@
                    <img id="clement-img" src="https://yt3.ggpht.com/a/AATXAJzk3Q0K_jLcqVVXOFqMz6iNw9YAt-b98G842PRrA_w=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
               <li class="resources-item">
-                 <a href="https://www.youtube.com/channel/UCaO6VoaYJv4kS-TQO_M-N_g/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Ben Awad (Good info on an array of various technologies)</a>
+                 <a id="ben-youtube" href="https://www.youtube.com/c/BenAwad97/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Ben Awad (Good info on an array of various technologies)</a>
+                  <img id="ben-img" src="https://yt3.ggpht.com/a/AATXAJzfIzn2ZRwWYX4ZbVUGR10ExZvzFXuJCdw0DWrthw=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
              <li class="resources-item">
-                 <a href="https://www.youtube.com/c/DesignCourse/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Design Course(Great UI/UX design content)</a>
+                 <a id="design-youtube" href="https://www.youtube.com/c/DesignCourse/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Design Course(Great UI/UX design content)</a>
+                  <img id="design-img" src="https://yt3.ggpht.com/a/AATXAJyC278MnqvWj6nYJAUT6E3tzxrZ03-CRsIbnDQIwA=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
              <li class="resources-item">
-                 <a href="https://www.youtube.com/c/ProgramWithErik/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Program with Erik(One of the best vue.js channel's)</a>
+                 <a id="program-youtube" href="https://www.youtube.com/c/ProgramWithErik/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Program with Erik(One of the best vue.js channel's)</a>
+                  <img id="program-img" src="https://yt3.ggpht.com/a/AATXAJxSznGC95KCVg_C-pMW1mVBMWYC7Tt1oLHJb-HU=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
               <li class="resources-item">
-                 <a href="https://www.youtube.com/c/WebDevSimplified/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Web Dev Simplified(Good front end content)</a>
+                 <a id="web-youtube" href="https://www.youtube.com/c/WebDevSimplified/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Web Dev Simplified(Good front end content)</a>
+                  <img id="web-img" src="https://yt3.ggpht.com/a/AATXAJzlhhukYsdgVeuIspbug5SNo_254oqP9ZyrY2E0=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
              <li class="resources-item">
-                 <a href="https://www.youtube.com/c/TheNetNinja/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Net Ninja(youtube icon, I learned quite a bit from this channel)</a>
+                 <a id="net-youtube" href="https://www.youtube.com/c/TheNetNinja/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Net Ninja(youtube icon, I learned quite a bit from this channel)</a>
+                  <img id="net-img" src="https://yt3.ggpht.com/a/AATXAJyWnmk6Ql70o3P-x2eHIR01SiiYamhspnAN04zhWA=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
               <li class="resources-item">
-                 <a href="https://www.youtube.com/c/Socratica/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Socratica(Study tips to SQL queries)</a>
+                 <a id="socratica-youtube" href="https://www.youtube.com/c/Socratica/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Socratica(Study tips to SQL queries)</a>
+                  <img id="socratica-img" src="https://yt3.ggpht.com/a/AATXAJwGTKp9qYkFCLtoWq_AWKdU_ayC0GTieAg3Z3yaQw=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
               <li class="resources-item">
-                 <a href="https://www.youtube.com/c/derekbanas/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Derek Banas(Tut's on alot of different tech's, frontend to backend)</a>
+                 <a id="derek-youtube" href="https://www.youtube.com/c/derekbanas/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Derek Banas(Tut's on alot of different tech's, frontend to backend)</a>
+                  <img id="derek-img" src="https://yt3.ggpht.com/a/AATXAJzCCG7r_PWNZBE9SOTRKKGMiBGcTG8XAA33BT2Axw=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
               <li class="resources-item">
-                 <a href="https://www.youtube.com/c/CodingTutorials360/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Dylan Israel(Industry vet with alot of good insights)</a>
+                 <a id="dylan-youtube" href="https://www.youtube.com/c/CodingTutorials360/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Dylan Israel(Industry vet with alot of good insights)</a>
+                  <img id="dylan-img" src="https://yt3.ggpht.com/a/AATXAJydTxXdKkKMDDaL_K77WDEoUWm2B6fDZmdkiQk=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
               <li class="resources-item">
-                 <a href="https://www.youtube.com/c/CSDojo/videos" target="_blank"><img src="../assets/list/youtube.svg"/> CS Dojo(good data structure & algo channel)</a>
+                 <a id="csdojo-youtube" href="https://www.youtube.com/c/CSDojo/videos" target="_blank"><img src="../assets/list/youtube.svg"/> CS Dojo(good data structure & algo channel)</a>
+                  <img id="csdojo-img" src="https://yt3.ggpht.com/a/AATXAJxJwY29yXENbgxRO0WxVMtiWyt65BT9iF2mNgWJ=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
               <li class="resources-item">
-                 <a href="https://www.youtube.com/c/Academind/videoss" target="_blank"><img src="../assets/list/youtube.svg"/> Academind(full stack web dev, with good front end library tuts)</a>
+                 <a id="academind-youtube" href="https://www.youtube.com/c/Academind/videoss" target="_blank"><img src="../assets/list/youtube.svg"/> Academind(full stack web dev, with good front end library tuts)</a>
+                  <img id="academind-img" src="https://yt3.ggpht.com/a/AATXAJxb_vf1eP6r278YghZIE53tMLh13RCKU6ZSuoTt6w=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
               <li class="resources-item">
-                 <a href="https://www.youtube.com/c/JaymeEdwardsMedia/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Healthy Software Developer(Agile development info)</a>
+                 <a id="healthy-youtube" href="https://www.youtube.com/c/JaymeEdwardsMedia/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Healthy Software Developer(Agile development info)</a>
+                  <img id="healthy-img" src="https://yt3.ggpht.com/a/AATXAJxd3LS0PayyHSbUnwikXer622EkWjMM9vW8_1xugg=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
              <li class="resources-item">
-                 <a href="https://www.youtube.com/c/whatsdev/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Whatsdev(pathway's / guide's)</a>
+                 <a id="stefan-youtube" href="https://www.youtube.com/channel/UCyUBW72KU30dfAYWLVNZO8Q" target="_blank"><img src="../assets/list/youtube.svg"/> Stefan Mischook(industry / freelance vet)</a>
+                  <img id="stefan-img" src="https://yt3.ggpht.com/a/AATXAJzjH-MEVq22_N_dxK-6IZLdok3GYfVU4mpQjiglMA=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
              <li class="resources-item">
-                 <a href="https://www.youtube.com/channel/UCyUBW72KU30dfAYWLVNZO8Q" target="_blank"><img src="../assets/list/youtube.svg"/> Stefan Mischook(industry / freelance vet)</a>
+                 <a id="tech-youtube" href="https://www.youtube.com/c/TechWithTim/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Tech with Tim(vast array of tech topics)</a>
+                  <img id="tech-img" src="https://yt3.ggpht.com/a/AATXAJwAyCZGleVpp_e-jurqWYsH-6Q4rZaKVeareXRK7A=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
              <li class="resources-item">
-                 <a href="https://www.youtube.com/c/Codevolution/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Codeevolution(A lot of good tutorial's)</a>
-             </li>
-              
-             <li class="resources-item">
-                 <a href="https://www.youtube.com/c/TechWithTim/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Tech with Tim(vast array of tech topics)</a>
+                 <a id="deved-youtube" href="https://www.youtube.com/c/DevEd/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Dev Ed(Really good tut's, he is in my top 10)</a>
+                  <img id="deved-img" src="https://yt3.ggpht.com/a/AATXAJzj9Wp5NIzuIcB3DhQ5jgunW5b98DCWGeSv2TZptQ=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
              <li class="resources-item">
-                 <a href="https://www.youtube.com/c/DevEd/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Dev Ed(Really good tut's, he is in my top 10)</a>
-             </li>
-             <li class="resources-item">
-                 <a href="https://www.youtube.com/c/RedStapler_channel/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Red Stapler(Good UI / css vids)</a>
+                 <a id="red-youtube" href="https://www.youtube.com/c/RedStapler_channel/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Red Stapler(Good UI / css vids)</a>
+                  <img id="red-img" src="https://yt3.ggpht.com/a/AATXAJw9rDLrDqNFCAsI1Umf8K3b87ORxhmEC9AL6opQ=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
               <li class="resources-item">
-                 <a href="https://www.youtube.com/c/CodingAddict/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Coding Addict(Alot of good JS & frontend vids)</a>
+                 <a id="codingaddict-youtube" href="https://www.youtube.com/c/CodingAddict/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Coding Addict(Alot of good JS & frontend vids)</a>
+                  <img id="codingaddict-img" src="https://yt3.ggpht.com/a/AATXAJyYNqJwk4aGRpnCGiyZIS29DW_UvzZGkdkazzoPeA=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
              <li class="resources-item">
-                 <a href="https://www.youtube.com/c/FKnight/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Forrest Knight(Industry vet with good insights)</a>
+                 <a id="forrest-youtube" href="https://www.youtube.com/c/FKnight/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Forrest Knight(Industry vet with good insights)</a>
+                  <img id="forrest-img" src="https://yt3.ggpht.com/a/AATXAJwTrqkd2h57fkHXuOQBAVOksgREc0NKd5ig9Lal1Q=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
               <li class="resources-item">
-                 <a href="https://www.youtube.com/c/CodingGardenwithCJ/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Coding Garden(Full stack & api vid's)</a>
+                 <a id="garden-youtube" href="https://www.youtube.com/c/CodingGardenwithCJ/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Coding Garden(Full stack & api vid's)</a>
+                  <img id="garden-img" src="https://yt3.ggpht.com/a/AATXAJyd7g6PJDaD3j2Ouariuf_U42P-yZZPQw6-E-B08Q=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
              <li class="resources-item">
-                 <a href="https://www.youtube.com/c/AndySterkowitz/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Andy Sterkowitz(Career advice / technique's)</a>
+                 <a id="andy-youtube" href="https://www.youtube.com/c/AndySterkowitz/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Andy Sterkowitz(Career advice / technique's)</a>
+                  <img id="andy-img" src="https://yt3.ggpht.com/a/AATXAJzfOPycc8E41LnLMjztVFhon7otkWPmDF6HeaqA=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
              <li class="resources-item">
-                 <a href="https://www.youtube.com/c/tutoriaLinux/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Tutorial linux(good dev ops content)</a>
+                 <a id="tutorial-youtube" href="https://www.youtube.com/c/tutoriaLinux/videos" target="_blank"><img src="../assets/list/youtube.svg"/> Tutorial linux(good dev ops content)</a>
+                  <img id="tutorial-img" src="https://yt3.ggpht.com/a/AATXAJw43PONhVkfly0LW6ygGivUqNCkH6AoI9d0dVwSsg=s100-c-k-c0xffffffff-no-rj-mo" />
              </li>
        </div>
      </div>
      </section>
-   
-    
+    <!-- footer -->
+    <footer>
+        <div class="footer-container" >
+              <router-link to="/"><h4>JG</h4></router-link>
+              <a href="https://github.com/Iinguistics" target="_blank"> 
+                <img src="../assets/icons/github-icon.png" alt="github logo"/>
+                </a>      
+        </div>
+    </footer>
     
 
    <!-- link side bar -->
@@ -179,10 +199,11 @@
         <li><a href="mailto:jmsgoytia@gmail.com"><img class="link-icons" id="contact-img" src="../assets/icons/email-icon.png" alt="email icon"><p id="contact-text">Contact</p></a></li> 
     </div>
 
-     <!-- footer -->
+     <!-- mobile footer -->
   <div class="footer" @click="paths">
     <router-link to="/about"><img src="../assets/mobile-icons/face.png" id="about"/>About</router-link>
     <router-link to="/skills"><img src="../assets/mobile-icons/skill.png" id="skills"/>Skills</router-link>
+    <router-link to="/projects"><img src="../assets/mobile-icons/projects-icon.png" id="projects"/>Projects</router-link>
     <a href="mailto:jmsgoytia@gmail.com"><img src="../assets/mobile-icons/contact.png" id="contact"/>Contact</a>
   </div>
   </div>
@@ -256,6 +277,7 @@ export default {
 </script>
 
 <style scoped>
+
 .header{
     height: 40vh;
 }
@@ -310,7 +332,7 @@ h6{
 }
 
 .book{
-    max-width: 70%;
+    max-width: 75%;
     margin: auto;
     margin-bottom: 150px;
 }
@@ -327,7 +349,6 @@ h6{
 }
 
 .resources{
-    
     max-width: 75%;
     margin: auto;
 }
@@ -337,7 +358,7 @@ h6{
 }
 
 .resources-site-flex{
-     margin-top: 50px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -422,8 +443,245 @@ h6{
    opacity: 1;
 }
 
+#ben-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#ben-youtube:hover ~ #ben-img{
+   opacity: 1;
+}
 
+#design-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#design-youtube:hover ~ #design-img{
+   opacity: 1;
+}
 
+#program-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#program-youtube:hover ~ #program-img{
+   opacity: 1;
+}
+
+#web-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#web-youtube:hover ~ #web-img{
+   opacity: 1;
+}
+
+#net-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#net-youtube:hover ~ #net-img{
+   opacity: 1;
+}
+
+#socratica-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#socratica-youtube:hover ~ #socratica-img{
+   opacity: 1;
+}
+
+#derek-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#derek-youtube:hover ~ #derek-img{
+   opacity: 1;
+}
+
+#dylan-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#dylan-youtube:hover ~ #dylan-img{
+   opacity: 1;
+}
+
+#csdojo-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#csdojo-youtube:hover ~ #csdojo-img{
+   opacity: 1;
+}
+
+#academind-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#academind-youtube:hover ~ #academind-img{
+   opacity: 1;
+}
+
+#healthy-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#healthy-youtube:hover ~ #healthy-img{
+   opacity: 1;
+}
+
+#stefan-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#stefan-youtube:hover ~ #stefan-img{
+   opacity: 1;
+}
+
+#tech-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#tech-youtube:hover ~ #tech-img{
+   opacity: 1;
+}
+
+#deved-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#deved-youtube:hover ~ #deved-img{
+   opacity: 1;
+}
+
+#red-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#red-youtube:hover ~ #red-img{
+   opacity: 1;
+}
+
+#codingaddict-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#codingaddict-youtube:hover ~ #codingaddict-img{
+   opacity: 1;
+}
+
+#forrest-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#forrest-youtube:hover ~ #forrest-img{
+   opacity: 1;
+}
+
+#garden-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#garden-youtube:hover ~ #garden-img{
+   opacity: 1;
+}
+
+#andy-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#andy-youtube:hover ~ #andy-img{
+   opacity: 1;
+}
+
+#tutorial-img{
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.8s;
+  border: orangered solid 1px;
+}
+#tutorial-youtube:hover ~ #tutorial-img{
+   opacity: 1;
+}
 
 .globe-svg{
     height: 17px;
@@ -435,6 +693,8 @@ li{
   list-style: none;
 }
 
+
+ 
 
 .link-bar{
     background: #111;
@@ -495,7 +755,28 @@ a{
     display: inherit;
 }
 
+/* desktop footer */
+.footer-container{
+    height: 100px;
+    width: 100%;
+    background: #212121;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
+
+.footer-items a, h4{
+    display: inline-block;
+     color: #fff;
+     padding-top: 10px;
+}
+
+
+
+
+/* mobile */
  .footer{
       display: none;
      }
@@ -538,6 +819,10 @@ a{
       .header{
     height: 25vh;
 }
+
+.resources-flex li{
+    padding-bottom: 150px;
+}
    
    .link-bar{
        display: none;
@@ -569,6 +854,9 @@ a{
   }
   #skills{
     padding-left: 12px;
+  }
+  #projects{
+    padding-left: 18px;
   }
 
 
