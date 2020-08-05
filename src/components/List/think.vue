@@ -13,7 +13,9 @@
         <!-- description -->
           <h6>By: V. Anton Spraul</h6>
            <p>The real challenge of programming isn't learning a language's syntax, it's learning to creatively solve problems so you can build something great.</p>
-            <p>Takeaways: </p>
+            <p>Takeaways: Take the time to form a plan when faced with a problem to solve. Break big problems into smaller pieces and try to solve the small pieces. Then you might spark ideas about how to work on the parts you’re less comfortable with. </p>
+            <p>If a program will have multiple parts to solve, start with the one with the most constraints. Write separate programs to test small functions within a bigger project. If you can write a small piece on its own, you’ll have an easier time fitting that function into the bigger project. This works great with component based frameworks like vue, react ect..Build a "test" component, add it to your router/make a test route for your view. Once you have what you want, bring it to your parent component.</p>
+            <p>There are problems they give you in this book that will trigger your creative side, there is a perimeter with coding, but the area size is massive, you can do so many different things within it. Once you realize this, you can open your mind to creative problem solving.</p>
       </div>
   </div>
 </template>

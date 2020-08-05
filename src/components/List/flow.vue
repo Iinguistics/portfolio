@@ -13,7 +13,11 @@
         <!-- description -->
           <h6>By: Mihaly Csikszentmihalyi</h6>
            <p>Psychologist Mihaly Csikszentmihalyi's famous investigations of "optimal experience" have revealed that what makes an experience genuinely satisfying is a state of consciousness called flow.</p>
-            <p>Takeaways: </p>
+            <p>Takeaways: Achieving flow state is not easy, but it is very possible with many different careers or hobbies that you do. You need to set some goals & get feedback from the goals so you can measure your progress, it's about challenging yourself & growing.
+               I applied this to a what I found to be very dull inventory control job I had. How many transfers can I get done in the next two hours? How many PO receipts can I do this shift? 30 the first day, 40 the next & so on. Turned out not to be such a great idea for me specifically, I worked swing shift & would often do so much work that day shift would come in the next morning with nothing to do, but you get the idea.  
+            </p>
+            <p>The best moments usually occur when a person’s body or mind is stretched to its limits in a voluntary effort to accomplish something difficult and worthwhile.
+            </p>
       </div>
   </div>
 </template>

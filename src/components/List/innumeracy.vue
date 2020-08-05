@@ -13,7 +13,8 @@
         <!-- description -->
           <h6>By: John Allen Paulos</h6>
            <p>John Allen Paulos, in his celebrated bestseller first published in 1988, argues that our inability to deal rationally with very large numbers and the probabilities associated with them results in misinformed governmental policies, confused personal decisions, and an increased susceptibility to pseudoscience of all kinds. Innumeracy lets us know what we're missing, and how we can do something about it.</p>
-            <p>Takeaways: </p>
+            <p>Takeaways: It goes into a lot of stats & percentages & how those percentages can be used, either for one's benefit or disadvantage. It describes the Baltimore Stockbroker Parable which is a good real world type example.
+John goes into how math is taught in grade school & how it can be improved, or taught better so less people would be intimidated by math & it's concepts. This book can really open your eyes to actually how big the world is, & how different industries from marketing to politics can sell you something based off of misinformation. </p>
       </div>
   </div>
 </template>

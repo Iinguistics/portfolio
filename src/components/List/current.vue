@@ -13,7 +13,6 @@
         <!-- description -->
           <h6>By: Jordan Ellenberg</h6>
            <p>This book connects various economic and societal philosophies with basic mathematics and statistical principles. Math isn’t confined to abstract incidents that never occur in real life, but rather touches everything we do—the whole world is shot through with it.</p>
-            <p>Takeaways: </p>
       </div>
   </div>
 </template>
