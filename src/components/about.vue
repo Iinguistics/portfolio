@@ -20,18 +20,20 @@
         <li><a href="mailto:jmsgoytia@gmail.com"><img class="link-icons" id="contact-img" src="../assets/icons/email-icon.png" alt="email icon"><p id="contact-text">Contact</p></a></li> 
     </div>
        <div class="about-wrap">
-        
-     <div class="about-container">
-       <div class="about-item">
-         <h5>Hello, I'm James, a front end developer based in El Dorado Hills, CA.</h5>
-         <p>I enjoy creating software that has a positive impact of people's life, whether that be websites, applications, or anything in between.</p>
-         <p>I don’t like to define myself by the work I’ve done. I define myself
-            by the work I want to do. I prefer to keep learning, continue challenging myself,
-            and do interesting things that matter.
-         </p>
-        <p>
-          I enjoy problem solving, & have high ambitions with high attention to detail, I am interested in the entire frontend, backend spectrums & working with fellow ambitious life long learners.
-        </p>
+        <div class="about-container">
+         <div class="about-item">
+          <h5>Hello, I'm James, a front end developer based in El Dorado Hills, CA.</h5>
+          <p>I enjoy creating software that has a positive impact of people's life, whether that be websites, applications, or anything in between.</p>
+          <p>I don’t like to define myself by the work I’ve done. I define myself
+              by the work I want to do. I prefer to keep learning, continue challenging myself,
+              and do interesting things that matter.
+          </p>
+          <p>
+            I enjoy problem solving, & have high ambitions with high attention to detail, I am interested in the entire frontend, backend spectrums & working with fellow ambitious life long learners.
+          </p>
+          <p>
+            I am an avid reader, if you are interested in viewing some of my favorite books & resources I use check out my <router-link to="list" id="list">reading list</router-link>
+          </p>
        </div>
      </div>
      <!-- circle spinner -->
@@ -86,15 +88,12 @@
   </div>
  </div>
 
-       <!--  ---------------------------------->
+       <!------------------------------------>
     </div>
    <div class="mobile">
-       
         <div class="about-header-mobile">
              <h1>About Me</h1>
-            </div>
-     
-           
+            </div> 
        <div class="about-wrap">
         <div class="about-container">
          <div class="about-item">
@@ -107,10 +106,12 @@
             <p>
             I enjoy problem solving, & have high ambitions with high attention to detail, I am interested in the entire frontend, backend spectrums & working with fellow ambitious life long learners.
             </p>
+             <p>
+            I am an avid reader, if you are interested in viewing some of my favorite books & resources I use check out my <router-link to="list"> reading list</router-link>
+        </p>
        </div>
-      
      </div>
-       </div>
+   </div>
 
              <!-- cube slider ------------------------>
           <!-- projects display -->
@@ -650,6 +651,10 @@ a{
   width: 200px;
 }
 
+#list{
+  display: inline-block;
+}
+
 .mobile{
       display: none;
     }
@@ -810,7 +815,7 @@ a{
  }
 
 .about-wrap{
-  height: 91vh;
+  height: 98vh;
 }
 
 .circular-text{
@@ -946,13 +951,15 @@ a{
 }
 
 
-
   .head-container{
     height: 75vh;
     background-color: #000;
 }
 
- 
+
+ a{
+   display: inline-block;
+ }
 
 .about-header-mobile{
   left: 25%;
@@ -970,12 +977,12 @@ a{
   flex-direction: column;
   max-width: 80%;
   justify-content: space-evenly;
-  height: 100vh;
+  height: 118vh;
   margin:auto;
 }
 
 .about-item{
-  max-width: 375px; 
+  max-width: 375px;  
   text-align: left;
 }
 

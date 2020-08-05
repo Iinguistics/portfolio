@@ -5,6 +5,7 @@ import Projects from './components/projects.vue';
 import About from './components/about.vue';
 import Skills from './components/skills.vue';
 import Contact from './components/contact.vue';
+import List from './components/list.vue';
 
 //import test from './components/test.vue';
 //import contactMobile from './components/contactMobile.vue';
@@ -46,6 +47,11 @@ export default new Router({
             path:'/contact',
             name: 'contact',
             component: Contact,
+        },
+        {
+            path:'/list',
+            name: 'list',
+            component: List,
         },
 
 

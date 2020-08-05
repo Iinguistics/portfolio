@@ -14,7 +14,7 @@
                 Sorry, your browser doesn't support embedded videos.
             </video> 
             </a>
-              <div class="three-inner"><p>User logins, password hashing, setting up a database, posting, updating & deleting data. Once you learn the server side API calls & how to set up a data base /schemas, not only can you create any site on the web,it also expands your knowledge of the front end so you have a deeper understanding of the parameter's & data distribution on the UI.</p><p>Enter in Admin@admin.com & project*# to log into & view the stylist dashboard page.</p></div>
+              <div class="three-inner"><p>User logins, password hashing, setting up a database, posting, updating & deleting data. Once you learn the server side API calls & how to set up a model, not only can you create the majority of site's on the web,it also expands your knowledge of the front end so you have a deeper understanding of the entire stack to the data distribution on the UI.</p><p>Enter in Admin@admin.com & project*# to log into & view the stylist dashboard page.</p></div>
         </div>
         </section>
         <section>

@@ -60,7 +60,7 @@
       </div>
        <a class="bg1" href="https://github.com/Iinguistics/portfolio" target="_blank">
         <h2>Portfolio</h2>
-        <p>Built with Vue, pixie js & GSAP</p>
+        <p>Built with Vue, pixiejs, threejs & GSAP</p>
       </a>
        <a class="bg1" href="https://github.com/Iinguistics/weatherApp" target="_blank">
         <h2>Weather App</h2>
