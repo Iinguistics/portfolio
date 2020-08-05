@@ -859,6 +859,10 @@ a{
     padding-left: 18px;
   }
 
+  .footer-container{
+      display: none;
+  }
+
 
 }
     
