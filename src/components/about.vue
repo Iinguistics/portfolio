@@ -539,7 +539,7 @@ export default {
   flex-direction: column;
   max-width: 60%;
   justify-content: space-evenly;
-  height: 120vh;
+  height: 160vh;
   margin:auto;
   background: #000;
 }
