@@ -273,7 +273,7 @@ export default {
           "distance": 200
         },
         "push": {
-          "particles_nb": 3
+          "particles_nb": 2
         },
         "remove": {
           "particles_nb": 2
