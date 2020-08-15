@@ -56,36 +56,36 @@ export default {
   },
   methods: {
     pageLoad: function(){
-          TweenMax.to(".loading-screen", 4, {
-            delay: 7.0,
+          TweenMax.to(".loading-screen", 3, {
+            delay: 3.5,
             top: "-110%",
             ease: Expo.easeInOut
       });
 
      
      TweenMax.from(".about", 3, {
-            delay: 8.8,
+            delay: 5.0,
             opacity: 0,
             y: 20,
             ease: Expo.easeInOut
       });
 
       TweenMax.from(".projects", 3, {
-            delay: 9,
+            delay: 5.0,
             opacity: 0,
             y: 20,
             ease: Expo.easeInOut
       });
 
       TweenMax.from(".skills", 3, {
-            delay: 6.6,
+            delay: 4.5,
             opacity: 0,
             y: 20,
             ease: Expo.easeInOut
       });
 
       TweenMax.from(".contact", 3, {
-            delay: 9.2,
+            delay: 6,
             opacity: 0,
             y: 20,
             ease: Expo.easeInOut
@@ -94,10 +94,10 @@ export default {
 
   
          let tl = TweenMax.timeline();
-         tl.from(".ringOne" ,{duration:2, y:40})
-         tl.to(".ringOne", {duration:2, x:40});
-         tl.from(".ringTwo" ,{duration:2, y:40})
-         tl.to(".ringTwo", {duration:2, x:40});
+         tl.from(".ringOne" ,{duration:0.7, y:40})
+         tl.to(".ringOne", {duration:0.7, x:40});
+         tl.from(".ringTwo" ,{duration:0.7, y:40})
+         tl.to(".ringTwo", {duration:0.7, x:40});
       
     },
     pushSkills(){
