@@ -15,7 +15,7 @@
     "circletype": "^2.3.0",
     "core-js": "^3.6.5",
     "glitch-canvas": "^1.1.8",
-    "gsap": "^3.2.6",
+    "gsap": "^3.6.0",
     "jquery": "^3.5.1",
     "particles.js": "^2.0.0",
     "pixi.js": "^5.2.4",
