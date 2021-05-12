@@ -20,7 +20,7 @@
     "particles.js": "^2.0.0",
     "pixi.js": "^5.2.4",
     "prerender-spa-plugin": "^3.4.0",
-    "swiper": "^5.4.5",
+    "swiper": "^6.5.1",
     "three": "^0.117.1",
     "vue": "^2.6.11",
     "vue-router": "^3.3.1",
